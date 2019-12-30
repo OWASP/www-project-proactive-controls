@@ -41,8 +41,8 @@ auto-migrated: 1
 <p>The OWASP Top Ten Proactive Controls describes the most important control and control categories that every architect and developer should absolutely, 100% include in every project.</p>
 <h2 id="presentation">Presentation</h2>
 <h2 id="presentation">Presentation</h2>
-<p>Use the extensive <a href="media:OWASP_Top_Ten_Proactive_Controls_v3.pptx" title="wikilink">project presentation</a> that expands on the information in the document.</p>
-<p>Use the extensive <a href="media:OWASP_Top_Ten_Proactive_Controls_v3.pptx" title="wikilink">project presentation</a> that expands on the information in the document.</p>
+<p>Use the extensive <a href="media:OWASP_Top_Ten_Proactive_Controls_v3.pptx" title=>project presentation</a> that expands on the information in the document.</p>
+<p>Use the extensive <a href="media:OWASP_Top_Ten_Proactive_Controls_v3.pptx" title=>project presentation</a> that expands on the information in the document.</p>
 <h2 id="project_leaders">Project Leaders</h2>
 <h2 id="project_leaders">Project Leaders</h2>
 <ul>
@@ -59,8 +59,8 @@ auto-migrated: 1
 <h2 id="key_contributors">Key Contributors</h2>
 <ul>
 <ul>
-<li><a href="User:Taras_Ivashchenko" title="wikilink">Taras Ivashchenko</a> <a href="mailto:taras.ivaschenko@owasp.org">@</a> (Russian Translation)</li>
-<li><a href="User:Taras_Ivashchenko" title="wikilink">Taras Ivashchenko</a> <a href="mailto:taras.ivaschenko@owasp.org">@</a> (Russian Translation)</li>
+<li><a href="User:Taras_Ivashchenko" title=>Taras Ivashchenko</a> <a href="mailto:taras.ivaschenko@owasp.org">@</a> (Russian Translation)</li>
+<li><a href="User:Taras_Ivashchenko" title=>Taras Ivashchenko</a> <a href="mailto:taras.ivaschenko@owasp.org">@</a> (Russian Translation)</li>
 <li>Jay Zudilin (Russian Translation)</li>
 <li>Jay Zudilin (Russian Translation)</li>
 <li>Danny Harris <a href="mailto:danny.harris@owasp.org">@</a></li>
@@ -107,31 +107,31 @@ auto-migrated: 1
 <h2 id="related_projects">Related Projects</h2>
 <ul>
 <ul>
-<li><a href="OWASP_Top_Ten_Project" title="wikilink">OWASP Top Ten Project</a></li>
-<li><a href="OWASP_Top_Ten_Project" title="wikilink">OWASP Top Ten Project</a></li>
-<li><a href="OWASP_Mobile_Security_Project" title="wikilink">OWASP Mobile Security Project</a></li>
-<li><a href="OWASP_Mobile_Security_Project" title="wikilink">OWASP Mobile Security Project</a></li>
-<li><a href="Cheat_Sheets" title="wikilink">Cheat Sheets</a></li>
-<li><a href="Cheat_Sheets" title="wikilink">Cheat Sheets</a></li>
+<li><a href="OWASP_Top_Ten_Project" title=>OWASP Top Ten Project</a></li>
+<li><a href="OWASP_Top_Ten_Project" title=>OWASP Top Ten Project</a></li>
+<li><a href="OWASP_Mobile_Security_Project" title=>OWASP Mobile Security Project</a></li>
+<li><a href="OWASP_Mobile_Security_Project" title=>OWASP Mobile Security Project</a></li>
+<li><a href="Cheat_Sheets" title=>Cheat Sheets</a></li>
+<li><a href="Cheat_Sheets" title=>Cheat Sheets</a></li>
 </ul></td>
 </ul></td>
 <ul>
-<li>Top 10 Proactive Controls 2018 PDF: <a href="Media:OWASP_Top_10_Proactive_Controls_V3.pdf" title="wikilink">EN</a> | <a href="Media:OWASP_TOP_10_Proactive_Controls_2018_V3_PL.pdf" title="wikilink">PL</a> | <a href="Media:Owasp-top-10-proactive-controls-2018-russian.pdf" title="wikilink">Ru</a></li>
+<li>Top 10 Proactive Controls 2018 PDF: <a href="Media:OWASP_Top_10_Proactive_Controls_V3.pdf" title=>EN</a> | <a href="/www-pdf-archive/OWASP_TOP_10_Proactive_Controls_2018_V3_PL.pdf" title=>PL</a> | <a href="/www-pdf-archive/Owasp-top-10-proactive-controls-2018-russian.pdf" title=>Ru</a></li>
 </ul>
 <ul>
-<li>Top 10 Proactive Controls 2018 <a href="Media:OWASP_Top_Ten_Proactive_Controls_v3.pptx" title="wikilink">PPT Download</a></li>
-<li>Top 10 Proactive Controls 2018 <a href="Media:OWASP_Top_10_Proactive_Controls_V3.docx" title="wikilink">DOCX Download</a></li>
-<li>Mapping to other OWASP and IEEE Top 10 Lists <a href="Media:Owasp-pc-ieee-ott-omtt-ssdf.pdf" title="wikilink">PDF Download</a></li>
+<li>Top 10 Proactive Controls 2018 <a href="Media:OWASP_Top_Ten_Proactive_Controls_v3.pptx" title=>PPT Download</a></li>
+<li>Top 10 Proactive Controls 2018 <a href="Media:OWASP_Top_10_Proactive_Controls_V3.docx" title=>DOCX Download</a></li>
+<li>Mapping to other OWASP and IEEE Top 10 Lists <a href="/www-pdf-archive/Owasp-pc-ieee-ott-omtt-ssdf.pdf" title=>PDF Download</a></li>
 </ul>
 <h2 id="translations">Translations</h2>
 <ul>
-<li>Top 10 Proactive Controls 2018 Chinese <a href="Media:OWASP_Top_10_Proactive_Controls_V3_Chinese.pdf" title="wikilink">PDF Download</a></li>
-<li>Top 10 Proactive Controls 2018 Russian <a href="Media:Owasp-top-10-proactive-controls-2018-russian.pdf" title="wikilink">PDF Download</a></li>
-<li>Top 10 Proactive Controls 2018 Polish <a href="Media:OWASP_TOP_10_Proactive_Controls_2018_V3_PL.pdf" title="wikilink">PDF Download</a></li>
-<li>Top 10 Proactive Controls 2016 Traditional Chinese Translation <a href="Media:OWASPTop10ProactiveControls2016-Chinese.pdf" title="wikilink">PDF Download</a></li>
-<li>Top 10 Proactive Controls 2016 Simplified Chinese Translation <a href="Media:OWASPTop10ProactiveControls2016-SimplifiedChinese.pdf" title="wikilink">PDF Download</a></li>
-<li>Top 10 Proactive Controls 2016 Japanese Translation <a href="Media:OWASPTop10ProactiveControls2016-Japanese.pdf" title="wikilink">PDF Download</a></li>
-<li>Top 10 Proactive Controls 2016 Hebrew Translation <a href="Media:OWASP_Proactive_Controls_2-Hebrew.pdf" title="wikilink">PDF Download</a></li>
+<li>Top 10 Proactive Controls 2018 Chinese <a href="/www-pdf-archive/OWASP_Top_10_Proactive_Controls_V3_Chinese.pdf" title=>PDF Download</a></li>
+<li>Top 10 Proactive Controls 2018 Russian <a href="/www-pdf-archive/Owasp-top-10-proactive-controls-2018-russian.pdf" title=>PDF Download</a></li>
+<li>Top 10 Proactive Controls 2018 Polish <a href="/www-pdf-archive/OWASP_TOP_10_Proactive_Controls_2018_V3_PL.pdf" title=>PDF Download</a></li>
+<li>Top 10 Proactive Controls 2016 Traditional Chinese Translation <a href="/www-pdf-archive/OWASPTop10ProactiveControls2016-Chinese.pdf" title=>PDF Download</a></li>
+<li>Top 10 Proactive Controls 2016 Simplified Chinese Translation <a href="/www-pdf-archive/OWASPTop10ProactiveControls2016-SimplifiedChinese.pdf" title=>PDF Download</a></li>
+<li>Top 10 Proactive Controls 2016 Japanese Translation <a href="/www-pdf-archive/OWASPTop10ProactiveControls2016-Japanese.pdf" title=>PDF Download</a></li>
+<li>Top 10 Proactive Controls 2016 Hebrew Translation <a href="/www-pdf-archive/OWASP_Proactive_Controls_2-Hebrew.pdf" title=>PDF Download</a></li>
 </ul>
 <h2 id="latest_news_and_events">Latest News and Events</h2>
 <ul>
@@ -305,20 +305,20 @@ of how you use the project. The project lead can be reached
 ## 2018 Version
 
   - Top 10 Proactive Controls 2018 Russian Translation: [PDF
-    Download](Media:Owasp-top-10-proactive-controls-2018-russian.pdf "wikilink")
+    Download](Media:Owasp-top-10-proactive-controls-2018-russian.pdf )
   - Top 10 Proactive Controls 2018 Polish Translation: [PDF
-    Download](Media:OWASP_TOP_10_Proactive_Controls_2018_V3_PL.pdf "wikilink")
+    Download](Media:OWASP_TOP_10_Proactive_Controls_2018_V3_PL.pdf )
 
 ## 2016 Version
 
   - Top 10 Proactive Controls 2016 Traditional Chinese Translation [PDF
-    Download](Media:OWASPTop10ProactiveControls2016-Chinese.pdf "wikilink")
+    Download](Media:OWASPTop10ProactiveControls2016-Chinese.pdf )
   - Top 10 Proactive Controls 2016 Simplified Chinese Translation [PDF
-    Download](Media:OWASPTop10ProactiveControls2016-SimplifiedChinese.pdf "wikilink")
+    Download](Media:OWASPTop10ProactiveControls2016-SimplifiedChinese.pdf )
   - Top 10 Proactive Controls 2016 Japanese Translation [PDF
-    Download](Media:OWASPTop10ProactiveControls2016-Japanese.pdf "wikilink")
+    Download](Media:OWASPTop10ProactiveControls2016-Japanese.pdf )
   - Top 10 Proactive Controls 2016 Hebrew Translation [PDF
-    Download](Media:OWASP_Proactive_Controls_2-Hebrew.pdf "wikilink")
+    Download](Media:OWASP_Proactive_Controls_2-Hebrew.pdf )
 
 ## 2014 Version
 
@@ -352,7 +352,7 @@ Welcome to the OWASP Top 10 Proactive Controls Project\!
 
 __NOTOC__ <headertabs></headertabs>
 
-[OWASP Proactive Controls](Category:OWASP_Project "wikilink")
-[Category:OWASP_Builders](Category:OWASP_Builders "wikilink")
-[Category:OWASP_Defenders](Category:OWASP_Defenders "wikilink")
-[Category:OWASP_Document](Category:OWASP_Document "wikilink")
+[OWASP Proactive Controls](Category:OWASP_Project )
+[Category:OWASP_Builders](Category:OWASP_Builders )
+[Category:OWASP_Defenders](Category:OWASP_Defenders )
+[Category:OWASP_Document](Category:OWASP_Document )
