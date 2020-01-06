@@ -2,7 +2,7 @@
 * Top 10 Proactive Controls 2018 [PDF](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_10_Proactive_Controls_V3.pdf) 
 * Top 10 Proactive Controls 2018 [PPT](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_Ten_Proactive_Controls_v3.pptx)
 * Top 10 Proactive Controls 2018 [Doc](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_10_Proactive_Controls_V3.docx)
-* Mapping to other OWASP and IEEE Top 10 Lists
+* [Mapping to other OWASP and IEEE Top 10 Lists](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP-OPC-IEEEE-OTop10-OTMobTop10-ssdf.pdf)
 
 ### Translations 
 * [Top 10 Proactive Controls 2018 Chinese PDF](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_10_Proactive_Controls_V3_Chinese.pdf)
