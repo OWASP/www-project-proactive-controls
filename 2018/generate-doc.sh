@@ -17,11 +17,11 @@ echo ""
 
 
 generate_docx() {
-    pandoc -s -f gfm --reference-doc=../templates/template.docx --toc  --columns 10000 -t docx  -o "../OWASP-Top10-Proactive-Controls-2018-$1.docx" *.md
+    pandoc -s -f gfm --reference-doc=../templates/template.docx --columns 10000 -t docx  -o "../OWASP-Top10-Proactive-Controls-V3-$1.docx" *.md
 }
 
 generate_html() {
-    pandoc -s -f gfm -t html5 --metadata=title:"OWASP Top 10 Proactive Controls 2018 " -o "../OWASP-Top10-Proactive-Controls-2018-$1.html" *.md
+    pandoc -s -f gfm -t html5 --metadata=title:"OWASP Top 10 Proactive Controls 2018 " -o "../OWASP-Top10-Proactive-Controls-V3-$1.html" *.md
 }
 
 generate() {
@@ -39,7 +39,7 @@ generate() {
 }
 
 # English
-generate "en"
+generate "EN"
 
  
 echo "Generated OWASP Top 10 Proactive Control"
