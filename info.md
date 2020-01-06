@@ -1,6 +1,6 @@
 ### Quick Acess 
-* Top 10 Proactive Controls 2018 PDF: [EN](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_10_Proactive_Controls_V3.pdf) |  [PL](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_TOP_10_Proactive_Controls_2018_V3_PL.pdf)  | [Ru](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/Owasp-top-10-proactive-controls-2018-russian.pdf) |  [Ch](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_10_Proactive_Controls_V3_Chinese.pdf)
-* Top 10 Proactive Controls 2018 [PPT]
+* Top 10 Proactive Controls 2018 [PDF](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_10_Proactive_Controls_V3.pdf) 
+* Top 10 Proactive Controls 2018 [PPT](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_Ten_Proactive_Controls_v3.pptx)
 * Top 10 Proactive Controls 2018 [Doc](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_10_Proactive_Controls_V3.docx)
 * Mapping to other OWASP and IEEE Top 10 Lists
 
