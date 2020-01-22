@@ -62,5 +62,11 @@ Use the extensive [project presentation](https://github.com/OWASP/www-project-pr
 - Jason Coleman 
 - Cassio Goldschmidt 
 
-## Licensing
-The OWASP Proactive Controls document is free to use under the [Creative Commons ShareAlike 3 License](https://creativecommons.org/licenses/by-sa/3.0/us/)
+
+## Related Projects
+- [OWASP Top Ten Project](https://owasp.org/www-project-top-ten)
+- [OWASP Mobile Security Project](https://owasp.org/www-project-mobile-security/)
+- [OWASP Cheat Sheet Series](https://cheatsheetseries.owasp.org/) 
+
+
+
