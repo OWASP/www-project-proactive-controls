@@ -30,46 +30,36 @@ The OWASP Top Ten Proactive Controls 2018 is a list of security techniques that 
 - C8: Protect Data Everywhere
 - C9: Implement Security Logging and Monitoring
 - C10: Handle All Errors and Exceptions
-</ol>
-<p>For more information, see the complete document in the tab to the right.</p>
+
+For more information, see the complete document in the tab to the right.
 
 
+ ## Presentation
+Use the extensive [project presentation](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_10_Proactive_Controls_V3.docx) that expands on the information in the document.
 
-<!-- Standard Chapter Page Template
-This is an example of a Project or Chapter page.
-Please change these items to indicate the actual information you wish to present. In addition to this information, the 'front-matter' above the text should be modified to reflect your actual information.  An explanation of each of the front-matter items is below:
 
-{front matter for this file}
+## Key Contributors
+- [Taras Ivashchenko](mailto:taras.ivaschenko@owasp.org)  (Russian Translation) 
+- Jay Zudilin (Russian Translation)
+- [Danny Harris](mailto:danny.harris@owasp.org)
+- Hiroaki Kuramochi (Japanese Translation) 
+- Hiroshi Fujimoto (Japanese Translation) 
+- Hidenori Nagai (Japanese Translation) 
+- [Riotaro OKADA]("mailto:riotaro@owasp.org) (Japanese Translation) 
+- Robert Dracea (Japanese Translation) 
+- Koichiro Watanabe (Japanese Translation) 
+- Tony Hsu Hsiang Chih (Chinese Translation) 
+- Abdessamad Temmar 
+- [Eyal Estrin](mailto:eyal.estrin@gmail.com) (Hebrew Translation) 
+- [Cyrille Grandval](mailto:cyrille.grandval@owasp.org) (French Translation) 
+- [Frédéric Baillon](mailto:fbaillon@darkmira.com) (French Translation) 
+- [Danny Harris](mailto:danny.harris@owasp.org)
+- Stephen de Vries 
+- Andrew Van Der Stock 
+- Gaz Heyes 
+- Colin Watson 
+- Jason Coleman 
+- Cassio Goldschmidt 
 
-```
- layout: This is the layout used by project and chapter pages.  You should leave this value as col-sidebar
- title: This is the title of your project or chapter page, usually the name.  For example, OWASP Zed Attack Proxy or OWASP Baltimore
-tags: This is a space-delimited list of tags you associate with your project or chapter.  If you are using tabs, at least one of these tags should be unique in order to be used in the tabs files (an example tab is included in this repo) 
-- region: This is the region you are in according to our data
-```
-
-{copy for this file (index.md)}
-Replace the text above the commented area with your information in the format below:
-```
-## Welcome
-Include some information here about your chapter
-
-## Participation
-The Open Web Application Security Project (OWASP) is a nonprofit foundation that works to improve the security of software. All of our projects ,tools, documents, forums, and chapters are free and open to anyone interested in improving application security. 
-
-Chapters are led by local leaders in accordance with the [Chapter Leader Handbook](/www-policy/rules-of-procedure/chapter-handbook). Financial contributions should only be made online using the authorized online donation button. To be a SPEAKER at ANY OWASP Chapter in the world simply review the [speaker agreement](/www-policy/speaker-agreement) and then contact the local chapter leader with details of what OWASP Project, independent research, or related software security topic you would like to present.
-
-Everyone is welcome and encouraged to participate in our [Projects](/projects), [Local Chapters](/chapters), [Events](/events), [Online Groups](https://groups.google.com/a/owasp.com/){:target='_blank'}, and [Community Slack Channel](https://owasp.slack.com/){:target='_blank'}. We especially encourage diversity in all our initiatives. OWASP is a fantastic place to learn about application security, to network, and even to build your reputation as an expert. We also encourage you to be [become a member](/membership) or consider a [donation](/donate) to support our ongoing work.
-
-## Local News
-- Meeting Location
-- Everyone is welcome to join us at our chapter meetings.
-
-```
-{info.md}
-
-This separate file is where you should place links to your Google Group and Meetup page. It will be automatically rendered in the column sidebar.
-
-{leaders.md}
-
--->
+## Licensing
+The OWASP Proactive Controls document is free to use under the [Creative Commons ShareAlike 3 License](https://creativecommons.org/licenses/by-sa/3.0/us/)
