@@ -1,7 +1,7 @@
 ---
 title: Numbering
 displaytext: Formal Numbering
-layout:  null
+layout: null
 tab: true
 order: 4
 tags: opc

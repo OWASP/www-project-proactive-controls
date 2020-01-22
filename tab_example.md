@@ -1,6 +1,6 @@
 ---
 title: Example
-layout:  null
+layout: null
 tab: true
 order: 7
 tags: tag-example

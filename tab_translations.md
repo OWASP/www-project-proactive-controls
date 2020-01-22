@@ -1,7 +1,7 @@
 ---
 title: Translations
 displaytext: Translations
-layout:  null
+layout: null
 tab: true
 order: 5
 tags: opc

@@ -1,7 +1,7 @@
 ---
 title: News
 displaytext: News
-layout:  null
+layout: null
 tab: true
 order: 3
 tags: opc
