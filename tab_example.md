@@ -3,7 +3,7 @@ title: Example
 layout:  null
 tab: true
 order: 7
-tags: opc
+tags: tag-example
 ---
 
 ## Example
