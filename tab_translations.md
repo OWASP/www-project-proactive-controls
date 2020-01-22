@@ -16,10 +16,10 @@ tags: opc
   - Top 10 Proactive Controls 2018 Polish Translation: [PDF Download](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_TOP_10_Proactive_Controls_2018_V3_PL.pdf)
 
 ### 2016 Version
-  - Top 10 Proactive Controls 2016 Traditional Chinese Translation [PDF Download](Media:OWASPTop10ProactiveControls2016-Chinese.pdf )
-  - Top 10 Proactive Controls 2016 Simplified Chinese Translation [PDF Download](Media:OWASPTop10ProactiveControls2016-SimplifiedChinese.pdf )
-  - Top 10 Proactive Controls 2016 Japanese Translation [PDF Download](Media:OWASPTop10ProactiveControls2016-Japanese.pdf )
-  - Top 10 Proactive Controls 2016 Hebrew Translation [PDF Download](Media:OWASP_Proactive_Controls_2-Hebrew.pdf )
+  - Top 10 Proactive Controls 2016 Traditional Chinese Translation [PDF Download](https://github.com/OWASP/www-project-proactive-controls/blob/master/v2/OWASPTop10ProactiveControls2016-Chinese.pdf)
+  - Top 10 Proactive Controls 2016 Simplified Chinese Translation [PDF Download](https://github.com/OWASP/www-project-proactive-controls/blob/master/v2/OWASPTop10ProactiveControls2016-SimplifiedChinese.pdf)
+  - Top 10 Proactive Controls 2016 Japanese Translation [PDF Download](https://github.com/OWASP/www-project-proactive-controls/blob/master/v2/OWASPTop10ProactiveControls2016-Japanese.pdf)
+  - Top 10 Proactive Controls 2016 Hebrew Translation [PDF Download](https://github.com/OWASP/www-project-proactive-controls/blob/master/v2/OWASP_Proactive_Controls_2-Hebrew.pdf)
 
 ### 2014 Version
   - Hebrew and French translations of the Top 10 Proactive Controls 2014
