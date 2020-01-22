@@ -1,5 +1,5 @@
 ---
-title: OWASP_Proactive_Controls_2018
+title: OPC2018
 displaytext: OWASP Proactive Controls 2018
 layout:  null
 tab: true
