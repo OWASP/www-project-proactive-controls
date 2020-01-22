@@ -1,13 +1,13 @@
 ---
 title: News
+displaytext: News
 layout:  null
 tab: true
-order: 1
+order: 3
 tags: news-tag
 ---
 
 ## News
-
 
   - \[ July 2019\] Featured in Coursera course from UCDavies
     [Identifying Security Vulnerabilities](https://www.coursera.org/directory/videos?courseId=V1k0pBtIEemZRAqH7m9oGA)
