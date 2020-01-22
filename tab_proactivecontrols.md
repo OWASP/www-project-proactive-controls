@@ -13,5 +13,5 @@ tags: opc
 OWASP Proactive Controls 2018 is currently available in the following formats:
   - Top 10 Proactive Controls 2018 [PDF version](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_10_Proactive_Controls_V3.pdf)
   - Top 10 Proactive Controls 2018 [PPT download](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_Ten_Proactive_Controls_v3.pptx).
-  - Top 10 Proactive Controls [2018 DOCX](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_10_Proactive_Controls_V3.docx).
+  - Top 10 Proactive Controls 2018 [DOCX download](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_10_Proactive_Controls_V3.docx).
 
