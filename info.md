@@ -1,5 +1,5 @@
-### Quick Acess 
-Top10 Proactive Controls 2018 
+
+### Quick Access Top 10 Proactive Controls 2018 
 * [PDF](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_10_Proactive_Controls_V3.pdf) 
  \|  [PPT](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_Ten_Proactive_Controls_v3.pptx)
 \|  [Doc](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_10_Proactive_Controls_V3.docx)
