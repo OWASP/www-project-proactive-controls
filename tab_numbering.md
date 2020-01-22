@@ -8,9 +8,9 @@ tags: opc
 ---
 
 
-# Formal Numbering
+## Formal Numbering
 
-## 2018 Numbering
+### 2018 Numbering
 
   - OWASP-2018-C1: Define Security Requirements
   - OWASP-2018-C2: Leverage Security Frameworks and Libraries
@@ -23,7 +23,7 @@ tags: opc
   - OWASP-2018-C9: Implement Security Logging and Monitoring
   - OWASP-2018-C10: Handle All Errors and Exceptions
 
-## 2016 Numbering
+### 2016 Numbering
 
   - OWASP-2016-C1: Verify for Security Early and Often
   - OWASP-2016-C2: Parameterize Queries
@@ -36,7 +36,7 @@ tags: opc
   - OWASP-2016-C9: Leverage Security Frameworks and Libraries
   - OWASP-2016-C10: Error and Exception Handling
 
-## 2014 Numbering
+###  2014 Numbering
 
   - OWASP-2014-C1: Parameterize Queries
   - OWASP-2014-C2: Encode Data
