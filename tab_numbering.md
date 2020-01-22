@@ -1,6 +1,6 @@
 ---
 title: Numbering
-displaytext: Formal Numbering
+displaytext: Numbering
 layout: null
 tab: true
 order: 4
