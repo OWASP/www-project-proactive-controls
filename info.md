@@ -4,10 +4,11 @@
 * Top10 Proactive Controls 2018 [Doc](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_10_Proactive_Controls_V3.docx)
 * [Mapping to other OWASP and IEEE Top 10 Lists](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP-OPC-IEEEE-OTop10-OTMobTop10-ssdf.pdf)
 
-### Translations 
-* [Top10 Proactive Controls 2018 Chinese PDF](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_10_Proactive_Controls_V3_Chinese.pdf)
-* [Top10 Proactive Controls 2018 Russian PDF](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/Owasp-top-10-proactive-controls-2018-russian.pdf)
-* [Top10 Proactive Controls 2018 Polish PDF](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_TOP_10_Proactive_Controls_2018_V3_PL.pdf)  
+### Translations
+Top10 Proactive Controls 2018 
+[Chinese PDF](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_10_Proactive_Controls_V3_Chinese.pdf)
+\| [Russian PDF](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/Owasp-top-10-proactive-controls-2018-russian.pdf)
+\| [ Polish PDF](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_TOP_10_Proactive_Controls_2018_V3_PL.pdf)  
 
 ### Project Information
 * <i class="fas fa-book" style="font-size: 1.2em; color:#233e81;"></i><span style="font-size:1.0em;padding-left:12px;">Documentation</span>
