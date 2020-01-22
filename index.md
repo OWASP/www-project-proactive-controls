@@ -2,13 +2,14 @@
 
 layout: col-sidebar
 title: OWASP Proactive Controls
-tags: example-tag
-level: 0
+site_side: true
+project: true
+tags: opc
+level: 3
 type: documentation
 
 auto-migrated: 1
 auto-migrated: 1
-
 auto-migrated: 1
 
 ---
