@@ -34,7 +34,7 @@ For more information, see the complete document in the tab to the right.
 
 
 ## Presentation
-Use the extensive [project presentation](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_10_Proactive_Controls_V3.docx) that expands on the information in the document.
+Use the extensive [project presentation](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_Top_10_Proactive_Controls_V3.docx) that expands on the information in the document.
 
 ## Key Contributors
 - [Taras Ivashchenko](mailto:taras.ivaschenko@owasp.org)  (Russian Translation) 
