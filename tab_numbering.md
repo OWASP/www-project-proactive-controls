@@ -1,5 +1,5 @@
 ---
-title: Formal Numbering
+title: Numbering
 displaytext: Formal Numbering
 layout:  null
 tab: true

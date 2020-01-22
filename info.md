@@ -17,8 +17,7 @@ Top10 Proactive Controls 2018
 * <i class="fas fa-tools" style="font-size: 1.2em; color:#233e81;"></i><span style="font-size:1.0em;padding-left:12px;">Builder</span> 
 * <i class="fas fa-shield-alt" style="font-size: 1.2em; color:#233e81;"></i><span style="font-size:1.0em;padding-left:12px;">Defender</span>
 
-### Latest News and Events
-
+#### Latest News and Events
 * [Dec 2019] 3.0 Chinese Translation Released!
 * [Aug 2018] 3.0 Polish Translation Released!
 * [May 2018] 3.0 Released!
