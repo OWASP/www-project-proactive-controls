@@ -8,7 +8,6 @@ level: 0
 type: documentation
 
 
-
 ---
 
 
@@ -34,9 +33,8 @@ The OWASP Top Ten Proactive Controls 2018 is a list of security techniques that 
 For more information, see the complete document in the tab to the right.
 
 
- ## Presentation
+## Presentation
 Use the extensive [project presentation](https://github.com/OWASP/www-project-proactive-controls/blob/master/2018/OWASP_Top_10_Proactive_Controls_V3.docx) that expands on the information in the document.
-
 
 ## Key Contributors
 - [Taras Ivashchenko](mailto:taras.ivaschenko@owasp.org)  (Russian Translation) 
@@ -45,7 +43,7 @@ Use the extensive [project presentation](https://github.com/OWASP/www-project-pr
 - Hiroaki Kuramochi (Japanese Translation) 
 - Hiroshi Fujimoto (Japanese Translation) 
 - Hidenori Nagai (Japanese Translation) 
-- [Riotaro OKADA]("mailto:riotaro@owasp.org) (Japanese Translation) 
+- [Riotaro OKADA](mailto:riotaro@owasp.org) (Japanese Translation) 
 - Robert Dracea (Japanese Translation) 
 - Koichiro Watanabe (Japanese Translation) 
 - Tony Hsu Hsiang Chih (Chinese Translation) 
