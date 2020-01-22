@@ -7,14 +7,32 @@ tags: opc
 level: 0
 type: documentation
 
-auto-migrated: 1
 
 
 ---
 
 
 ## What is This?
-* The OWASP Top Ten Proactive Controls describes the most important control and control categories that every architect and developer should absolutely, 100% include in every project.
+The OWASP Top Ten Proactive Controls describes the most important control and control categories that **every architect and developer** should absolutely, 100% include in every project.
+
+## OWASP Top 10 Proactive Controls 2018
+Software developers are the foundation of any application. In order to achieve secure software, developers must be supported and helped by the organization they author code for. As software developers author the code that makes up a web application, they need to embrace and practice a wide variety of secure coding techniques. All tiers of a web application, the user interface, the business logic, the controller, the database code and more – all need to be developed with security in mind. This can be a very difficult task and developers are often set up for failure. Most developers did not learn about secure coding or crypto in school. The languages and frameworks that developers use to build web applications are often lacking critical core controls or are insecure by default in some way. It is also very rare when organizations provide developers with prescriptive requirements that guide them down the path of secure software. And even when they do, there may be security flaws inherent in the requirements and designs. When it comes to software, developers are often set up to lose the security game.
+
+The OWASP Top Ten Proactive Controls 2018 is a list of security techniques that should be included in every software development project. They are ordered by order of importance, with control number 1 being the most important. This document was written by developers for developers to assist those new to secure development.
+
+- C1: Define Security Requirements
+- C2: Leverage Security Frameworks and Libraries
+- C3: Secure Database Access
+- C4: Encode and Escape Data
+- C5: Validate All Inputs
+- C6: Implement Digital Identity
+- C7: Enforce Access Controls
+- C8: Protect Data Everywhere
+- C9: Implement Security Logging and Monitoring
+- C10: Handle All Errors and Exceptions
+</ol>
+<p>For more information, see the complete document in the tab to the right.</p>
+
 
 
 <!-- Standard Chapter Page Template
