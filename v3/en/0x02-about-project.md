@@ -1,6 +1,6 @@
 ---
 
-layout: col-layout
+layout: col-document
 author:
 contributors:
 tags: OWASP Top Ten Proactive Controls 2018

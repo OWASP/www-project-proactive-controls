@@ -1,3 +1,12 @@
+---
+
+layout: col-document
+tags: 
+document: OWASP Top Ten Proactive Controls 2018
+order: 6
+
+---
+
 # C2: Leverage Security Frameworks and Libraries
 
 ## Description
