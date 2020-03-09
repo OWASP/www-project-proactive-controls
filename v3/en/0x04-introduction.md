@@ -5,10 +5,9 @@ tags: OWASP Top Ten Proactive Controls 2018, Intro
 document: OWASP Top Ten Proactive Controls 2018
 order: 4
 
-
 ---
 
-# INTRODUCTION
+# Introduction
 The OWASP Top Ten Proactive Controls 2018 is a list of security techniques that should be considered for every software development project. This document is written for developers to assist those new to secure development.
 
 One of the main goals of this document is to provide concrete practical guidance that helps developers build secure software. These techniques should be applied proactively at the early stages of software development to ensure maximum effectiveness.

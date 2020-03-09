@@ -9,7 +9,7 @@ order: 3
 
 ---
 
-# DOCUMENT STRUCTURE
+# Document Structure
 This document is structured as a list of security controls. Each control is described as follows:
 
 

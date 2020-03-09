@@ -8,7 +8,7 @@ document: OWASP Top Ten Proactive Controls 2018
 order: 2
 
 ---
-# FOREWORD
+# Foreword
 Insecure software is undermining our financial, healthcare, defense, energy, and other critical infrastructure worldwide. As our digital, global infrastructure gets increasingly complex and interconnected, the difficulty of achieving application security increases exponentially. We can no longer afford to tolerate relatively simple security problems.
 
 ## AIM & OBJECTIF
