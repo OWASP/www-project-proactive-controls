@@ -7,4 +7,3 @@
     {% endif %}
     {% endfor %}
 </ul>
-</ul>
