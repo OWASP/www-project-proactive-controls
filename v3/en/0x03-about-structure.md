@@ -1,3 +1,15 @@
+---
+
+layout: col-layout
+title: About Structure
+author:
+contributors:
+tags: OWASP Top Ten Proactive Controls 2018
+document: OWASP Top Ten Proactive Controls 2018
+order: 3
+
+---
+
 # DOCUMENT STRUCTURE
 This document is structured as a list of security controls. Each control is described as follows:
 
