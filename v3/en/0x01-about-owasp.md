@@ -1,7 +1,6 @@
 ---
 
 layout: col-document
-title: About-OWASP
 tags: 
 document: OWASP Top Ten Proactive Controls 2018
 order: 1

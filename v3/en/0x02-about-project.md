@@ -1,7 +1,6 @@
 ---
 
 layout: col-layout
-title: About Project
 author:
 contributors:
 tags: OWASP Top Ten Proactive Controls 2018

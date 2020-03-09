@@ -1,11 +1,9 @@
 ---
 
 layout: col-document
-title: C1-Security-Requirements
 tags: 
 document: OWASP Top Ten Proactive Controls 2018
 order: 5
-
 
 ---
 
