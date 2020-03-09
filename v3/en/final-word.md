@@ -1,3 +1,12 @@
+---
+
+layout: col-document
+tags: 
+document: OWASP Top Ten Proactive Controls 2018
+order: 15
+
+---
+
 # Final word
 
 This document should be seen as a starting point rather than a comprehensive set of techniques and practices. We want to again emphasize that this document is intended to provide initial awareness around building secure software.

@@ -1,3 +1,12 @@
+---
+
+layout: col-document
+tags: 
+document: OWASP Top Ten Proactive Controls 2018
+order: 13
+
+---
+
 # C9: Implement Security Logging and Monitoring
 
 ## Description

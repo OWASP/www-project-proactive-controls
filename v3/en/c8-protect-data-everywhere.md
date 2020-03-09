@@ -1,4 +1,14 @@
-#C8: Protect Data Everywhere
+---
+
+layout: col-document
+tags: 
+document: OWASP Top Ten Proactive Controls 2018
+order: 12
+
+---
+
+
+# C8: Protect Data Everywhere
 
 ## Description
 Sensitive data such as passwords, credit card numbers, health records, personal information and business secrets require extra protection, particularly if that data falls under privacy laws (EU's General Data Protection Regulation GDPR), financial data protection rules such as PCI Data Security Standard (PCI DSS) or other regulations

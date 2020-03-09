@@ -1,3 +1,12 @@
+---
+
+layout: col-document
+tags: 
+document: OWASP Top Ten Proactive Controls 2018
+order: 10
+
+---
+
 # C6: Implement Digital Identity
 
 ## Description
