@@ -13,9 +13,9 @@ t222
 <ul>
   {% assign mypages = site.pages | where:"document","Top Ten Proactive Controls 2018"| sort: "order" %}
     {% for page in mypages %}
-    {% unless page.order == 0 %}
+    {% if page.order > 0 %}
     <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
-    {% endunless %}
+    {% endif %}
     {% endfor %}
 </ul>
 </ul>
