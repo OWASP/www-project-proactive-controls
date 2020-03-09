@@ -1,13 +1,12 @@
 ---
 
-layout: col-document
+layout: col-layout
 title: About Project
 author:
 contributors:
 tags: OWASP Top Ten Proactive Controls 2018
 document: OWASP Top Ten Proactive Controls 2018
 order: 2
-
 
 ---
 # FOREWORD
