@@ -22,7 +22,7 @@ Software developers are the foundation of any application. In order to achieve s
 
 The OWASP Top Ten Proactive Controls 2018 is a list of security techniques that should be included in every software development project. They are ordered by order of importance, with control number 1 being the most important. This document was written by developers for developers to assist those new to secure development.
 
-- C1: Define Security Requirements
+- [C1: Define Security Requirements](/c1-security-requirements.md)
 - C2: Leverage Security Frameworks and Libraries
 - C3: Secure Database Access
 - C4: Encode and Escape Data
