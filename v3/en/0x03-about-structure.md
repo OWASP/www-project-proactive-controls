@@ -3,7 +3,7 @@
 layout: col-document
 author:
 contributors:
-tags: OWASP Top Ten Proactive Controls 2018
+tags: OWASP Top Ten Proactive Controls 2018, Document Structure
 document: OWASP Top Ten Proactive Controls 2018
 order: 3
 

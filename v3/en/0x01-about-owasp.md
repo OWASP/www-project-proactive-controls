@@ -1,7 +1,7 @@
 ---
 
 layout: col-document
-tags: 
+tags: OWASP Top Ten Proactive Controls 2018, AboutOWASP
 document: OWASP Top Ten Proactive Controls 2018
 order: 1
 permalink: v3/en/

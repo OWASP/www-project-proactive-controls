@@ -1,7 +1,7 @@
 ---
 
 layout: col-document
-tags: 
+tags: OWASP Top Ten Proactive Controls 2018, Final Word
 document: OWASP Top Ten Proactive Controls 2018
 order: 15
 
