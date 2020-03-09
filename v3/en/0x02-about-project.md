@@ -1,7 +1,7 @@
 ---
 
 layout: col-document
-title: About-Project
+title: About Project
 author:
 contributors:
 tags: OWASP Top Ten Proactive Controls 2018
@@ -17,7 +17,7 @@ Insecure software is undermining our financial, healthcare, defense, energy, and
 The goal of the **OWASP Top 10 Proactive Controls project** (OPC) is to raise awareness about application security by describing the most important areas of concern that software developers must be aware of. We encourage you to use the OWASP Proactive Controls to get your developers started with application security. Developers can learn from the mistakes of other organizations. We hope that the OWASP Proactive Controls is useful to your efforts in building secure software.
 
 ## CALL TO ACTION
-Please don’t hesitate to contact the OWASP Proactive Control project with your questions, comments, and ideas, either publicly to our email list or privately to `jim@owasp.org <mailto:jim@owasp.org>`_.
+Please don’t hesitate to contact the OWASP Proactive Control project with your questions, comments, and ideas, either publicly to our email list or privately to jim@owasp.org, mailto:jim@owasp.org.
 
 ## COPYRIGHT AND LICENSE
 
