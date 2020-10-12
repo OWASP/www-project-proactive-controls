@@ -1,31 +1,35 @@
 #!/bin/bash
 
 echo "OWASP Top 10 Proactive Controls Markdown Conversion Tool"
-echo ""
 
 function command_exists () {
     command -v $1 >/dev/null 2>&1;
 }
 
 if ! command_exists pandoc; then
-    echo "Error: Please install pandoc. Cannot continue"
+    echo "
+    Error: Please install pandoc. Cannot continue"
     exit;
 fi
 
-echo ""
 
 
 
 generate_docx() {
-    pandoc -s -f gfm --reference-doc=../templates/template.docx --columns 10000 -t docx  -o "../OWASP-Top10-Proactive-Controls-V3-$1.docx" *.md
+   # pandoc -s -f gfm   -s -f markdown_github  --reference-doc=../templates/template.docx --columns 10000 -t docx  -o "../OWASP-Top10-Proactive-Controls-V3-$1.docx" *.md
+   # ensure info.md is not included in doc generation
+  local pages="0x*.md c*.md  f*.md "
+   pandoc  --from markdown  --reference-doc="../templates/template.docx" --columns 10000 --toc --toc-depth=1 -t docx  -o "../OWASP-Top10-Proactive-Controls-V3-$1.docx" $pages 
 }
 
+
+
 generate_html() {
-    pandoc -s -f gfm -t html5 --metadata=title:"OWASP Top 10 Proactive Controls 2018 " -o "../OWASP-Top10-Proactive-Controls-V3-$1.html" *.md
+    pandoc --standalone -f gfm -t html5 --metadata=title:"OWASP Top 10 Proactive Controls 2018 " -o "../OWASP-Top10-Proactive-Controls-V3-$1.html" *.md
 }
 
 generate() {
-    echo -n "Generating OWASP Top 10 Proactive Controls ($1)..."
+    echo -n "Generating ($1) version ..."
     if [ -d "$1" ]; 
     then
         cd "$1"
@@ -39,8 +43,8 @@ generate() {
 }
 
 # English
-generate "EN"
+generate "en"
 
  
-echo "Generated OWASP Top 10 Proactive Control"
+echo "Finished generating documents for OWASP Top 10 Proactive Control"
 
