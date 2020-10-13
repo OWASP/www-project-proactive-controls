@@ -29,27 +29,8 @@ This document is released under the Creative Commons Attribution ShareAlike 3.0 
 
 ## Contributors
 
-+:--------------------------------------+:-----------------------------:+------------------------------------------:+
-|   Chris&nbsp;Romeo                    | Dan&nbsp;Anderson              | David&nbsp;Cybuck                        |
-+---------------------------------------+--------------------------------+------------------------------------------+
-|   Dave&nbsp;Ferguson                  | Josh&nbsp;Grossman             | Osama Elnaggar                           |
-+---------------------------------------+--------------------------------+------------------------------------------+
-|  Colin&nbsp;Watson                    | Rick&nbsp;Mitchell             | And&nbsp;many&nbsp;more…                 |
-+---------------------------------------+--------------------------------+------------------------------------------+
+*  Chris Romeo  &nbsp; | Dan Anderson  &nbsp; |  David Cybuck 
+*  Dave Ferguson | Josh Grossman | Osama Elnaggar
+*  Colin Watson &nbsp; | Rick Mitchell &nbsp; |  And many more…  
 
 
-<table cellpadding="15" cellspacing="0">
-<tr width="33%">
-<td >
-aaa
-</td>
-<td width="33%">
-bbb
-</td>
-<td width="34%">
-  ccc
-
-
-</td>
-</tr>
-</table>

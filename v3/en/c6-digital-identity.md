@@ -41,10 +41,9 @@ In order to provide strong authentication controls, an application must securely
 
 Below is an example for secure password hashing in PHP using `password_hash()` function (available since 5.5.0) which defaults to using the bcrypt algorithm. The example uses a work factor of 15.
 
-
     <?php
      $cost = 15;
-     $password_hash = password_hash("secret_password", PASSWORD_DEFAULT, ["cost" => $cost] ); 
+     $password_hash = password_hash("secret_password", PASSWORD_DEFAULT,["cost" => $cost]); 
     ?>
 
 Please see the [OWASP Password Storage Cheat Sheet](https://www.owasp.org/index.php/Password_Storage_Cheat_Sheet) for further details.

@@ -26,7 +26,8 @@ The ASVS requirements are basic verifiable statements which can be expanded upon
 
 Here is an example of expanding on an ASVS 3.0.1 requirement. From the "Authentication Verification Requirements" section of ASVS 3.0.1, requirement 2.19 focuses on default passwords.
 
-> 2.19 Verify there are no default passwords in use for the application framework or any components used by the application (such as "admin/password").
+    2.19 Verify there are no default passwords in use for the application framework 
+        or any components used by the application (such as "admin/password").
 
 This requirement contains both an action to verify that no default passwords exist, and also carries with it the guidance that no default passwords should be used within the application.
 
