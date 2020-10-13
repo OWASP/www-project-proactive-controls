@@ -22,16 +22,34 @@ Please don’t hesitate to contact the OWASP Proactive Control project with your
 This document is released under the Creative Commons Attribution ShareAlike 3.0 license. For any reuse or distribution, you must make it clear to others the license terms of this work.
 
 ## Project Leaders  
-| Katy Anton | Jim Bird | Jim Manico
+
+* Katy Anton 
+* Jim Bird 
+* Jim Manico 
 
 ## Contributors
 
-* Chris Romeo
-* Dan Anderson
-* David Cybuck
-* Dave Ferguson
-* Josh Grossman
-* Osama Elnaggar
-* Colin Watson
-* Rick Mitchell
-* And many more…
++:--------------------------------------+:-----------------------------:+------------------------------------------:+
+|   Chris&nbsp;Romeo                    | Dan&nbsp;Anderson              | David&nbsp;Cybuck                        |
++---------------------------------------+--------------------------------+------------------------------------------+
+|   Dave&nbsp;Ferguson                  | Josh&nbsp;Grossman             | Osama Elnaggar                           |
++---------------------------------------+--------------------------------+------------------------------------------+
+|  Colin&nbsp;Watson                    | Rick&nbsp;Mitchell             | And&nbsp;many&nbsp;more…                 |
++---------------------------------------+--------------------------------+------------------------------------------+
+
+
+<table cellpadding="15" cellspacing="0">
+<tr width="33%">
+<td >
+aaa
+</td>
+<td width="33%">
+bbb
+</td>
+<td width="34%">
+  ccc
+
+
+</td>
+</tr>
+</table>
