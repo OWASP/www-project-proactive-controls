@@ -18,8 +18,10 @@ fi
 generate_docx() {
    # pandoc -s -f gfm  --reference-doc=../templates/template.docx --columns 10000 -t docx  -o "../OWASP-Top10-Proactive-Controls-V3-$1.docx" *.md
    # ensure info.md is not included in doc generation
-  local pages="0x*.md c*.md f*.md "
-   pandoc  --from markdown  --reference-doc="../templates/template.docx" --columns 10000 --toc --toc-depth=1 -t docx  -o "../OWASP-Top10-Proactive-Controls-V3-$1.docx" $pages 
+   #sed -i 's/---.*order:[0-9]{1,2}\s*---/NEWTEXT/g'  0x0*.md c*.md 
+   
+  local pages="0x0*.md c*.md "
+  sed '/^---$/,/^---$/d' $pages | pandoc  --from markdown  --reference-doc="../templates/template.docx" --columns 10000 --toc --toc-depth=1 -t docx  -o "../OWASP-Top10-Proactive-Controls-V3-$1.docx"  
 }
 
 
