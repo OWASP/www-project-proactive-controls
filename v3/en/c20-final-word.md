@@ -20,4 +20,4 @@ Good next steps to help build an application security program include:
 
 If you have any questions for the project leadership team, please contact with your questions, comments, and ideas at our GitHub project repository: https://github.com/OWASP/www-project-proactive-controls/issues
 
-.. image:: _static/controls-logo.png
+
