@@ -6,6 +6,7 @@
 * [Mapping to OWASP and IEEE Top 10 ](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP-OPC-IEEEE-OTop10-OTMobTop10-ssdf.pdf)
 
 ### Translations 
+- Top10 Proactive Controls 2018 [Italian](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_Top_10_Proactive_Controls_V3-IT.pdf)
 - Top10 Proactive Controls 2018 [Chinese](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_Top_10_Proactive_Controls_V3_Chinese.pdf)
 - Top10 Proactive Controls 2018 [Russian](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/Owasp-top-10-proactive-controls-2018-russian.pdf)
 - Top10 Proactive Controls 2018 [Polish](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_TOP_10_Proactive_Controls_2018_V3_PL.pdf)  
