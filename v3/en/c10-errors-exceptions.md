@@ -27,7 +27,7 @@ Mistakes in error handling can lead to different kinds of security vulnerabiliti
 
 
 ## Positive Advice
-* Manage exceptions in a [centralized manne](https://www.owasp.org/index.php/Error_Handling#Centralised_exception_handling_.28Struts_Example.29) to avoid duplicated try/catch blocks in the code. Ensure that all unexpected behavior is correctly handled inside the application.
+* Manage exceptions in a [centralized manner](https://www.owasp.org/index.php/Error_Handling#Centralised_exception_handling_.28Struts_Example.29) to avoid duplicated try/catch blocks in the code. Ensure that all unexpected behavior is correctly handled inside the application.
 * Ensure that error messages displayed to users do not leak critical data, but are still verbose enough to enable the proper user response.
 * Ensure that exceptions are logged in a way that gives enough information for support, QA, forensics or incident response teams to understand the problem.
 * Carefully test and verify error handling code.
