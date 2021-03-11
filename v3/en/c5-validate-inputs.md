@@ -19,14 +19,14 @@ An application should check that data is both *syntactically* and *semantically*
 
 **Semantic validity** includes only accepting input that is within an acceptable range for the given application functionality and context. For example, a start date must be before an end date when choosing date ranges.
 
-### Whitelisting vs Blacklisting
-There are two general approaches to performing input syntax validation, commonly known as blacklisting and whitelisting:
+### Allowlisting vs Denylisting
+There are two general approaches to performing input syntax validation, commonly known as allow and deny lists:
 
-* **Blacklisting** or **blacklist validation*** attempts to check that given data does not contain "known bad" content. For example, a web application may block input that contains the exact text ``<SCRIPT>`` in order to help prevent XSS. However, this defense could be evaded with a lower case script tag or a script tag of mixed case.
-* **Whitelisting** or **whitelist** validation attempts to check that a given data matches a set of "known good" rules. For example a whitelist validation rule for a US state would be a 2-letter code that is only one of the valid US states.
+* **Denylisting** or **denylist validation*** attempts to check that given data does not contain "known bad" content. For example, a web application may block input that contains the exact text ``<SCRIPT>`` in order to help prevent XSS. However, this defense could be evaded with a lower case script tag or a script tag of mixed case.
+* **Allowlisting** or **allowlist** validation attempts to check that a given data matches a set of "known good" rules. For example a allowlist validation rule for a US state would be a 2-letter code that is only one of the valid US states.
 
 **Important**
-When building secure software, whitelisting is the recommended minimal approach. Blacklisting is prone to error and can be bypassed with various evasion techniques and can be dangerous when depended on by itself. Even though blacklisting can often be evaded it can often useful to help detect obvious attacks. So while **whitelisting** helps limit the attack surface by ensuring data is of the right syntactic and semantic validity, **blacklisting** helps detect and potentially stop obvious attacks.
+When building secure software, allowlisting is the recommended minimal approach. Denylisting is prone to error and can be bypassed with various evasion techniques and can be dangerous when depended on by itself. Even though denylisting can often be evaded it can often useful to help detect obvious attacks. So while **allowlisting** helps limit the attack surface by ensuring data is of the right syntactic and semantic validity, **denylisting** helps detect and potentially stop obvious attacks.
 
 ### Client side and Server side Validation
 Input validation must always be done on the server-side for security. While client side validation can be useful for both functional and some security purposes it can often be easily bypassed. This makes server-side validation even more fundamental to security. For example, JavaScript validation may alert the user that a particular field must consist of numbers but the server side application must validate that the submitted data only consists of numbers in the appropriate numerical range for that feature.
@@ -34,7 +34,7 @@ Input validation must always be done on the server-side for security. While clie
 ### Regular Expressions
 Regular expressions offer a way to check whether data matches a specific pattern. Let’s start with a basic example.
 
-The following regular expression is used to define a whitelist rule to validate usernames.
+The following regular expression is used to define a allowlist rule to validate usernames.
 
     ^[a-z0-9_]{3,16}$
 
@@ -74,7 +74,7 @@ As a simple example, if the user object has a field privilege which specifies th
 
 Two approaches can be used to handle this:
 * Avoid binding input directly and use Data Transfer Objects (DTOs) instead.
-* Enable auto-binding but set up whitelist rules for each page or feature to define which fields are allowed to be auto-bound.
+* Enable auto-binding but set up allowlist rules for each page or feature to define which fields are allowed to be auto-bound.
 
 More examples are available in the [OWASP Mass Assignment Cheat Sheet](https://www.owasp.org/index.php/Mass_Assignment_Cheat_Sheet).
 
