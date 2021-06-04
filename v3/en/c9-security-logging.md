@@ -50,5 +50,4 @@ Logging solutions must be built and managed in a secure way. Secure Logging desi
 * [OWASP Cheat Sheet: Application Logging Vocabulary](https://cheatsheetseries.owasp.org/cheatsheets/Application_Logging_Vocabulary_Cheat_Sheet.html) A standard vocabulary for logging security events
 
 ## Tools
-* [OWASP Security Logging Project](https://www.owasp.org/index.php/OWASP_Security_Logging_Project)
 * [Apache Logging Services](https://logging.apache.org/)
