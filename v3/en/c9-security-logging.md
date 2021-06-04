@@ -45,12 +45,9 @@ Logging solutions must be built and managed in a secure way. Secure Logging desi
 * Forward logs from distributed systems to a central, secure logging service. This will sure log data cannot be lost if one node is compromised. This also allows for centralized monitoring.
 
 ## References
-* [OWASP AppSensor Detection Points](https://www.owasp.org/index.php/AppSensor_DetectionPoints) - Detection points used to identify a malicious user probing for vulnerabilities or weaknesses in application.
 * [OWASP Log injection](https://www.owasp.org/index.php/Log_Injection)
-* [OWASP Log forging](https://www.owasp.org/index.php/Log_Forging)
-* [OWASP Cheat Sheet: Logging](https://www.owasp.org/index.php/Logging_Cheat_Sheet>`_ How to properly implement logging in an application 
-* [OWASP Development Guide: Logging](https://www.owasp.org/index.php/Error_Handling,_Auditing_and_Logging#Logging)
-* [OWASP Code Review Guide: Reviewing Code for Logging Issues](https://www.owasp.org/index.php/Reviewing_Code_for_Logging_Issues)
+* [OWASP Cheat Sheet: Logging](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html>`_ How to properly implement logging in an application 
+* [OWASP Cheat Sheet: Application Logging Vocabulary](https://cheatsheetseries.owasp.org/cheatsheets/Application_Logging_Vocabulary_Cheat_Sheet.html>`_ A standard vocabulary for logging security events
 
 ## Tools
 * [OWASP Security Logging Project](https://www.owasp.org/index.php/OWASP_Security_Logging_Project)
