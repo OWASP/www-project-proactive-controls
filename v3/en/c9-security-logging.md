@@ -39,7 +39,7 @@ When your application encounters such activity, your application should at the v
 ## Secure Logging Design
 Logging solutions must be built and managed in a secure way. Secure Logging design may include the following:
 
-* Encode and validate any dangerous characters before logging to prevent [log injection](https://www.owasp.org/index.php/Log_Injection) or [log forging](https://www.owasp.org/index.php/Log_Forging) attacks.
+* Encode and validate any dangerous characters before logging to prevent [log injection](https://www.owasp.org/index.php/Log_Injection) attacks.
 * Do not log sensitive information. For example, do not log password, session ID, credit cards, or social security numbers.
 * Protect log integrity. An attacker may attempt to tamper with the logs. Therefore, the permission of log files and log changes audit should be considered.
 * Forward logs from distributed systems to a central, secure logging service. This will sure log data cannot be lost if one node is compromised. This also allows for centralized monitoring.
