@@ -32,7 +32,7 @@ Use logging to identify activity that indicates that a user is behaving maliciou
 * Submitted data that is outside of an expected numeric range.
 * Submitted data that involves changes to data that should not be modifiable (select list, checkbox or other limited entry component).
 * Requests that violate server-side access control rules.
-* A more comprehensive list of possible detection points is available [here])https://cheatsheetseries.owasp.org/cheatsheets/Application_Logging_Vocabulary_Cheat_Sheet.html).
+* A more comprehensive list of possible detection points is available [here](https://cheatsheetseries.owasp.org/cheatsheets/Application_Logging_Vocabulary_Cheat_Sheet.html).
 
 When your application encounters such activity, your application should at the very least log the activity and mark it as a high severity issue.  Ideally, your application should also respond to a possible identified attack, by for example invalidating the user’s session and locking the user's account. The response mechanisms allows the software to react in realtime to possible identified attacks. 
 
