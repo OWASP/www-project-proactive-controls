@@ -52,8 +52,11 @@ The process begins with discovery and selection of security requirements. In thi
 ### Investigation and Documentation
 During investigation and documentation, the developer reviews the existing application against the new set of security requirements to determine whether the application currently meets the requirement or if some development is required. This investigation culminates in the documentation of the results of the review.
 
-### Implementation and Test
-After the need is determined for development, the developer must now modify the application in some way to add the new functionality or eliminate an insecure option. In this phase the developer first determines the design required to address the requirement, and then completes the code changes to meet the requirement. Test cases should be created to confirm the existence of the new functionality or disprove the existence of a previously insecure option.
+### Implementation
+After the need is determined for development, the developer must now modify the application in some way to add the new functionality or eliminate an insecure option. In this phase the developer first determines the design required to address the requirement, and then completes the code changes to meet the requirement.
+
+### Test
+Test cases should be created to confirm the existence of the new functionality or disprove the existence of a previously insecure option.
 
 ## Vulnerabilities Prevented
 Security requirements define the security functionality of an application. Better security built in from the beginning of an applications life cycle results in the prevention of many types of vulnerabilities. 
