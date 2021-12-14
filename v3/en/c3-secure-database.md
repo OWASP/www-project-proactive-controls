@@ -22,7 +22,7 @@ SQL Injection occurs when untrusted user input is dynamically added to a SQL que
 
 In order to mitigate SQL injection, untrusted input should be prevented from being interpreted as part of a SQL command. The best way to do this is with the programming technique known as 'Query Parameterization'. This defense should be applied to SQL, OQL, as well as stored procedure construction.
 
-A good list of query parameterization examples in ASP, ColdFusion, C#, Delphi, .NET, Go, Java, Perl, PHP, PL/SQL, PostgreSQL, Python, R, Ruby and Scheme can be found at [http://bobby-tables.com](http://bobby-tables.com/) and the [OWASP Cheat Sheet on Query Parameterization](https://www.owasp.org/index.php/Query_Parameterization_Cheat_Sheet).
+A good list of query parameterization examples in ASP, ColdFusion, C#, Delphi, .NET, Go, Java, Perl, PHP, PL/SQL, PostgreSQL, Python, R, Ruby and Scheme can be found at [http://bobby-tables.com](http://bobby-tables.com/) and the [OWASP Cheat Sheet on Query Parameterization](https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html).
 
 **Caution on Query Parameterization**
 
@@ -44,11 +44,11 @@ Most DBMS support a variety of communications methods (services, APIs, etc) - se
 A quick guidance on providing a secure communication mean can be found in the [Database Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Database_Security_Cheat_Sheet.html#connecting-to-the-database).
 
 ## Vulnerabilities Prevented
-* [OWASP Top 10 2017- A1: Injection](https://www.owasp.org/index.php/Top_10-2017_A1-Injection)
+* [OWASP Top 10 2021-A3: Injection](https://owasp.org/Top10/A03_2021-Injection/)
 * [OWASP Mobile Top 10 2014-M1 Weak Server Side Controls](https://www.owasp.org/index.php/Mobile_Top_10_2014-M1)
 
 ## References
-* [OWASP Cheat Sheet: Query Parameterization](https://www.owasp.org/index.php/Query_Parameterization_Cheat_Sheet)
+* [OWASP Cheat Sheet: Query Parameterization](https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html)
 * [OWASP Cheat Sheet: Database Security](https://cheatsheetseries.owasp.org/cheatsheets/Database_Security_Cheat_Sheet.html)
 * [Bobby Tables: A guide to preventing SQL injection](http://bobby-tables.com/)
 * [CIS Database Hardening Standards](https://www.cisecurity.org/cis-benchmarks/)
