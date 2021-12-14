@@ -32,7 +32,7 @@ When building secure software, allowlisting is the recommended minimal approach.
 Input validation must always be done on the server-side for security. While client side validation can be useful for both functional and some security purposes it can often be easily bypassed. This makes server-side validation even more fundamental to security. For example, JavaScript validation may alert the user that a particular field must consist of numbers but the server side application must validate that the submitted data only consists of numbers in the appropriate numerical range for that feature.
 
 ### Regular Expressions
-Regular expressions offer a way to check whether data matches a specific pattern. Let’s start with a basic example.
+Regular expressions offer a way to checkwhether data matches a specific pattern. Let’s start with a basic example.
 
 The following regular expression is used to define a allowlist rule to validate usernames.
 
@@ -95,7 +95,7 @@ All languages and most frameworks provide validation libraries or functions whic
 * Input validation should not be used as the primary method of preventing [XSS](https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet), [SQL Injection](https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet) and other attacks.
 
 ## References
-* [OWASP Cheat Sheet: Input Validation](https://www.owasp.org/index.php/Input_Validation_Cheat_Sheet)
+* [OWASP Cheat Sheet: Input Validation](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html)
 * [OWASP Cheat Sheet: iOS - Security Decisions via Untrusted Inputs](https://www.owasp.org/index.php/IOS_Developer_Cheat_Sheet#Security_Decisions_via_Untrusted_Inputs_.28M7.29)
 * [OWASP Testing Guide: Testing for Input Validation](https://www.owasp.org/index.php/Testing_for_Input_Validation)
 
