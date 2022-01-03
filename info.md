@@ -10,7 +10,7 @@
 - Top10 Proactive Controls 2018 [Chinese](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_Top_10_Proactive_Controls_V3_Chinese.pdf)
 - Top10 Proactive Controls 2018 [Russian](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/Owasp-top-10-proactive-controls-2018-russian.pdf)
 - Top10 Proactive Controls 2018 [Polish](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_TOP_10_Proactive_Controls_2018_V3_PL.pdf)  
-- Top 10 Proactive Controls 2018 Arabic Translation: [PDF Download](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_Top_10_Proactive_Controls_V3-AR.pdf)
+- Top10 Proactive Controls 2018 [Arabic](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_Top_10_Proactive_Controls_V3-AR.pdf)
 
 ### Project Information
 * <i class="fas fa-book" style="font-size: 1.2em; color:#233e81;"></i><span style="font-size:1.0em;padding-left:12px;">Documentation</span>
