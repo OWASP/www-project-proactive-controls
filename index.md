@@ -61,7 +61,9 @@ Use the extensive [project presentation](https://github.com/OWASP/www-project-pr
 - Gaz Heyes 
 - Colin Watson 
 - Jason Coleman 
-- Cassio Goldschmidt 
+- Cassio Goldschmidt
+- [Wallace Soares](https://www.linkedin.com/in/soareswallace1/) (Brazilian Portuguese Translation) 
+
 
 
 ## Related Projects
