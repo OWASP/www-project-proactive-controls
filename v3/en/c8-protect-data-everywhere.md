@@ -60,8 +60,10 @@ Applications contain numerous "secrets" that are needed for security operations.
 * [OWASP Cheat Sheet: HSTS](https://www.owasp.org/index.php/HTTP_Strict_Transport_Security_Cheat_Sheet)
 * [OWASP Cheat Sheet: Cryptographic Storage](https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html)
 * [OWASP Cheat Sheet: Password Storage](https://www.owasp.org/index.php/Password_Storage_Cheat_Sheet)
+* [OWASP Cheat Sheet: Secrets Management](https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_CheatSheet.html)
 * [OWASP Cheat Sheet: IOS Developer - Insecure Data Storage](https://www.owasp.org/index.php/IOS_Developer_Cheat_Sheet#Insecure_Data_Storage_.28M1.29)
 * [OWASP Testing Guide: Testing for TLS](https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/01-Testing_for_Weak_Transport_Layer_Security)
+
 
 ## Tools
 * [SSLyze](https://github.com/nabla-c0d3/sslyze) - SSL configuration scanning library and CLI tool
@@ -71,4 +73,4 @@ Applications contain numerous "secrets" that are needed for security operations.
 * [TruffleHog](https://github.com/dxa4481/truffleHog)  - Searches for secrets accidentally committed
 * [KeyWhiz](https://github.com/square/keywhiz) - Secrets manager
 * [Hashicorp Vault](https://www.vaultproject.io/) - Secrets manager
-* [Amazon KM](https://aws.amazon.com/kms/) - Manage keys on Amazon AWS
+* [Amazon KMS](https://aws.amazon.com/kms/) - Manage keys on Amazon AWS
