@@ -63,6 +63,13 @@ Use the extensive [project presentation](https://github.com/OWASP/www-project-pr
 - Jason Coleman 
 - Cassio Goldschmidt
 - [Wallace Soares](https://www.linkedin.com/in/soareswallace1/) (Brazilian Portuguese Translation) 
+- Chris Romeo
+- Dan Anderson
+- David Cybuck
+- Dave Ferguson
+- Josh Grossman
+- Osama Elnaggar
+- Rick Mitchell
 
 
 
