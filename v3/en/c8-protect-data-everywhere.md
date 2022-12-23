@@ -35,14 +35,29 @@ Mobile applications are at particular risk of data leakage because mobile device
 
 As a general rule, only the minimum data required should be stored on the mobile device. But if you must store sensitive data on a mobile device, then sensitive data should be stored within each mobile operating systems specific data storage directory. On Android this will be the Android keystore and on iOS this will be the iOS keychain.
 
-### Key Lifecycle
-Secret keys are used in applications number of sensitive functions. For example, secret keys can be used to to sign JWTs, protect credit cards, provide various forms of authentication as well as facilitation other sensitive security features. In managing keys, a number of rules should be followed including:
+### Secret Lifecycle
+Secret keys can be used in a number of sensitive functions. For example, they can be used to sign JWTs, encrypt credit cards, sign hash, provide various forms of authentication and more. In managing keys, a number of precautious should be adhered including but not limited to the following:
 
 * Ensure that any secret key is protected from unauthorized access
-* Store keys in a proper secrets vault as described below
+* Store keys in a proper secrets vault as described in *Application Secrets Management*
 * Use independent keys when multiple keys are required
 * Build support for changing algorithms and keys when needed
 * Build application features to handle a key rotation
+
+### Secret Datatype
+When an immutable datatype such as `string` is used to store secrets, secrets can remain plaintext in the memory for a long time.
+Even if you try to nullify the string value, it still remains in the memory. 
+`string` is an immutable type and cannot be changed. When you modify a string (try to overwrite it), a new copy of it is created. 
+This means another copy of the unprotected secret will remain in the memory. 
+Furthermore, there is no gurantee when garbage collector is going to clean up the secret.
+This increases exposure of plaintext secrets in the memory.
+
+If secrets remain unprotected in the memory, they can get disclosed on the disk or external log aggregators 
+through a number of scenarios: server crash logs, caching, serialisation or memory paging.
+
+A safe way to handle secret is by using **Read Once** pattern.
+Read once is a defensive design pattern where a value can be only accessed once. After the first read, value is cleared from memory, and subsequent access is not possible.
+For an example implementation see [this post](https://discuss.secdim.com/t/do-not-use-string-to-store-secret-it-gets-disclosed/247).
 
 ### Application Secrets Management
 Applications contain numerous "secrets" that are needed for security operations. These include certificates, SQL connection passwords, third party service account credentials, passwords, SSH keys, encryption keys and more. The unauthorized disclosure or modification of these secrets could lead to complete system compromise. In managing application secrets, consider the following.
@@ -63,6 +78,7 @@ Applications contain numerous "secrets" that are needed for security operations.
 * [OWASP Cheat Sheet: Secrets Management](https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_CheatSheet.html)
 * [OWASP Cheat Sheet: IOS Developer - Insecure Data Storage](https://www.owasp.org/index.php/IOS_Developer_Cheat_Sheet#Insecure_Data_Storage_.28M1.29)
 * [OWASP Testing Guide: Testing for TLS](https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/01-Testing_for_Weak_Transport_Layer_Security)
+* [Do not use String to store secret. It gets disclosed](https://discuss.secdim.com/t/do-not-use-string-to-store-secret-it-gets-disclosed/247)
 
 
 ## Tools
