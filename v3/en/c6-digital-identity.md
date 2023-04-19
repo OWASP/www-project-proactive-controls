@@ -10,12 +10,12 @@ order: 10
 # C6: Implement Digital Identity
 
 ## Description
-Digital Identity is the unique representation of a user (or other subject) as they engage in an online transaction. Authentication is the process of verifying that an individual or entity is who they claim to be. Session management is a process by which a server maintains the state of the users authentication so that the user may continue to use the system without re-authenticating. The [NIST Special Publication 800-63B: Digital Identity Guidelines (Authentication and Lifecycle Management](https://pages.nist.gov/800-63-3/sp800-63b.html) provides solid guidance on implementing digital identity, authentication and session management controls.
+Digital Identity is the unique representation of a user (or other subject) as they engage in an online transaction. Authentication is the process of verifying that an individual or entity is who they claim to be. Session management is a process by which a server maintains the state of the users authentication so that the user may continue to use the system without re-authenticating. The [NIST Special Publication 800-63B: Digital Identity Guidelines (Authentication and Lifecycle Management)](https://pages.nist.gov/800-63-3/sp800-63b.html) provides solid guidance on implementing digital identity, authentication and session management controls.
 
 Below are some recommendations for secure implementation.
 
 ## Authentication Levels
-NIST 800-63b describes three levels of a authentication assurance called a authentication assurance level (AAL). AAL level 1 is reserved for lower-risk applications that do not contain PII or other private data. At AAL level 1 only single-factor authentication is required, typically through the use of a password. 
+NIST 800-63b describes three levels of a authentication assurance called a authentication assurance level (AAL). AAL level 1 is reserved for lower-risk applications that do not contain PII or other private data. At AAL level 1 only single-factor authentication is required, typically through the use of a password.
 
 ### Level 1 : Passwords
 Passwords are really really important. We need policy, we need to store them securely, we need to sometimes allow users to reset them.
@@ -43,7 +43,7 @@ Below is an example for secure password hashing in PHP using `password_hash()` f
 
     <?php
      $cost = 15;
-     $password_hash = password_hash("secret_password", PASSWORD_DEFAULT,["cost" => $cost]); 
+     $password_hash = password_hash("secret_password", PASSWORD_DEFAULT,["cost" => $cost]);
     ?>
 
 Please see the [OWASP Password Storage Cheat Sheet](https://www.owasp.org/index.php/Password_Storage_Cheat_Sheet) for further details.
@@ -64,7 +64,7 @@ It is worth noting that biometrics, when employed as a single factor of authenti
 NIST 800-63b Authentication Assurance Level 3 (AAL3) is required when the impact of compromised systems could lead to personal harm, significant financial loss, harm the public interest or involve civil or criminal violations. AAL3 requires authentication that is "based on proof of possession of a key through a cryptographic protocol." This type of authentication is used to achieve the strongest level of authentication assurance. This is typically done though hardware cryptographic modules.
 
 #### Session Management
-Once the initial successful user authentication has taken place, an application may choose to track and maintain this authentication state for a limited amount of time. This will allow the user to continue using the application without having to keep re-authentication with each request. Tracking of this user state is called Session Management. 
+Once the initial successful user authentication has taken place, an application may choose to track and maintain this authentication state for a limited amount of time. This will allow the user to continue using the application without having to keep re-authentication with each request. Tracking of this user state is called Session Management.
 
 #### Session Generation and Expiration
 User state is tracked in a session. This session is typically stored on the server for traditional web based session management. A session identifier is then given to the user so the user can identify which server-side session contains the correct user data. The client only needs to maintain this session identifier, which also keeps sensitive server-side session data off of the client.
@@ -95,7 +95,7 @@ However, JWT's are often not saved by the server after initial creation. JWT's a
 
 This approach is both stateless and portable in the way that client and server technologies can be different yet still interact.
 
-**Caution** 
+**Caution**
 
 Digital identity, authentication and session management are very big topics. We're scratching the surface of the topic of Digital Identity here. Ensure that your most capable engineering talent is responsible for maintaining the complexity involved with most Identity solutions.
 
