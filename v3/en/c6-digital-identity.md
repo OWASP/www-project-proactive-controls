@@ -27,12 +27,12 @@ Passwords should comply with the following requirements at the very least:
 * all printing ASCII characters as well as the space character should be acceptable in memorized secrets
 * encourage the use of long passwords and passphrases
 * remove complexity requirements as these have been found to be of limited effectiveness. Instead, the adoption of MFA or longer password lengths is recommended
-* ensure that passwords used are not commonly used passwords that have been already been leaked in a previous compromise.  You may choose to block the top 1000 or 10000 most common passwords which meet the above length requirements and are found in compromised password lists. The following link contains the most commonly found passwords: https://github.com/danielmiessler/SecLists/tree/master/Passwords.
+* ensure that passwords used are not commonly used passwords that have been already been leaked in a previous compromise.  You may choose to block the top 1000 or 10000 most common passwords which meet the above length requirements and are found in compromised password lists. The following link contains the most commonly found passwords: [https://github.com/danielmiessler/SecLists/tree/master/Passwords](https://github.com/danielmiessler/SecLists/tree/master/Passwords).
 
 #### Implement Secure Password Recovery Mechanism
 It is common for an application to have a mechanism for a user to gain access to their account in the event they forget their password. A good design workflow for a password recovery feature will use multi-factor authentication elements. For example, it may ask a security question - something they know, and then send a generated token to a device - something they own.
 
-Please see the [Forgot_Password_Cheat_Sheet](https://www.owasp.org/index.php/Forgot_Password_Cheat_Sheet) and [Choosing_and_Using_Security_Questions_Cheat_Sheet](https://www.owasp.org/index.php/Choosing_and_Using_Security_Questions_Cheat_Sheet) for further details.
+Please see the [Forgot Password Cheat Sheet](https://www.owasp.org/index.php/Forgot_Password_Cheat_Sheet) and [Choosing and Using Security Questions Cheat Sheet](https://www.owasp.org/index.php/Choosing_and_Using_Security_Questions_Cheat_Sheet) for further details.
 
 #### Implement Secure Password Storage
 In order to provide strong authentication controls, an application must securely store user credentials. Furthermore, cryptographic controls should be in place such that if a credential (e.g., a password) is compromised, the attacker does not immediately have access to this information.
@@ -83,13 +83,13 @@ Browser cookies are a common method for web application to store session identif
 * When browser cookies are used as the mechanism for tracking the session of an authenticated user,  these should be accessible to a minimum set of domains and paths and should be tagged to expire at, or soon after, the session's validity period.
 * The 'secure' flag should be set to ensure the transfer is done via secure channel only (TLS).
 * HttpOnly flag should be set to prevent the cookie from  being accessed via JavaScript.
-* Adding "[samesite](https://www.owasp.org/index.php/SameSite)" attributes to cookies prevents some [modern browsers](https://caniuse.com/#search=samesite) from sending cookies with cross-site requests and provides protection against cross-site request forgery and information leakage attacks.
+* Adding "[SameSite](https://www.owasp.org/index.php/SameSite)" attributes to cookies prevents some [modern browsers](https://caniuse.com/#search=samesite) from sending cookies with cross-site requests and provides protection against cross-site request forgery and information leakage attacks.
 
 #### Tokens
 Server-side sessions can be limiting for some forms of authentication. "Stateless services" allow for client side management of session data for performance purposes so they server has less of a burden to store and verify user session. These "stateless" applications generate a short-lived access token which can be used to authenticate a client request without sending the user's credentials after the initial authentication.
 
 #### JWT (JSON Web Tokens)
-JSON Web Token (JWT) is an open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519) ) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed. A JWT token is created during authentication and is verified by the server (or servers) before any processing.
+JSON Web Token (JWT) is an open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed. A JWT token is created during authentication and is verified by the server (or servers) before any processing.
 
 However, JWT's are often not saved by the server after initial creation. JWT's are typically created and then handed to a client without being saved by the server in any way. The integrity of the token is maintained through the use of digital signatures so a server can later verify that the JWT is still valid and was not tampered with since its creation.
 
