@@ -15,7 +15,7 @@ type: documentation
 [![Twitter Follow](https://img.shields.io/twitter/follow/OWASPControls.svg?style=social&label=Follow)](https://twitter.com/OWASPControls)
 
 ## What is This?
-The OWASP Top Ten Proactive Controls describes the most important control and control categories that **every architect and developer** should absolutely, 100% include in every project.
+The OWASP Top Ten Proactive Controls describes the most important controls and control categories that **every architect and developer** should absolutely, 100% include in every project.
 
 ## OWASP Top 10 Proactive Controls 2018
 Software developers are the foundation of any application. In order to achieve secure software, developers must be supported and helped by the organization they author code for. As software developers author the code that makes up a web application, they need to embrace and practice a wide variety of secure coding techniques. All tiers of a web application, the user interface, the business logic, the controller, the database code and more – all need to be developed with security in mind. This can be a very difficult task and developers are often set up for failure. Most developers did not learn about secure coding or crypto in school. The languages and frameworks that developers use to build web applications are often lacking critical core controls or are insecure by default in some way. It is also very rare when organizations provide developers with prescriptive requirements that guide them down the path of secure software. And even when they do, there may be security flaws inherent in the requirements and designs. When it comes to software, developers are often set up to lose the security game.
