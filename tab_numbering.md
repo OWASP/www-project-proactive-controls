@@ -12,16 +12,16 @@ tags: opc
 
 ### 2018 Numbering
 
-  - OWASP-2018-C1: Define Security Requirements
-  - OWASP-2018-C2: Leverage Security Frameworks and Libraries
-  - OWASP-2018-C3: Secure Database Access
-  - OWASP-2018-C4: Encode and Escape Data
-  - OWASP-2018-C5: Validate All Inputs
-  - OWASP-2018-C6: Implement Digital Identity
-  - OWASP-2018-C7: Enforce Access Controls
-  - OWASP-2018-C8: Protect Data Everywhere
-  - OWASP-2018-C9: Implement Security Logging and Monitoring
-  - OWASP-2018-C10: Handle All Errors and Exceptions
+  - [OWASP-2018-C1: Define Security Requirements](/www-project-proactive-controls/v3/en/c1-security-requirements)
+  - [OWASP-2018-C2: Leverage Security Frameworks and Libraries](/www-project-proactive-controls/v3/en/c2-leverage-security-frameworks-libraries)
+  - [OWASP-2018-C3: Secure Database Access](/www-project-proactive-controls/v3/en/c3-secure-database)
+  - [OWASP-2018-C4: Encode and Escape Data](/www-project-proactive-controls/v3/en/c4-encode-escape-data)
+  - [OWASP-2018-C5: Validate All Inputs](/www-project-proactive-controls/v3/en/c5-validate-inputs)
+  - [OWASP-2018-C6: Implement Digital Identity](/www-project-proactive-controls/v3/en/c6-digital-identity)
+  - [OWASP-2018-C7: Enforce Access Controls](/www-project-proactive-controls/v3/en/c7-enforce-access-controls)
+  - [OWASP-2018-C8: Protect Data Everywhere](/www-project-proactive-controls/v3/en/c8-protect-data-everywhere)
+  - [OWASP-2018-C9: Implement Security Logging and Monitoring](/www-project-proactive-controls/v3/en/c9-security-logging)
+  - [OWASP-2018-C10: Handle All Errors and Exceptions](/www-project-proactive-controls/v3/en/c10-errors-exceptions)
 
 ### 2016 Numbering
 
