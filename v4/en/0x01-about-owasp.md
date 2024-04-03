@@ -1,6 +1,6 @@
 ---
 
-layout: col-document
+layout: col-sidebar
 tags: OWASP Top Ten Proactive Controls 2024, AboutOWASP
 document: OWASP Top Ten Proactive Controls 2024
 order: 1
