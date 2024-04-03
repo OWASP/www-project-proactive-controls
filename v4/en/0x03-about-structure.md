@@ -1,11 +1,10 @@
 ---
 
 layout: col-document
-author:
-contributors:
 tags: OWASP Top Ten Proactive Controls 2024, Document Structure
 document: OWASP Top Ten Proactive Controls 2024
 order: 3
+permalink: v4/en/
 
 ---
 
