@@ -39,20 +39,6 @@ This document is primarily written for developers. However, development managers
 ***How this List Was Created***
 This list was originally created by the current project leads with contributions from several volunteers. The document was then shared globally so even anonymous suggestions could be considered. Hundreds of changes were accepted from this open community process.
 
-## The Top 10 Proactive Controls
-The list is ordered by importance with list item number 1 being the most important:
-
-* C1: Implement Access Control 
-* C2: Use Cryptography the right way
-* C3: Validate, Escape, Sanitize or Parameterize Untrusted Data
-* C4: Use Secure Architecture Patterns 
-* C5: Secure By Default Configurations 
-* C6: Asses and Update your Components 
-* C7: Implement Digital Identity
-* C8: Help the Browser defend its User
-* C9: Implement Security Logging and Monitoring
-* C10: Don’t perform unintended malicious outgoing requests
-
 ## Relationship to other OWASP Projects
 
 The OWASP Top 10 Proactive Controls is similar to the [OWASP Top 10](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project) but is focused on defensive techniques and controls as opposed to risks. Each technique or control in this document will map to one or more items in the *risk based* OWASP Top 10. This mapping information is included at the end of each control description.
