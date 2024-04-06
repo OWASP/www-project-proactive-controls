@@ -10,12 +10,15 @@ tags: opc
 
 ## Roadmap
 
-
 Welcome to the OWASP Top 10 Proactive Controls Project\!
+
+### 2024 Roadmap
+
+  - Create wiki for 2024 version (in progress)
 
 ### 2018 Roadmap 
   - Create new PowerPoint and other artifacts for 2018 version (done)
-  - Create wiki for 2018 version (work in progress)
+  - Create wiki for 2018 version (done)
 
 ### 2016 Roadmap  
   - Create new PowerPoint and other artifacts for 2016 version (done)
