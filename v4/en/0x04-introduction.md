@@ -1,14 +1,14 @@
 ---
 
-layout: col-document
-tags: OTPC-2024, Intro
-document: OTPC-2024
+layout: col-sidebar
+tags: OWASP Top Ten Proactive Controls 2024, Intro
+document: OWASP Top Ten Proactive Controls 2024
 order: 4
 permalink: /v4/en/introduction
 
 ---
 
-
+{% include sub_navigation.html %}
 
 # Introduction
 
