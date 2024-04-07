@@ -7,3 +7,9 @@
     {% endif %}
     {% endfor %}
 </ul>
+
+
+{% comment %} rm the first H1  {% endcomment %}
+<style type="test/css">
+  h1.page-title {display: none; }
+</style>
