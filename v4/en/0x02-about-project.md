@@ -3,7 +3,7 @@
 layout: col-sidebar
 tags: OWASP Top Ten Proactive Controls 2024, About Project
 document: OWASP Top Ten Proactive Controls 2024
-order: 2
+order: 402
 
 ---
 

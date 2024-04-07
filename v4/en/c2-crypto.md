@@ -1,9 +1,9 @@
 ---
 
-layout: col-sidebar
+layout: col-document
 tags: OWASP Top Ten Proactive Controls 2024, C2, Use Cryptography the proper way
 document: OWASP Top Ten Proactive Controls 2024
-order: 6
+order: 406
 permalink: /v4/en/c2-crypto
 
 ---
