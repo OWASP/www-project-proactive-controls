@@ -3,7 +3,7 @@
 layout: col-sidebar
 tags: OWASP Top Ten Proactive Controls 2024, Document Structure
 document: OWASP Top Ten Proactive Controls 2024
-order: 3
+order: 403
 
 ---
 
@@ -20,7 +20,7 @@ This document is structured as a list of security controls. The list is ordered 
 * C7: Implement Digital Identity
 * C8: Help the Browser defend its User
 * C9: Implement Security Logging and Monitoring
-* C10: Don’t perform unintended malicious outgoing requests
+* C10: Stop Server Side Request Forgery
 
 ## Security Controls
 
