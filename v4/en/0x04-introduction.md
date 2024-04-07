@@ -8,8 +8,6 @@ permalink: /v4/en/introduction
 
 ---
 
-{% include sub_navigation.html %}
-
 # Introduction
 
 For years, developers have suffered through introducing the same security issues into the things they build. The most common issues, which have existed for decades, have been documented by the OWASP Top Ten. Many of the issues in the earliest version still exist in some form today. A mechanism is needed to counter these challenges, and that mechanism is proactive controls.
