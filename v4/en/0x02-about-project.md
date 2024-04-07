@@ -1,6 +1,6 @@
 ---
 
-layout: col-sidebar
+layout: col-document
 tags: OWASP Top Ten Proactive Controls 2024, About Project
 document: OWASP Top Ten Proactive Controls 2024
 order: 402
