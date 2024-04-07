@@ -1,3 +1,9 @@
+{% comment %} rm the first H1  {% endcomment %}
+<style type="test/css">
+  .sec-main h1 {display: none; }
+  div.navigation {display: inline;} 
+</style>
+
 {% assign spages = site.pages | where:"document","OWASP Top Ten Proactive Controls 2024"| sort: "order" }
 {% assign getnext = false %}
 {% assign getprevious = true %}
@@ -16,7 +22,7 @@
 {% endfor %}
          
          
-<nav role="navigation" aria-label="navigate page">
+<div class="navigation" aria-label="navigate page">
     <ol>
     {% if previous %}
     {% if dev_file.size == 0 %}
@@ -37,6 +43,6 @@
               <li class='page next'><a href="{{ href }}">{{ next.title }}<span style="font-size: 3em; color: lightgray; vertical-align:middle;">
                   <i class="fas fa-angle-right"></i>
                 </span></a></li>
-            {% endif %}
-            </ol>
-        </nav>
+     {% endif %}
+  </ol>
+ </div>
