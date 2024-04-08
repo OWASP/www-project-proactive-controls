@@ -7,9 +7,9 @@ order: 15
 
 ---
 
-Appendix
+# Appendix
 
-# Document Security Requirements and automatically test them
+## Document Security Requirements and automatically test them
 
 Threat Modeling and Security Design Review are an important part of secure application development. Alas this OWASP document focuses upon Security Controls and thus we have a chicken-and-egg problem: a document with a list of proactive security controls should not start with “perform threat modeling to gather security controls”.
 We still believe threat modeling to be essential and thus have added it to the appendix.

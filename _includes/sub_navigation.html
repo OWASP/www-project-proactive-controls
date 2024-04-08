@@ -26,20 +26,14 @@
 <div class="nav" aria-label="navigate page">
     <ol>
     {% if previous %}
-    {% if dev_file.size == 0 %}
-    {% assign href = site.github.url | append: previous.url | replace: "www2.", "" | replace: ".html", "" | replace: 'http://', 'https://' %}
-    {% else %}
-    {% assign href = previous.url %}
+     {% assign href = previous.url %}
     {% endif %}
     <li class='page previous'><a href="{{ href }}"><span style="font-size: 3em; color: lightgray; vertical-align:middle;">
      <i class="fas fa-angle-left"></i>
     </span>{{ previous.title }}</a></li>
     {% endif %}
             {% if next %}
-              {% if dev_file.size == 0 %}
-              {% assign href = site.github.url | append: next.url | replace: "www2.", ""  | replace: ".html", "" | replace: 'http://', 'https://' %}
-              {% else %}
-              {% assign href = next.url %}
+               {% assign href = next.url %}
               {% endif %}
               <li class='page next'><a href="{{ href }}">{{ next.title }}<span style="font-size: 3em; color: lightgray; vertical-align:middle;">
                   <i class="fas fa-angle-right"></i>
