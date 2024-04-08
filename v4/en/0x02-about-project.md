@@ -28,7 +28,7 @@ This document is released under the Creative Commons Attribution ShareAlike 3.0 
 
 ## Contributors
 
-* Chris ROmeo 
+* Chris Romeo 
 * Jasmin Mair
 * Abdessamad Temmar
 * Carl Sampson
