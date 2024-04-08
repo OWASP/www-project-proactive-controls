@@ -13,7 +13,13 @@ permalink: /v4/en/c4-secure-architecture
 ## Description
 
 Experts have shared their wisdom about best practices in an easily digestible format called secure architecture patterns. Architecture patterns are reusable and can be applied across multiple applications.
-For a solution to be considered a pattern, it must have these characteristics. First, a secure architecture pattern must solve a security problem. Second, a secure architecture pattern must not be tied to a specific vendor or technology. Third, a secure architecture pattern must demonstrate how it mitigates threats. Fourth, a secure architecture pattern must use standardized terms for threats and controls for easy reuse.<sup><sup>[\[1\]](#footnote-1)</sup></sup>
+
+For a solution to be considered a pattern, it must have these characteristics: 
+- First, a secure architecture pattern must solve a security problem. 
+- Second, a secure architecture pattern must not be tied to a specific vendor or technology. 
+- Third, a secure architecture pattern must demonstrate how it mitigates threats. 
+- Fourth, a secure architecture pattern must use standardized terms for threats and controls for easy reuse.<sup><sup>[\[1\]](#footnote-1)</sup></sup>.
+
 An architecture pattern is a way to solve a problem using a standard solution versus creating a custom solution. A secure architecture pattern is a standard solution that has been reviewed and hardened against known security threats.
 
 ## Implementation
@@ -34,4 +40,5 @@ An architecture pattern is a way to solve a problem using a standard solution ve
 - <https://owasp.org/www-pdf-archive/Vanhilst_owasp_140319.pdf>
 - <https://cheatsheetseries.owasp.org/cheatsheets/Microservices_based_Security_Arch_Doc_Cheat_Sheet.html>
 - <https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet.html>
+
 ## Tools
