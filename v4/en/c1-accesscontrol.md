@@ -75,9 +75,9 @@ Be careful about this type of role-based programming in code. It has the followi
 - Large codebases with many access control checks can make it difficult to audit or verify the overall application access control policy.
 - Hard coded roles can also be seen as a backdoor when discovered during audits.
 
-**7) ABAC Policy Enforcement Point Example**
+**7) ABAC Policy Descision Point Example**
 
-Please consider the following access control enforcement points using this following programming methodology:
+Please consider the following access control descision points using this following programming methodology:
 
 ~~~ java
 if (user.hasPermission("DELETE_ACCOUNT")) {
