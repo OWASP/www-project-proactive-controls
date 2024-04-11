@@ -8,7 +8,7 @@ permalink: /v4/en/c3-validate-all-input
 
 ---
 
-# C3: Contextualize all Input & Handle Exceptions
+# C3: Usage of Contextualized Encoding & Handle Exceptions
 
 ## Description
 
