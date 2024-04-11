@@ -38,7 +38,7 @@ Access Control design may start simple but can often become complex and feature-
 **2) Force Every Access Request to Go Through an Access Control Check**
 Ensure that all access requests are forced to go through an access control verification layer. Technologies like Java filters or other automatic request processing mechanisms are ideal programming components that will ensure that all requests go through an access control check.
 
-**3) Centralize the access control check**
+**3) Consolidate the access control check**
 Use a single access control procedure or routine. This prevents the scenario where you have multiple access control implementations, where most are correct, but some are flawed. By using a centralized approach, you can focus security resources on reviewing and fixing one central library or function that performs the access control check, and then reuse it throughout your code base and organization.
 
 **4) Deny by Default**
