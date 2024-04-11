@@ -12,7 +12,7 @@ permalink: /v4/en/c3-validate-all-input
 
 ## Description
 
-Contextualize input validation is a programming technique that ensures only properly formatted data may enter a software system component. When the injection attack targets a client, e.g., JavaScript based attacks, web servers can perform quoting/encoding on the attacker-provided data before forwarding it to the client. The quoting should uphold the separation between commands and data.
+Contextualized encoding is a technique that ensures only properly formatted data may enter the next software system component. When the injection attack targets a client, e.g., JavaScript based attacks, web servers can perform quoting/encoding on the attacker-provided data before forwarding it to the client. The escaping should uphold the separation between commands and data.
 
 Injection attacks commonly occur if an application confuses data input as executable commands and are often possible where input validation is forgotten or implemented wrong.. For example, imagine that a web application accepts an email address as input from a user. The email address would be the expected “data”. Attackers now search for ways to confuse applications to execute this (supposed) data as commands. Different injection attacks target different areas:
 
