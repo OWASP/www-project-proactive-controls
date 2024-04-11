@@ -135,8 +135,7 @@ Regarding Input Validation:
 - [OWASP Testing Guide: Testing for Input Validation](https://www.owasp.org/index.php/Testing_for_Input_Validation)
 - [Injection Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet.html)
 - [Injection Prevention Cheat Sheet in Java](https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_in_Java_Cheat_Sheet.html)
-Hardening with CSP:
-- [CSP with Google](https://csp.withgoogle.com/docs/index.html)
+- Hardening with CSP: [CSP with Google](https://csp.withgoogle.com/docs/index.html)
 - Deploying CSP in Single Page Applications
 
 ## Tools
