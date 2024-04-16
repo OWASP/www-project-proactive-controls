@@ -36,7 +36,7 @@ Two core types of access control design should be considered.
 Access Control design may start simple but can often become complex and feature-heavy security control. When evaluating the access control capability of software frameworks, ensure that your access control functionality will allow for customization for your specific access control feature need.
 
 **2) Force Every Access Request to Go Through an Access Control Check**
-Ensure that all access requests are forced to go through an access control verification layer. Technologies like Java filters or other automatic request processing mechanisms are ideal programming components that will ensure that all requests go through an access control check.
+Ensure that all access requests are forced to go through an access control verification layer. Technologies like Java filters or other automatic request processing mechanisms are ideal programming components that will ensure that all requests go through an access control check. This is refered to as _Policy Enforcement Point_ in [RFC 2904](https://datatracker.ietf.org/doc/html/rfc2904#section-4.3).
 
 **3) Consolidate the access control check**
 Use a single access control procedure or routine. This prevents the scenario where you have multiple access control implementations, where most are correct, but some are flawed. By using a centralized approach, you can focus security resources on reviewing and fixing one central library or function that performs the access control check, and then reuse it throughout your code base and organization.
@@ -100,7 +100,10 @@ Attribute or feature-based access control checks of this nature are the starting
 - [OWASP ASVS V4 Access Control](https://owasp.org/www-project-application-security-verification-standard/)
 - [OWASP Testing Guide: Authorization Testing](https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/05-Authorization_Testing/)
 - [OAuth2.0](https://oauth.net/2/) protocol for authorization
+- [Draft OAuth2.1](https://datatracker.ietf.org/doc/html/draft-ietf-oauth-v2-1-10)
+- [Policy Enforcement in RFC 2904](https://datatracker.ietf.org/doc/html/rfc2904#section-4.3)
 
 ## Tools
 
 - [ZAP](https://www.zaproxy.org/) with the optional [Access Control Testing](https://www.zaproxy.org/docs/desktop/addons/access-control-testing/) add-on
+- [Open Policy Agent](https://www.openpolicyagent.org/)
