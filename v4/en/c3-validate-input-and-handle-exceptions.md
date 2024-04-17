@@ -34,7 +34,7 @@ Protection against Injection Attacks is typically based upon a defense-in-depth 
 
 ### Prevent malicious data from entering the system
 
-Never trust external provided data! Screen all data for malicious patterns or, even better, check all data against an allow list.
+Never trust provided data! Screen all data for malicious patterns or, even better, check all data against an allow list.
 
 #### Allowlisting vs Denylisting
 There are two general approaches to performing syntactic validation, commonly known as allow and deny lists:
