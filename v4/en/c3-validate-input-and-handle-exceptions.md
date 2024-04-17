@@ -8,11 +8,11 @@ permalink: /v4/en/c3-validate-all-input
 
 ---
 
-# C3: Validate all Input & Handle Exceptions
+# C3: Usage of Contextualized Encoding & Handle Exceptions
 
 ## Description
 
-Input validation is a programming technique that ensures only properly formatted data may enter a software system component. When the injection attack targets a client, e.g., JavaScript based attacks, web servers can perform quoting/encoding on the attacker-provided data before forwarding it to the client. The quoting should uphold the separation between commands and data.
+Contextualized encoding is a technique that ensures only properly formatted data may enter the next software system component. When the injection attack targets a client, e.g., JavaScript based attacks, web servers can perform quoting/encoding on the attacker-provided data before forwarding it to the client. The escaping should uphold the separation between commands and data.
 
 Injection attacks commonly occur if an application confuses data input as executable commands and are often possible where input validation is forgotten or implemented wrong.. For example, imagine that a web application accepts an email address as input from a user. The email address would be the expected “data”. Attackers now search for ways to confuse applications to execute this (supposed) data as commands. Different injection attacks target different areas:
 
@@ -30,7 +30,7 @@ An application should check that data is syntactically and semantically valid (i
 
 ## Implementation
 
-Protection against Injection Attacks is typically based upon a defense-in-depth approach and incorporates input filtering, output escaping, and utilization of hardening mechanisms. The former two are only dependent upon implemented security measures, and the latter is mostly dependent upon client-support, e.g., when protecting against XSS, filtering XSS from input and escaping output data server-side would prevent XSS regardless of the used web browser; adding a Content-Security-Policy prevents XSS, but only if the user’s browser supports it. Due to this, security must never depend upon optional hardening measures alone.
+Protection against Injection Attacks is typically based upon a defense-in-depth approach and incorporates contextualize encoding and utilization of hardening mechanisms. The first is only dependent upon implemented security measures, and the second is mostly dependent upon client-support, e.g., when protecting against XSS, filtering XSS from input and escaping output data server-side would prevent XSS regardless of the used web browser; adding a Content-Security-Policy prevents XSS, but only if the user’s browser supports it. Due to this, security must never depend upon optional hardening measures alone.
 
 ### Prevent malicious data from entering the system
 
@@ -81,7 +81,7 @@ More examples are available in the [OWASP Mass Assignment Cheat Sheet](https://w
 
 ### Limits of Input Validation
 
-Input validation does not always make data “safe” since certain complex input forms may be “valid” but still dangerous. For example, a valid email address may contain a SQL injection attack, or a valid URL may contain a Cross Site Scripting attack. Additional defenses besides input validation should always be applied to data, such as query parameterization or escaping.
+Input validation does not always make data “safe” since certain complex input forms may be “valid” but still dangerous. For example, a valid email address may contain a SQL injection attack, or a valid URL may contain a Cross Site Scripting attack. The main measure against injections is contextualized encoding for the next interpreter with a framework.
 
 ### Use mechanisms that uphold the separation of data and commands
 
@@ -96,7 +96,8 @@ Even if malicious data has passed the input checking, applications can prevent i
 
 A special case are JavaScript based Injection attacks (XSS). The injected malicious code is commonly executed within a victim’s browser. Typically, attackers try to steal the user’s session information from the browser and not directly execute commands (as they do on the server-side). In addition to server-side input filtering and output escaping, multiple client-side hardening measurements can be taken (these also protect against the special case of DOM-based XSS where no server-side logic is involved and thus cannot filter malicious code):
 - Mark sensitive cookies with httpOnly so JavaScript cannot access them
-- Utilize a Content-Security-Policy to reduce the attack-surface for JavaScript-based Attacks
+- Utilize a Content-Security-Policy to reduce the attack-surface for JavaScript-based Attacks,
+- Use a secure by default framework like Angular
 
 #### Validating and Sanitizing HTML
 
