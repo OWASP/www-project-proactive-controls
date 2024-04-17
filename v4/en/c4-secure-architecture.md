@@ -8,9 +8,35 @@ permalink: /v4/en/c4-secure-architecture
 
 ---
 
-# C4: Use Secure Architecture Patterns
+# C4: Address Security from the Start
 
 ## Description
+
+When designing a new application, creating a secure architecture prevents vulnerabilties before they even become part of the application. This prevents costly repairs and repudiation problems.
+
+There are design principles that lead to secure architectures:
+
+- **keep it simple, stupid** principle (KISS): the easier an application is to understand, the easier it is to reason about its components and their interactions. This allows to reason about the application's security behavior.
+- **don't rely on obscurity**: if the only security is due to the intransparency of the application or its source code, the application is note secure at all.
+- **Identify and minimize your exposed components** ("attack surface"): attackers cannot attack what's not there.
+- **Design for Defense-in-Depth**: think about what happens, if a component is breached and about the potential blast radius of an attack.
+- **Make it easy to do the right thing**
+
+## Implementation
+
+### Identify and minimize your exposed components ("attack surface")
+
+### Clearly articulate what's trusted to do what, and ensure those relationships are enforced 
+
+Clearly articulate what's trusted to do what, and ensure those
+relationships are enforced (trust boundaries deliniate blast radius
+and are enforced by controls, such as firewalls or gateways.)
+
+Attenuate what's allowed by careful validation at each step.
+
+Go deeper with threat modeling mnemonics like stride or methodologies like stride per element
+
+### Use well-known Architecture Patterns
 
 Experts have shared their wisdom about best practices in an easily digestible format called secure architecture patterns. Architecture patterns are reusable and can be applied across multiple applications.
 
@@ -22,7 +48,7 @@ For a solution to be considered a pattern, it must have these characteristics:
 
 An architecture pattern is a way to solve a problem using a standard solution versus creating a custom solution. A secure architecture pattern is a standard solution that has been reviewed and hardened against known security threats.
 
-## Implementation
+Implementation:
 
 1. Identify the problem that requires solving.
 2. Consider the catalog of available secure architecture patterns.
@@ -42,7 +68,5 @@ An architecture pattern is a way to solve a problem using a standard solution ve
 - <https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet.html>
 
 ## Tools
-
-
 
 [^footnote-1]: https://securitypatterns.io/what-is-a-security-pattern/
