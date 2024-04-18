@@ -24,7 +24,23 @@ There are design principles that lead to secure architectures:
 
 ## Implementation
 
+### Design for Clarity and Transparency
+
+- so no security by obscurity
+- make it easy to reason about an architecture's security
+
+### Make it easy to do the right thing
+
+- basic idea behind "security by design" and "security by default"
+- important for user interfaces and flows
+- but also important for anything that other developers are expected to extend (frameworks, plugin systems, etc.)
+- think about this when designing your configuration files too
+
 ### Identify and minimize your exposed components ("attack surface")
+
+- identify all areas that an attacker can access
+- review them and try to minimize those areas
+- attackers cannot attack what's not there
 
 ### Clearly articulate what's trusted to do what, and ensure those relationships are enforced 
 
