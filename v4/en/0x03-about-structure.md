@@ -16,7 +16,7 @@ This document is structured as a list of security controls. The list is ordered 
 * C3: Validate, Escape, Sanitize or Parameterize Untrusted Data
 * C4: Use Secure Architecture Patterns 
 * C5: Secure By Default Configurations 
-* C6: Asses and Update your Components 
+* C6: Assess and Update your Components 
 * C7: Implement Digital Identity
 * C8: Help the Browser defend its User
 * C9: Implement Security Logging and Monitoring
