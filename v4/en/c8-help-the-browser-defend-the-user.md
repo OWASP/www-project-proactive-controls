@@ -13,6 +13,8 @@ order: 412
 
 Browsers are the gateway to the web for most users. As such, it's critical to employ robust security measures to protect the user from various threats. This section outlines the techniques and policies that can be implemented to bolster browser security.
 
+While we are currently focusing upon traditional web browsers, please note that there is a diverse world of other client programs out there, ranging from API clients to smart-tvs.
+
 ### Opportunistic Security and Browser-Support
 
 Instructing the web browser to enforce security measures is always opportunistic: the web application cannot verify that the browser heeds the guidance given and thus these security measures should always be seen as additional (and optional) **Hardening Measures** that further complicate an attacker’s life.
@@ -71,6 +73,11 @@ Implementing these browser defenses can help mitigate a range of vulnerabilities
 - Data Theft through insecure transmission
 - Session Hijacking
 - Abusing unintended browser hardware access (microphone, cameras, etc.)
+
+## Tools
+- [Web Check](https://github.com/Lissy93/web-check)
+- [Security Headers](https://securityheaders.com/)
+- [Mozilla Observatory](https://observatory.mozilla.org/)
 
 ## References
 
