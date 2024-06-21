@@ -26,13 +26,13 @@ There are two general approaches to performing input syntax validation, commonly
 * **Allowlisting** or **allowlist** validation attempts to check that a given data matches a set of "known good" rules. For example a allowlist validation rule for a US state would be a 2-letter code that is only one of the valid US states.
 
 **Important**
-When building secure software, allowlisting is the recommended minimal approach. Denylisting is prone to error and can be bypassed with various evasion techniques and can be dangerous when depended on by itself. Even though denylisting can often be evaded it can often useful to help detect obvious attacks. So while **allowlisting** helps limit the attack surface by ensuring data is of the right syntactic and semantic validity, **denylisting** helps detect and potentially stop obvious attacks.
+When building secure software, allowlisting is the recommended minimal approach. Denylisting is prone to error and can be bypassed with various evasion techniques and can be dangerous when depended on by itself. Even though denylisting can often be evaded, it can often be useful to help detect obvious attacks. So while **allowlisting** helps limit the attack surface by ensuring data is of the right syntactic and semantic validity, **denylisting** helps detect and potentially stop obvious attacks.
 
 ### Client side and Server side Validation
-Input validation must always be done on the server-side for security. While client side validation can be useful for both functional and some security purposes it can often be easily bypassed. This makes server-side validation even more fundamental to security. For example, JavaScript validation may alert the user that a particular field must consist of numbers but the server side application must validate that the submitted data only consists of numbers in the appropriate numerical range for that feature.
+Input validation must always be done on the server-side for security. While client side validation can be useful for both functional and some security purposes, it can often be easily bypassed. This makes server-side validation even more fundamental to security. For example, JavaScript validation may alert the user that a particular field must consist of numbers but the server side application must validate that the submitted data only consists of numbers in the appropriate numerical range for that feature.
 
 ### Regular Expressions
-Regular expressions offer a way to checkwhether data matches a specific pattern. Let’s start with a basic example.
+Regular expressions offer a way to check whether data matches a specific pattern. Let’s start with a basic example.
 
 The following regular expression is used to define a allowlist rule to validate usernames.
 
@@ -51,7 +51,7 @@ Regular expressions are just one way to accomplish validation. Regular expressio
 
 ### Limits of Input Validation
 
-**Input validation does not always make data "safe" since certain forms of complex input may be "valid" but still dangerous. For example a valid email address may contain a SQL injection attack or a valid URL may contain a Cross Site Scripting attack**. Additional defenses besides input validation should always be applied to data such as query parameterization or escaping.
+**Input validation does not always make data "safe" since certain forms of complex input may be "valid" but still dangerous. For example, a valid email address may contain a SQL injection attack or a valid URL may contain a Cross Site Scripting attack**. Additional defenses besides input validation should always be applied to data such as query parameterization or escaping.
 
 ### Challenges of Validating Serialized Data
 Some forms of input are so complex that validation can only minimally protect the application. For example, it's dangerous to deserialize untrusted data or data that can be manipulated by an attacker. The only safe architectural pattern is to not accept serialized objects from untrusted sources or to only deserialize in limited capacity for only simple data types. You should avoid processing serialized data formats and use easier to defend formats such as JSON when possible.
@@ -70,7 +70,7 @@ Some frameworks support automatic binding of HTTP requests parameters to server-
 
 This attack has a number of names including: mass assignment, autobinding and object injection.
 
-As a simple example, if the user object has a field privilege which specifies the user's privilege level in the application, a malicious user can look for pages where user data is modified and add privilege=admin to the HTTP parameters sent.  If auto-binding is enabled in an insecure fashion, the server-side object representing the user will be modified accordingly.
+As a simple example, if the user object has a field named `privilege` which specifies the user's privilege level in the application, a malicious user can look for pages where user data is modified and add `privilege=admin` to the HTTP parameters sent.  If auto-binding is enabled in an insecure fashion, the server-side object representing the user will be modified accordingly.
 
 Two approaches can be used to handle this:
 * Avoid binding input directly and use Data Transfer Objects (DTOs) instead.
