@@ -7,7 +7,7 @@ order: 412
 
 ---
 
-# C8: Help the Browser defend its User
+# C8: Leverage Browser Security Features
 
 ## Description
 
