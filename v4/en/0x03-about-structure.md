@@ -14,7 +14,7 @@ This document is structured as a list of security controls. The list is ordered 
 * C1: Implement Access Control 
 * C2: Use Cryptography the right way
 * C3: Validate, Escape, Sanitize or Parameterize Untrusted Data
-* C4: Use Secure Architecture Patterns 
+* C4: Address Security from the Start
 * C5: Secure By Default Configurations 
 * C6: Asses and Update your Components 
 * C7: Implement Digital Identity
