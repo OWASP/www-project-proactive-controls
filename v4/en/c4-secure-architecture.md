@@ -24,35 +24,35 @@ There are design principles that lead to secure architectures:
 
 ## Implementation
 
+The mantra "Complexity is the enemy of enemy of security" can be seen throughout this implementation guidance.
+
 ### Design for Clarity and Transparency
 
-- KISS
-- so no security by obscurity
-- make it easy to reason about an architecture's security
+Architecture should focus upon simplicity: the designed software should be only as complex as the intended user's requirements warant. Focusing upon simplicity brings multiple benefits for the created software:
+
+- It is easier to reason about a simple system. This allows to reason about potential security impacts of changes.
+- Long-term maintenance is aided through the simpler design.
+- The design should focus upon transprency, i.e., the security should not depend upon security-by-obscurity.
 
 ### Make it easy to do the right thing
 
-- basic idea behind "security by design" and "security by default"
-- important for user interfaces and flows
-- but also important for anything that other developers are expected to extend (frameworks, plugin systems, etc.)
-- think about this when designing your configuration files too
+Two terms often heard are "security by design" and "security by default". The former implies, that the software system should be usable in a secure manner while the latter means that the initial configuration of the software system is secure.
+
+This implies, that an system administrator has to make an explicit choice to introduce insecure configuration into the system. In constrast, the path of least resistance should always result in a secure system.
+
+When focusing upon end-user interactions, this aspect is important for designing user interfaces and flows. When focusing upon developer interactions, develeper-facing facilities such as framework, APIs, network APIs should be designed that when using them with default values, only secure operations should occur. Think about this when designing your configuration files too
 
 ### Clearly articulate what's trusted to do what, and ensure those relationships are enforced 
 
-Clearly articulate what's trusted to do what, and ensure those
-relationships are enforced (trust boundaries deliniate blast radius
-and are enforced by controls, such as firewalls or gateways.)
+Clearly articulate what's trusted to do what, and ensure those relationships are enforced, e.g., trust boundaries deliniate blast radius and are enforced by controls, such as firewalls or gateways.
 
-Attenuate what's allowed by careful validation at each step.
-
-Go deeper with threat modeling mnemonics like stride or methodologies like stride per element
+Attenuate what's allowed by careful validation at each step. Go deeper with threat modeling mnemonics like stride or methodologies like stride per element.
 
 ### Identify and minimize your exposed components ("attack surface")
 
-- identify all areas that an attacker can access
-- review them and try to minimize those areas
-- attackers cannot attack what's not there
-- this makes reasoning and maintenance easier
+Identify all areas that an attacker can access, review them and try to minimize them: attackers cannot attack what's not there.
+
+In addition, exposing only a minimal set of operations makes long-term maintenance easier.
 
 ### Use well-known Architecture Patterns
 
