@@ -16,16 +16,17 @@ When designing a new application, creating a secure architecture prevents vulner
 
 There are design principles that lead to secure architectures:
 
-- **keep it simple, stupid** principle (KISS): the easier an application is to understand, the easier it is to reason about its components and their interactions. This allows to reason about the application's security behavior.
-- **don't rely on obscurity**: if the only security is due to the intransparency of the application or its source code, the application is note secure at all.
+- **keep it simple, stupid** (KISS): the easier an application is to understand, the easier it is to reason about its components and their interactions. This allows to reason about the application's security behavior.
+- **Make it easy to do the right thing**: don't expect the user to read documentation or invest time to "do things the right way". By default the application should behave in a secure manner. To make it insecure, an explicit action by the user has to take place.
+- **don't rely on obscurity**: if the only security is due to the intransparency of the application or its source code, the application is not secure at all.
 - **Identify and minimize your exposed components** ("attack surface"): attackers cannot attack what's not there.
 - **Design for Defense-in-Depth**: think about what happens, if a component is breached and about the potential blast radius of an attack.
-- **Make it easy to do the right thing**
 
 ## Implementation
 
 ### Design for Clarity and Transparency
 
+- KISS
 - so no security by obscurity
 - make it easy to reason about an architecture's security
 
@@ -35,12 +36,6 @@ There are design principles that lead to secure architectures:
 - important for user interfaces and flows
 - but also important for anything that other developers are expected to extend (frameworks, plugin systems, etc.)
 - think about this when designing your configuration files too
-
-### Identify and minimize your exposed components ("attack surface")
-
-- identify all areas that an attacker can access
-- review them and try to minimize those areas
-- attackers cannot attack what's not there
 
 ### Clearly articulate what's trusted to do what, and ensure those relationships are enforced 
 
@@ -52,11 +47,19 @@ Attenuate what's allowed by careful validation at each step.
 
 Go deeper with threat modeling mnemonics like stride or methodologies like stride per element
 
+### Identify and minimize your exposed components ("attack surface")
+
+- identify all areas that an attacker can access
+- review them and try to minimize those areas
+- attackers cannot attack what's not there
+- this makes reasoning and maintenance easier
+
 ### Use well-known Architecture Patterns
 
 Experts have shared their wisdom about best practices in an easily digestible format called secure architecture patterns. Architecture patterns are reusable and can be applied across multiple applications.
 
-For a solution to be considered a pattern, it must have these characteristics: 
+For a solution to be considered a pattern, it must have these characteristics:
+
 - First, a secure architecture pattern must solve a security problem. 
 - Second, a secure architecture pattern must not be tied to a specific vendor or technology. 
 - Third, a secure architecture pattern must demonstrate how it mitigates threats. 
@@ -84,5 +87,7 @@ Implementation:
 - <https://cheatsheetseries.owasp.org/cheatsheets/Secure_Product_Design_Cheat_Sheet.html>
 
 ## Tools
+
+- maybe add some threat modeling tools here?
 
 [^footnote-1]: https://securitypatterns.io/what-is-a-security-pattern/
