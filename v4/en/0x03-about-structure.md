@@ -18,7 +18,7 @@ This document is structured as a list of security controls. The list is ordered 
 * C5: Secure By Default Configurations 
 * C6: Assess and Update your Components 
 * C7: Implement Digital Identity
-* C8: Help the Browser defend its User
+* C8: Leverage Browser Security Features
 * C9: Implement Security Logging and Monitoring
 * C10: Stop Server Side Request Forgery
 
