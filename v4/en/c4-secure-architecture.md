@@ -22,6 +22,13 @@ There are design principles that lead to secure architectures:
 - **Identify and minimize your exposed components** ("attack surface"): attackers cannot attack what's not there.
 - **Design for Defense-in-Depth**: think about what happens, if a component is breached and about the potential blast radius of an attack.
 
+## Threats
+
+- If the application is only protected by security-by-obscurity, an attacker that reverse-engineers the application has full permissions as soon the obfuscation is cleared-up. In addtion, an attacker is able to monitor network traffic: while the obfuscation might be performed on the code-level, the operations on the network level can easily be analyzed.
+- A web-application with a complex authorization scheme is deployed. A new software developer is tasked with extending one of the components. Due to the complexity, they misconfigure the authorization scheme and an attacker is able to exploit IDOR.
+- A web-application with a complex authorization scheme is deployed. A new software developer adds a new plugin to the system. The system makes it hard to do the right thing, and all security configuration must be manually added to the plugin, by-default no security measures are taken. The new developer is not configuring anything thus the new plugin introduces an IDOR into the system.
+- A web-application has many components, all of which are exposed to the public internet. The resulting attack surface is massive. For example, a database management tool (e.g., phpmyadmin) is deployed. After a 0day was found in mysqladmin, the whole database was extracted. During normal use, nobody uses phpmyadmin.
+
 ## Implementation
 
 The mantra "Complexity is the enemy of enemy of security" can be seen throughout this implementation guidance.
