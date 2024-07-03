@@ -12,6 +12,9 @@ order: 414
 ## Description
 
 While Injection Attacks typically target the victim server itself, Server-Side Request Forgery (SSRF) attacks try to coerce the server to perform a request on behalf of the attacker. Why is this beneficial for the attacker? The outgoing request will be performed with the identity of the victim server and thus the attacker might execute operations with elevated operations.
+
+## Threats
+
 Examples of this contain:
 - If an SSRF attack is possible on an server within the DMZ, an attacker might be able to access other servers within the DMZ without passing a perimeter firewall
 - Many servers have local services running on localhost, often without any authentication/authorization as localhost. This can be abused by SSRF attacks.
