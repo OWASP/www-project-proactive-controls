@@ -88,9 +88,11 @@ Web servers can instruct web browsers to uphold minimal transport-level security
 - Content-Security-Policy allows for automatic client-side upgrade from HTTP to HTTPS.
 - When setting cookies, always utilize the “secure” flag to prevent transmission over HTTP.
 
-### Cryptography changes over Time
+### Support Cryptographic Agility: Cryptography changes over Time
 
-Cryptographic recommendations change over time. To allow for this, make cryptographic choices such as used algorithms or key sizes configurable. If the application needs to support high availability, design key-rollover procedures.
+Cryptographic recommendations change over time. To allow for this, make cryptographic choices such as used algorithms or key sizes configurable. This is called [Cryptographic Agility](https://en.wikipedia.org/wiki/Cryptographic_agility)
+
+If the application needs to support high availability, design key-rollover procedures.
 
 ## Vulnerabilities Prevented
 
