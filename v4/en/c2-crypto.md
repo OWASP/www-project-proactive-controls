@@ -11,82 +11,88 @@ permalink: /v4/en/c2-crypto
 
 ## Description
 
-Sensitive data such as passwords, credit card numbers, health records, personal information and business secrets require extra protection, particularly if that data falls under privacy laws (EU’s General Data Protection Regulation GDPR), financial data protection rules such as PCI Data Security Standard (PCI DSS) or other regulations.
+Sensitive data such as passwords, credit card numbers, health records, personal information and business secrets require extra protection, particularly if that data falls under privacy laws.
 
 Attackers can steal data from web and web service applications in a number of ways. For example, if sensitive information is sent over the internet without communications security, then an attacker on a shared wireless connection could capture and steal another user’s data. Also, an attacker could use SQL Injection to steal passwords and other credentials from an applications database and expose that information to the public.
 
-Privacy is assurance that the confidentiality of, and access to, certain information about an entity is protected. Users of the things developers build want their information protected from disclosure.
-
-Protect sensitive data such as passwords, credit card numbers, health records, personal information, and business secrets.
+Privacy is assurance that the confidentiality of, and access to, certain information about an entity is protected. Both users and data subjects want their personal data to be protected from publication. Protect sensitive data such as passwords, credit card numbers, health records, social data or personal information and business secrets.
 
 Regulations exist to force companies to protect user’s personal information. The European Union values individual privacy, such that they created the EU General Data Protection Regulation GDPR). Financial data protection rules such as PCI Data Security Standard (PCI DSS) also exist to protect cardholder privacy.
 
 Cryptography is the art or science concerning the principles, means, and methods for rendering plain information unintelligible and restoring encrypted information to intelligible form. Individual user data requires cryptography to ensure it is properly cared for when stored.
 
-#### Classify data types in your application
+### Classify data types in your application
 
 It’s critical to classify data in your system and determine which level of sensitivity each piece of data belongs to. Each data category can then be mapped to protection rules necessary for each level of sensitivity. For example, public marketing information that is not sensitive may be categorized as public data which is ok to place on the public website. Credit card numbers may be classified as private user data which will need to be encrypted while stored, processed or in transit.
 
-Data classification can also be mandated by legislation, e.g., GDPR when serving users within the European Union.
-
 Classify the data sent, processed, and stored in your system and determine what level of sensitivity the data belongs to. Categorize the data to define specific protection rules for each type. The rule creation enables your team to perform data minimization and try not to store sensitive data whenever possible.
 
-For example, public marketing information that is not sensitive may be categorized as public data, which is okay to place on the public website and does not need to be encrypted. Credit card numbers need to be encrypted while stored, processed, and in transit.
+Data classification can also be mandated by legislation, e.g., GDPR when serving users within the European Union.
 
 ## Implementation
 
 When it comes to cryptography, there are a few simple rules:
 
-- Never transmit plain-text data. The technical capability exists to easily encrypt all data that is sent between any point A and B. Embrace the use of cryptography to protect all data at rest and in transit.
-- Do not create your own cryptographic protocols. The creation of a cryptographic protocol is a tricky proposition. When NIST created AES, they had an open competition where the best cryptographers worldwide submitted proposals and then looked for flaws in the other proposals. Instead of using your developer cycles to create a new crypto protocol, use an existing, battle-tested standard. Focus your innovation on making your feature or product better.
-- Do not implement cryptographic routines. Use an existing library that implements cryptographic routines.
+* Never transmit plain-text data. The technical capability exists to easily encrypt all data that is sent between any point A and B. Embrace the use of cryptography to protect all data at rest and in transit.
+* Do not create your own cryptographic protocols. The creation of a cryptographic protocol is a tricky proposition. When NIST created AES, they had an open competition where the best cryptographers worldwide submitted proposals and then looked for flaws in the other proposals. Instead of using your developer cycles to create a new crypto protocol, use an existing, battle-tested standard. Focus your innovation on making your feature or product better.
+* Do not implement cryptographic routines. Use an existing library that implements cryptographic routines.
 
 ### Protect data at rest
 
 The first rule of sensitive data management is to avoid storing sensitive data when at all possible. If you must store sensitive data then make sure it is cryptographically protected in some way to avoid unauthorized disclosure and modification.
+
 Cryptography (or crypto) is one of the more advanced topics of information security and one whose understanding requires the most schooling and experience. It is difficult to get right because there are many approaches to encryption, each with advantages and disadvantages that need to be thoroughly understood by web solution architects and developers. In addition, serious cryptography research is typically based on advanced mathematics and number theory, providing a serious barrier to entry.
+
 Designing or building cryptographic algorithms is very error-prone (see side-channel attacks). Instead of building cryptographic capability from scratch, it is strongly recommended that peer-reviewed and open solutions be used, such as the Google Tink project, Libsodium, and secure storage capability built into many software frameworks and cloud services.
 
 #### Store passwords safely
 
 Most web applications will face the challenge of storing user’s passwords to set up authentication services. Store the passwords safely to ensure an attacker cannot quickly obtain them.
+
 Do not store the passwords in plain text anywhere in the database. Always use a hashing function to store passwords. Enhance the hashing function by adding a random salt for each item to increase the randomness of hashes.
 
 #### Special Case: Application Secrets management
 
 Applications contain numerous “secrets” that are needed for security operations. These include certificates, SQL connection passwords, third party service account credentials, passwords, SSH keys, encryption keys and more. The unauthorized disclosure or modification of these secrets could lead to complete system compromise. In managing application secrets, consider the following:
-Don’t store secrets in code, config files or pass them through environment variables. Use tools like GitRob or TruffleHog to scan code repos for secrets. Your code should be written in a way that even if your code would be disclosed, e.g., due to a defective configured github repository, your running applications are still secure.
-Keep keys and your other application-level secrets in a secrets vault like KeyWhiz or Hashicorp’s Vault project , Amazon KMS, or AWS Secrets Manager to provide secure storage and access to application-level secrets at run-time. Many web-frameworks such as Ruby on Rails provide integrated ways of dealing with secrets and credentials.
+
+* Don’t store secrets in code, config files or pass them through environment variables. Use tools like GitRob or TruffleHog to scan code repos for secrets. Your code should be written in a way that even if your code would be disclosed, e.g., due to a defective configured github repository, your running applications are still secure.
+
+* Keep keys and your other application-level secrets in a secrets vault like KeyWhiz or Hashicorp’s Vault project , Amazon KMS, or AWS Secrets Manager to provide secure storage and access to application-level secrets at run-time. Many web-frameworks such as Ruby on Rails provide integrated ways of dealing with secrets and credentials.
 
 #### Key Lifecycle
 
 Secret keys are used in applications with a number of sensitive functions. For example, secret keys can be used to sign JWTs, protect credit cards, provide various forms of authentication as well as facilitate other sensitive security features. In managing keys, a number of rules should be followed including
 
-- Ensure that any secret key is protected from unauthorized access
-- All authorized access to a secret key is logged for forensic purposes
-- Store keys in a proper secrets vault as described below
-- Use independent keys when multiple keys are required
-- Build support for changing cryptographic algorithms to prepare for future needed changes
-- Build application features to support and handle key rotation gracefully. This can happen on a periodic base or after a key has been compromised.
+* Ensure that any secret key is protected from unauthorized access
+* All authorized access to a secret key is logged for forensic purposes
+* Store keys in a proper secrets vault as described below
+* Use independent keys when multiple keys are required
+* Build support for changing cryptographic algorithms to prepare for future needed changes
+* Build application features to support and handle key rotation gracefully. This can happen on a periodic base or after a key has been compromised.
 
 ### Protect data in transit
 
 Sensitive data such as passwords, credit card numbers, health records, personal information and business secrets require extra protection, particularly if that data falls under privacy laws (EU’s General Data Protection Regulation GDPR), financial data protection rules such as PCI Data Security Standard (PCI DSS) or other regulations.
+
 Attackers can steal data from web and web service applications in a number of ways. For example, if sensitive information is sent over the internet without communications security, then an attacker on a shared wireless connection could capture and steal another user’s data. Also, an attacker could use SQL Injection to steal passwords and other credentials from an applications database and expose that information to the public.
+
+#### Instruct Clients to enforce Transport Level Encryption
+
+When transmitting sensitive data over any network, end-to-end communications security (or encryption-in-transit) of some kind should be considered. TLS is by far the most common and widely supported cryptographic protocol for communications security. It is used by many types of applications (web, webservice, mobile) to communicate over a network in a secure fashion. TLS must be properly configured in a variety of ways in order to properly defend secure communications.
+
+The primary benefit of transport layer security is the protection of web application data from unauthorized disclosure and modification when it is transmitted between clients (web browsers) and the web application server, and between the web application server and back end and other non-browser based enterprise components.
+
+Web servers can instruct web browsers to uphold minimal transport-level security:
+* Use the Strict-Transport-Security Header to enforce opportunistic encryption and certificate validation checks.
+* Content-Security-Policy allows for automatic client-side upgrade from HTTP to HTTPS.
+* When setting cookies, always utilize the “secure” flag to prevent transmission over HTTP.
 
 #### Use current cryptographic protocols
 
 When developing web applications, use TLSv1.2 or TLSv1.3, preferably TLSv1.3. If possible, investigate the usage of HTTP/2 or HTTP/3 as they warrant the usage of security TLS versions/algorithms.
-- Directly turn off other older protocols to avoid protocol downgrade attacks.
-- Do not offer HTTP. Disable both HTTP and SSL compression.
-- Always utilize a secure random number generator (RNG).
-
-#### Instruct Clients to enforce Transport Level Encryption
-
-Web servers can instruct web browsers to uphold minimal transport-level security:
-- Use the Strict-Transport-Security Header to enforce opportunistic encryption and certificate validation checks.
-- Content-Security-Policy allows for automatic client-side upgrade from HTTP to HTTPS.
-- When setting cookies, always utilize the “secure” flag to prevent transmission over HTTP.
+* Directly turn off other older protocols to avoid protocol downgrade attacks.
+* Do not offer HTTP. Disable both HTTP and SSL compression.
+* Always utilize a secure random number generator (RNG).
 
 ### Support Cryptographic Agility: Cryptography changes over Time
 
