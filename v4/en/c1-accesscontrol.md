@@ -95,7 +95,7 @@ if (user.hasPermission("DELETE_ACCOUNT")) {
 ~~~
 
 ## Log All Access Control Events
-**All** access control events should be logged as these may be indicative of a malicious user probing the application for vulnerabilities.
+**Any** access control events should be logged as these may be indicative of a malicious user probing the application for vulnerabilities.
 
 ## Vulnerabilities Prevented
 
