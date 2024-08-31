@@ -1,13 +1,3 @@
----
-
-layout: col-document
-tags: OWASP Top Ten Proactive Controls 2024, C4, Use Secure Architecture Patterns
-document: OWASP Top Ten Proactive Controls 2024
-order: 408
-permalink: /v4/en/c4-secure-architecture
-
----
-
 # C4: Address Security from the Start
 
 ## Description

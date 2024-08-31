@@ -1,12 +1,3 @@
----
-
-layout: col-document
-tags: OWASP Top Ten Proactive Controls 2024, C1, Implement Access Control
-document: OWASP Top Ten Proactive Controls 2024
-order: 405
-permalink: /v4/en/c1-accesscontrol
-
----
 # C1: Implement Access Control
 
 ## Description

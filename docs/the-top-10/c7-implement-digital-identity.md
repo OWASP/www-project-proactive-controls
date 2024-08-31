@@ -1,11 +1,3 @@
----
-
-layout: col-document
-tags: OWASP Top Ten Proactive Controls 2024, C7, Implement Digital Identity
-document: OWASP Top Ten Proactive Controls 2024
-order: 411
-
----
 # C7: Implement Digital Identity
 
 ## Description

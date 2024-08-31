@@ -43,30 +43,24 @@ copyright: |
     <a href="https://creativecommons.org/licenses/by/4.0">CC-BY-4.0</a>. For any reuse or distribution, you must make clear to others the license terms of this work.
   </span><br><span style="font-size: smaller">OWASP &#174; is a registered trademark of the OWASP Foundation, Inc.</span> <span>This website uses cookies to analyze our traffic and only share that information with our analytics partners. <a href="https://github.com/OWASP/owasp-mastg/blob/master/about_cookies.md">Learn more</a>.</span>
 
-nav2:
+nav:
   - 'Introduction':
-    - 'Why OT Top 10?': index.md
+    - 'About this Project': index.md
     - 'About OWASP': introduction/about-owasp.md
-    - 'How to contribute?': introduction/community-and-contributing.md
+    - 'How to contribute?': introduction/contributing.md
     - 'Related OWASP Projects': introduction/related-owasp-projects.md
-  - 'Operation Technology (OT)':
-    - 'What is OT?': background-ot/what-is-ot.md
-    - 'Cultural Differences': background-ot/culture.md
-    - 'Example Architectures': background-ot/ot-architectures.md
-    - 'Related Standards': background-ot/related-standards.md
-    - 'OT vs IT': 0x05_background/ot-vs-it.md
-  - 'Methodology':
-    - 'How was this created?': methodology/how-was-this-created.md
-    - "What's in a Top 10 item": methodology/structure.md
-  - 'The Top 10':
-      - "Preliminiary List": the-top-10/index.md
-      - "1. TBD": the-top-10/1.md
-      - "2. TBD": the-top-10/2.md
-      - "3. TBD": the-top-10/3.md
-      - "4. TBD": the-top-10/4.md
-      - "5. TBD": the-top-10/5.md
-      - "6. TBD": the-top-10/6.md
-      - "7. TBD": the-top-10/7.md
-      - "8. TBD": the-top-10/8.md
-      - "9. TBD": the-top-10/9.md
-      - "10. TBD": the-top-10/10.md
+  - 'About the Top 10':
+    - "Introduction": about-top-10/introduction.md
+    - 'Structure': 'about-top-10/structure.md'
+  - 'The Top 10 List':
+      - "C1: Implement Access Control": the-top-10/c1-accesscontrol.md
+      - "C2: Use Cryptography the proper way": the-top-10/c2-crypto.md
+      - "C3: Validate all Input & Handle Exceptions": the-top-10/c3-validate-input-and-handle-exceptions.md
+      - "C4: Address Security from the Start": the-top-10/c4-secure-architecture.md
+      - "C5: Secure By Default Configurations": the-top-10/c5-secure-by-default.md
+      - "C6: Keep your Components Secure": the-top-10/c6-use-secure-dependencies.md
+      - "C7: Implement Digital Identity": the-top-10/c7-implement-digital-identity.md
+      - "C8: Leverage Browser Security Features": the-top-10/c8-help-the-browser-defend-the-user.md
+      - "C9: Implement Security Logging and Monitoring": the-top-10/c9-security-logging-and-monitoring.md
+      - "C10: Stop Server Side Request Forgery": the-top-10/c10-stop-server-side-request-forgery.md
+  - 'Final Word': final-word.md

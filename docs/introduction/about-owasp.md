@@ -1,13 +1,3 @@
----
-
-layout: col-sidebar
-tags: OWASP Top Ten Proactive Controls 2024, AboutOWASP
-document: OWASP Top Ten Proactive Controls 2024
-order: 401
-permalink: /v4/en/
-
----
-
 # About OWASP
 
 The *Open Web Application Security Project* (OWASP) is a 501c3 non for profit educational charity dedicated to enabling organizations to design, develop, acquire, operate, and maintain secure software. All OWASP tools, documents, forums, and chapters are free and open to anyone interested in improving application security. We can be found at [www.owasp.org](https://www.owasp.org).
