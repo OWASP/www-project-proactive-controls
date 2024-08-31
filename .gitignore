@@ -2,3 +2,4 @@ __pycache__
 env
 .vscode
 _site/
+.DS_Store
