@@ -1,1 +1,72 @@
-site_name: My Docs
+site_name: "OWASP Top 10 Proactive Controls"
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.tracking
+    - navigation.path
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: lime
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/OWASP/www-project-proactive-controls
+  analytics:
+    provider: google
+    property: G-7YFX9CCX5E
+
+copyright: |
+  <div style="float: left; padding-right: 1em;">
+    <a href="https://www.owasp.org"><img src="https://github.com/OWASP/owasp-mastg/blob/master/Document/Images/OWASP_logo_white.png?raw=true" width="100px" /></a>
+  </div>
+  <span style="font-size: smaller">
+    &#169; OWASP Foundation 2024. This work is licensed under 
+    <a href="https://creativecommons.org/licenses/by/4.0">CC-BY-4.0</a>. For any reuse or distribution, you must make clear to others the license terms of this work.
+  </span><br><span style="font-size: smaller">OWASP &#174; is a registered trademark of the OWASP Foundation, Inc.</span> <span>This website uses cookies to analyze our traffic and only share that information with our analytics partners. <a href="https://github.com/OWASP/owasp-mastg/blob/master/about_cookies.md">Learn more</a>.</span>
+
+nav2:
+  - 'Introduction':
+    - 'Why OT Top 10?': index.md
+    - 'About OWASP': introduction/about-owasp.md
+    - 'How to contribute?': introduction/community-and-contributing.md
+    - 'Related OWASP Projects': introduction/related-owasp-projects.md
+  - 'Operation Technology (OT)':
+    - 'What is OT?': background-ot/what-is-ot.md
+    - 'Cultural Differences': background-ot/culture.md
+    - 'Example Architectures': background-ot/ot-architectures.md
+    - 'Related Standards': background-ot/related-standards.md
+    - 'OT vs IT': 0x05_background/ot-vs-it.md
+  - 'Methodology':
+    - 'How was this created?': methodology/how-was-this-created.md
+    - "What's in a Top 10 item": methodology/structure.md
+  - 'The Top 10':
+      - "Preliminiary List": the-top-10/index.md
+      - "1. TBD": the-top-10/1.md
+      - "2. TBD": the-top-10/2.md
+      - "3. TBD": the-top-10/3.md
+      - "4. TBD": the-top-10/4.md
+      - "5. TBD": the-top-10/5.md
+      - "6. TBD": the-top-10/6.md
+      - "7. TBD": the-top-10/7.md
+      - "8. TBD": the-top-10/8.md
+      - "9. TBD": the-top-10/9.md
+      - "10. TBD": the-top-10/10.md
