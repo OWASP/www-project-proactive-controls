@@ -1,6 +1,9 @@
 site_name: "OWASP Top 10 Proactive Controls"
 theme:
   name: material
+  custom_dir: overrides
+  static_templates:
+    - 404.html
   features:
     - navigation.sections
     - navigation.tracking
@@ -75,3 +78,4 @@ nav:
       - "C9: Implement Security Logging and Monitoring": the-top-10/c9-security-logging-and-monitoring.md
       - "C10: Stop Server Side Request Forgery": the-top-10/c10-stop-server-side-request-forgery.md
   - 'Final Word': final-word.md
+
