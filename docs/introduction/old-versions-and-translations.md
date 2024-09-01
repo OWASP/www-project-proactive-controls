@@ -18,6 +18,9 @@ You can find the [OWASP Top 10 Proactive Controls 2018 (vv) on GitHub](https://g
     - Polish: [pdf](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_TOP_10_Proactive_Controls_2018_V3_PL.pdf)
     - Russian: [pdf](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/Owasp-top-10-proactive-controls-2018-russian.pdf)
 
+We also provide a [Mapping to the OWASP Top 10 and IEEE Top 10 ](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP-OPC-IEEEE-OTop10-OTMobTop10-ssdf.pdf).
+
+
 ## OWASP Top 10 Proactive Controls 2016 (v2)
 
 You can find the [OWASP Top 10 Proactive Controls 2016 (v2) on GitHub](https://github.com/OWASP/www-project-proactive-controls/tree/master/v2):
