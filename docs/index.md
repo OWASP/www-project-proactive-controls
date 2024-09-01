@@ -10,12 +10,12 @@ The goal of the **OWASP Top 10 Proactive Controls project** (OPC) is to raise aw
 
 This document is released under the Creative Commons Attribution-ShareAlike 4.0 International license. For any reuse or distribution, you must make it clear to others the license terms of this work.
 
-## Project Leaders  
+## Project Leaders (in alphabetical order)
 
-* [Jim Manico](mailto:jim.manico@owasp.org) 
-* [Andreas Happe](mailto:andreas.happe@owasp.org)
-* [Katy Anton ](mailto:katy.anton@owasp.org)
- 
+* [Andreas Happe](mailto:andreas.happe@owasp.org), connect through [linkedin](https://www.linkedin.com/in/andreashappe/), [github](https://github.com/andreashappe), [twitter/x](https://twitter.com/andreashappe)
+* [Jim Manico](mailto:jim.manico@owasp.org), connect through [linkedin](https://www.linkedin.com/in/jmanico/), [github](https://github.com/jmanico), [twitter/x](https://twitter.com/manicode)
+* [Katy Anton ](mailto:katy.anton@owasp.org), connect through [linkedin](https://www.linkedin.com/in/katyanton/), [github](https://github.com/katyanton), [twitter/x](https://twitter.com/katyanton)
+
 ## Contributors
 
 * Chris Romeo 
