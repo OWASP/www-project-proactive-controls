@@ -42,7 +42,7 @@ Always perform Input validation on the server side for security. While client-si
 Regular expressions offer a way to check whether data matches a specific pattern. Let’s start with a basic example.
 The following regular expression defines an allowlist rule to validate usernames.
 
-~~~ regex
+~~~ regexp
 ^\[a-z0-9_\]{3,16}$
 ~~~
 
