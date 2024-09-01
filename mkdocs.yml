@@ -49,6 +49,7 @@ nav:
     - 'About OWASP': introduction/about-owasp.md
     - 'How to contribute?': introduction/contributing.md
     - 'Related OWASP Projects': introduction/related-owasp-projects.md
+    - 'In the News': introduction/in-the-news.md
   - 'About the Top 10':
     - "Introduction": about-top-10/introduction.md
     - 'Structure': 'about-top-10/structure.md'
