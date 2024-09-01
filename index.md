@@ -22,16 +22,16 @@ Software developers are the foundation of any application. In order to achieve s
 
 The OWASP Top Ten Proactive Controls 2018 is a list of security techniques that should be included in every software development project. They are ordered by order of importance, with control number 1 being the most important. This document was written by developers for developers to assist those new to secure development.
 
-- [C1: Define Security Requirements](/www-project-proactive-controls/v3/en/c1-security-requirements)
-- [C2: Leverage Security Frameworks and Libraries](/www-project-proactive-controls/v3/en/c2-leverage-security-frameworks-libraries)
-- [C3: Secure Database Access](/www-project-proactive-controls/v3/en/c3-secure-database)
-- [C4: Encode and Escape Data](/www-project-proactive-controls/v3/en/c4-encode-escape-data)
-- [C5: Validate All Inputs](/www-project-proactive-controls/v3/en/c5-validate-inputs)
-- [C6: Implement Digital Identity](/www-project-proactive-controls/v3/en/c6-digital-identity)
-- [C7: Enforce Access Controls](/www-project-proactive-controls/v3/en/c7-enforce-access-controls)
-- [C8: Protect Data Everywhere](/www-project-proactive-controls/v3/en/c8-protect-data-everywhere)
-- [C9: Implement Security Logging and Monitoring](/www-project-proactive-controls/v3/en/c9-security-logging)
-- [C10: Handle All Errors and Exceptions](/www-project-proactive-controls/v3/en/c10-errors-exceptions)
+- [C1: Define Security Requirements](https://top10proactive.owasp.org/v3/en/c1-security-requirements)
+- [C2: Leverage Security Frameworks and Libraries](https://top10proactive.owasp.org/v3/en/c2-leverage-security-frameworks-libraries)
+- [C3: Secure Database Access](https://top10proactive.owasp.org/v3/en/c3-secure-database)
+- [C4: Encode and Escape Data](https://top10proactive.owasp.org/v3/en/c4-encode-escape-data)
+- [C5: Validate All Inputs](https://top10proactive.owasp.org/v3/en/c5-validate-inputs)
+- [C6: Implement Digital Identity](https://top10proactive.owasp.org/v3/en/c6-digital-identity)
+- [C7: Enforce Access Controls](https://top10proactive.owasp.org/v3/en/c7-enforce-access-controls)
+- [C8: Protect Data Everywhere](https://top10proactive.owasp.org/v3/en/c8-protect-data-everywhere)
+- [C9: Implement Security Logging and Monitoring](https://top10proactive.owasp.org/v3/en/c9-security-logging)
+- [C10: Handle All Errors and Exceptions](https://top10proactive.owasp.org/v3/en/c10-errors-exceptions)
 
 For more information, see the complete document in the tab to the right.
 
