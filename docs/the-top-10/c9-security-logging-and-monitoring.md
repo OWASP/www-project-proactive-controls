@@ -1,12 +1,3 @@
----
-
-layout: col-document
-tags: OWASP Top Ten Proactive Controls 2024, C9, Implement Security Logging and Monitoring
-document: OWASP Top Ten Proactive Controls 2024
-order: 413
-
----
-
 # C9: Implement Security Logging and Monitoring
 
 ## Description

@@ -1,12 +1,3 @@
----
-
-layout: col-document
-tags: OWASP Top Ten Proactive Controls 2024, C5, Secure By Default Configurations
-document: OWASP Top Ten Proactive Controls 2024
-order: 409
-
----
-
 # C5: Secure By Default Configurations
 
 ## Description

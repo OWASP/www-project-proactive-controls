@@ -1,12 +1,3 @@
----
-
-layout: col-document
-tags: OWASP Top Ten Proactive Controls 2024, Final Word
-document: OWASP Top Ten Proactive Controls 2024
-order: 416
-
----
-
 # Final word
 
 This document should be seen as a starting point rather than a comprehensive set of techniques and practices. We want to again emphasize that this document is intended to provide initial awareness around building secure software.
@@ -20,5 +11,3 @@ Good next steps to help build an application security program include:
 
 
 If you have any questions for the project leadership team, please contact with your questions, comments, and ideas at our GitHub project repository: https://github.com/OWASP/www-project-proactive-controls/issues
-
-

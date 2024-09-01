@@ -1,0 +1,77 @@
+site_name: "OWASP Top 10 Proactive Controls"
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.tracking
+    - navigation.path
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: lime
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/OWASP/www-project-proactive-controls
+  analytics:
+    provider: google
+    property: G-7YFX9CCX5E
+
+copyright: |
+  <div style="float: left; padding-right: 1em;">
+    <a href="https://www.owasp.org"><img src="https://github.com/OWASP/owasp-mastg/blob/master/Document/Images/OWASP_logo_white.png?raw=true" width="100px" /></a>
+  </div>
+  <span style="font-size: smaller">
+    &#169; OWASP Foundation 2024. This work is licensed under 
+    <a href="https://creativecommons.org/licenses/by/4.0">CC-BY-4.0</a>. For any reuse or distribution, you must make clear to others the license terms of this work.
+  </span><br><span style="font-size: smaller">OWASP &#174; is a registered trademark of the OWASP Foundation, Inc.</span> <span>This website uses cookies to analyze our traffic and only share that information with our analytics partners. <a href="https://github.com/OWASP/owasp-mastg/blob/master/about_cookies.md">Learn more</a>.</span>
+
+nav:
+  - 'Introduction':
+    - 'About this Project': index.md
+    - 'About OWASP': introduction/about-owasp.md
+    - 'How to contribute?': introduction/contributing.md
+    - 'Related OWASP Projects': introduction/related-owasp-projects.md
+    - 'In the News': introduction/in-the-news.md
+    - 'Old Versions and Translations': introduction/old-versions-and-translations.md
+  - 'About the Top 10':
+    - "Introduction": about-top-10/introduction.md
+    - 'Structure': 'about-top-10/structure.md'
+  - 'The Top 10 List':
+      - "C1: Implement Access Control": the-top-10/c1-accesscontrol.md
+      - "C2: Use Cryptography the proper way": the-top-10/c2-crypto.md
+      - "C3: Validate all Input & Handle Exceptions": the-top-10/c3-validate-input-and-handle-exceptions.md
+      - "C4: Address Security from the Start": the-top-10/c4-secure-architecture.md
+      - "C5: Secure By Default Configurations": the-top-10/c5-secure-by-default.md
+      - "C6: Keep your Components Secure": the-top-10/c6-use-secure-dependencies.md
+      - "C7: Implement Digital Identity": the-top-10/c7-implement-digital-identity.md
+      - "C8: Leverage Browser Security Features": the-top-10/c8-help-the-browser-defend-the-user.md
+      - "C9: Implement Security Logging and Monitoring": the-top-10/c9-security-logging-and-monitoring.md
+      - "C10: Stop Server Side Request Forgery": the-top-10/c10-stop-server-side-request-forgery.md
+  - 'Final Word': final-word.md

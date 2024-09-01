@@ -1,13 +1,3 @@
----
-
-layout: col-document
-tags: OWASP Top Ten Proactive Controls 2024, C3, Validate all Input and Handle Exceptions
-document: OWASP Top Ten Proactive Controls 2024
-order: 407
-permalink: /v4/en/c3-validate-all-input
-
----
-
 # C3: Validate all Input & Handle Exceptions
 
 ## Description
@@ -52,7 +42,7 @@ Always perform Input validation on the server side for security. While client-si
 Regular expressions offer a way to check whether data matches a specific pattern. Let’s start with a basic example.
 The following regular expression defines an allowlist rule to validate usernames.
 
-~~~ regex
+~~~ regexp
 ^\[a-z0-9_\]{3,16}$
 ~~~
 

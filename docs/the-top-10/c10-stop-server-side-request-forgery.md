@@ -1,12 +1,3 @@
----
-
-layout: col-document
-tags: OWASP Top Ten Proactive Controls 2024, C10, Stop Server Side Request Forgery
-document: OWASP Top Ten Proactive Controls 2024
-order: 414
-
----
-
 # C10: Stop Server Side Request Forgery
 
 ## Description

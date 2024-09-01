@@ -1,11 +1,3 @@
----
-
-layout: col-document
-tags: OWASP Top Ten Proactive Controls 2024, C6, Keep your Components Secure
-document: OWASP Top Ten Proactive Controls 2024
-order: 410
-
----
 # C6: Keep your Components Secure
 
 ## Description
