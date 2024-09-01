@@ -8,7 +8,7 @@ The goal of the **OWASP Top 10 Proactive Controls project** (OPC) is to raise aw
 
 ## Copyright and Licence
 
-This document is released under the Creative Commons Attribution ShareAlike 3.0 license. For any reuse or distribution, you must make it clear to others the license terms of this work.
+This document is released under the Creative Commons Attribution-ShareAlike 4.0 International license. For any reuse or distribution, you must make it clear to others the license terms of this work.
 
 ## Project Leaders  
 
