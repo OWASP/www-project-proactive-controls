@@ -10,6 +10,9 @@ tags: opc
 
 ## News
 
+  - \[10 Nov 2022] [Blog Post by Kerr](https://kerr.ventures/2022/11/10/owasp-proactive-controls-the-answer-to-the-owasp-top-ten/)
+  - \[13 June 2022] Featured on the [GitHub Blog](https://github.blog/open-source/write-more-secure-code-owasp-top-10-proactive-controls/)
+
   - \[July 2019\] Featured in Coursera course from UCDavies
     [Identifying Security Vulnerabilities](https://www.coursera.org/directory/videos?courseId=V1k0pBtIEemZRAqH7m9oGA)
   - \[23 June 2019\] Featured on HackerCombat: [Implement OWASP Proactive Controls to Work](https://hackercombat.com/implement-owasp-proactive-controls-to-work/)
@@ -17,7 +20,7 @@ tags: opc
   - \[15 May 2019\] Featured in TechBeacon: [Put OWASP Top 10 Proactive Controls to work](https://techbeacon.com/security/put-owasp-top-10-proactive-controls-work)
   - \[2 Mar 2019\] Webinar: [The OWASP Top Ten Proactive Controls with Jim Manico](https://www.youtube.com/watch?v=ldXe8f5yVq8)
   - \[Dec 2018\] Featured as the resource for Security “Shifting to the Left”\! in the ISC2 course: "DevSecOps: Integrating Security into DevOps”
-  - \[20 Sep 2018 Featured in TechBeacon: [OWASP Top 10 Proactive Controls 2018: How it makes your code more secure](https://techbeacon.com/owasp-top-10-proactive-controls-2018-how-it-makes-your-code-more-secure)
+  - \[20 Sep 2018\] Featured in TechBeacon: [OWASP Top 10 Proactive Controls 2018: How it makes your code more secure](https://techbeacon.com/owasp-top-10-proactive-controls-2018-how-it-makes-your-code-more-secure)
   - \[17 Sep 2018\] Binary Blogger Podcast Episodes: [OWASP Top 10 Proactive Controls Podcast Episodes](https://binaryblogger.com/2018/09/17/owasp-top-10-proactive-controls-podcast-episodes/)
   - \[9 May 2018\] Featured in [Developer's security guide: 50 online resources to shift left](https://techbeacon.com/developer-secure-code-starter-kit-resources)
   - \[7 May 2018\] 3.0 released\!
@@ -26,7 +29,7 @@ tags: opc
   - \[12 May 2017\] Presented at [AppSec EU'17 -    Belfast](https://appseceurope2017.sched.com/event/A652/the-path-of-secure-software)
   - \[14 Feb 2017\] Featured in [Managing Cloud Infrastructure to     Prevent Security    Gaps](http://wwpi.com/2017/02/14/managing-cloud-infrastructure-to-prevent-security-gaps/)
   - \[Feb 2017 \] Featured in "[Application Security Program: Protect    Against Data    Breaches](http://assets.unisys.com/Documents/Global/POVPapers/POV_170062_ApplicationSecurityProgramProtectAgainstDataBreaches.pdf)"
-  - \[1 Oct 2016\] Presented at     [PHPNW16](http://conference.phpnw.org.uk/phpnw16/speakers/katy-anton/)
+  - \[1 Oct 2016\] Presented at [PHPNW16](http://conference.phpnw.org.uk/phpnw16/speakers/katy-anton/)
   - \[5 July 2016\] Featured in [Incorporating Security Best Practices     into Agile    Teams](https://www.thoughtworks.com/insights/blog/incorporating-security-best-practices-agile-teams)
   - \[June 2016 \] Featured in [A Transformative Approach to Secure    Systems    Delivery](http://www.booz-allen.co.in/content/dam/boozallen/documents/Viewpoints/2016/06/transformative-approach-to-secure-systems-delivery.pdf)
   - \[2 June 2016\] Featured in [DevOpsSec - Securing Software through    Continuous    Delivery](http://www.oreilly.com/webops-perf/free/devopssec.csp)
