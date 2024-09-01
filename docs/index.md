@@ -12,9 +12,9 @@ This document is released under the Creative Commons Attribution-ShareAlike 4.0 
 
 ## Project Leaders  
 
-* Jim Manico 
-* Andreas Happe
-* Katy Anton 
+* [Jim Manico](mailto:jim.manico@owasp.org) 
+* [Andreas Happe](mailto:andreas.happe@owasp.org)
+* [Katy Anton ](mailto:katy.anton@owasp.org)
  
 ## Contributors
 
