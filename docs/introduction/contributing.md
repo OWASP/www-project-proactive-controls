@@ -2,6 +2,8 @@
 
 Please don’t hesitate to contact the OWASP Proactive Control project with your questions, comments, and ideas, either publicly by adding issues or providing commits on [our github page](https://github.com/OWASP/www-project-proactive-controls).
 
+You find the source code of the current version of the OWASP Top 10 Proactive Controls in the `docs/` directory within the git repository.
+
 When you check [our open issues on github](https://github.com/OWASP/www-project-proactive-controls/issues), you can see that some issues are tagged with `help wanted` or `good first issue`. Choose these if you want to help out the project!
 
 ## How to test the OWASP Proactive Control website locally?
