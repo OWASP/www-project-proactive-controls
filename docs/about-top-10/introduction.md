@@ -14,18 +14,6 @@ Please note that while complying with best proactive practices will reduce the c
 
 The OWASP Top 10 Proactive Controls 2024 is a list of security techniques every software architect and developer should know and heed. The main goal of this document is to provide concrete, practical guidance that helps developers build secure software. These techniques should be applied proactively at the early stages of software development to ensure maximum effectiveness.
 
-### How to Use this Document
-
-This document’s main purpose is to provide a solid foundation of topics to help drive introductory software security developer training. To be effective, these controls should be used consistently and thoroughly throughout all applications.
-
-However, this document is a starting point rather than a comprehensive set of techniques and practices.
-
-A fully secure development process should include comprehensive requirements from a standard such as the OWASP ASVS in addition to including a range of software development activities described in maturity models such as [OWASP SAMM](https://www.owasp.org/index.php/OWASP_SAMM_Project) and [BSIMM](https://www.bsimm.com/).
-
-### Target Audience
-
-This document is primarily written for developers. However, development managers, product owners, Q/A professionals, program managers, and anyone involved in building software can also benefit from this document. 
-
 ### How this List Was Created
 
 This list was originally created by the current project leads with contributions from several volunteers. The document was then shared globally so even anonymous suggestions could be considered. Hundreds of changes were accepted from this open community process.
