@@ -3,3 +3,4 @@ env
 .vscode
 _site/
 .DS_Store
+venv/
