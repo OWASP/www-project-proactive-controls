@@ -4,10 +4,20 @@
 
 Introduction of the OWASP Top 10 Proactive Controls v4 and switch to new wiki system.
 
+- \[6 Feb 2024\] Featured in `gbhackers.` post [OWASP Top 10 Proactive Security Controls For Software Developers to Build Secure Software](https://gbhackers.com/owasp-released-top-10-proactive-controls/)
+
 ## 2022
 
-- \[10 Nov 2022] [Blog Post by Kerr](https://kerr.ventures/2022/11/10/owasp-proactive-controls-the-answer-to-the-owasp-top-ten/)
-- \[13 June 2022] Featured on the [GitHub Blog](https://github.blog/open-source/write-more-secure-code-owasp-top-10-proactive-controls/)
+- \[10 Nov 2022\] [Blog Post by Kerr](https://kerr.ventures/2022/11/10/owasp-proactive-controls-the-answer-to-the-owasp-top-ten/)
+- \[13 June 2022\] Featured on the [GitHub Blog](https://github.blog/open-source/write-more-secure-code-owasp-top-10-proactive-controls/)
+
+## 2021
+
+- \[12 Feb 2021\] Featured in oneconsult's post [OWASP Top 10 Proactive Controls – Teil 1](https://www.oneconsult.com/de/blog/news/owasp-top-10-proactive-controls-teil-1/)
+
+## 2020
+
+- \[5 Nov 2020\] Featured by Snyk in [Developing secure software: how to implement the OWASP top 10 Proactive Controls](https://snyk.io/blog/owasp-top-10-proactive-controls-2020/)
 
 ## 2019
 
