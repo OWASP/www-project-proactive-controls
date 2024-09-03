@@ -1,6 +1,8 @@
 # How to Contribute?
 
-Please don’t hesitate to contact the OWASP Proactive Control project with your questions, comments, and ideas, either publicly by adding issues or providing commits on [our github page](https://github.com/OWASP/www-project-proactive-controls).
+Please don’t hesitate to contact the OWASP Proactive Control project with your questions, comments, and ideas.
+
+You can contact maintainers directly, use our [project-top10-proactive-controls OWASP slack channel](https://owasp.slack.com/archives/C07KNHZAN1H), or visit [our github page](https://github.com/OWASP/www-project-proactive-controls).
 
 You find the source code of the current version of the OWASP Top 10 Proactive Controls in the `docs/` directory within the git repository.
 
