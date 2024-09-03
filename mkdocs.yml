@@ -6,6 +6,7 @@ theme:
   custom_dir: overrides
   static_templates:
     - 404.html
+    - google6fbf6cc04efaa5b5.html
   features:
     - navigation.sections
     - navigation.tracking
