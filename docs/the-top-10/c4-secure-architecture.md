@@ -21,7 +21,7 @@ There are design principles that lead to secure architectures:
 
 ## Implementation
 
-The mantra "Complexity is the enemy of enemy of security" can be seen throughout this implementation guidance.
+The mantra "Complexity is the enemy of security" can be seen throughout this implementation guidance.
 
 ### Design for Clarity and Transparency
 
