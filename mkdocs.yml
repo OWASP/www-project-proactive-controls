@@ -1,4 +1,6 @@
 site_name: "OWASP Top 10 Proactive Controls"
+site_url: https://top10proactive.owasp.org
+repo_url: https://github.com/OWASP/www-project-proactive-controls/
 theme:
   name: material
   custom_dir: overrides
