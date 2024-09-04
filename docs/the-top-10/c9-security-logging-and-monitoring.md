@@ -28,6 +28,18 @@ Logging solutions must be built and managed in a secure way. Secure Logging desi
 - Protect log integrity. An attacker may attempt to tamper with the logs. Therefore, the permission of log files and log changes audit should be considered.
 - Forward logs from distributed systems to a central, secure logging service. This will ensure log data cannot be lost if one node is compromised. This also allows for centralized or even automated monitoring.
 
+## Threats
+
+- An attacker could perform log injection attacks by manipulating log entries, potentially inserting malicious data or commands into log files.
+- An attacker could gain unauthorized access to sensitive information through overly verbose logging practices that inadvertently capture and store confidential data.
+- An attacker could engage in log tampering to cover tracks of malicious activities, potentially erasing or modifying evidence of their intrusion.
+- An attacker could launch denial of service attacks by overwhelming logging systems with a flood of data, potentially disrupting normal system operations or obscuring other malicious actions.
+- An attacker could gain unauthorized access to log files due to improper access controls, potentially exposing sensitive system information or user data.
+- An attacker could engage in log forging to create false audit trails, potentially misleading investigators or framing innocent parties for malicious activities.
+- An attacker could take advantage of insufficient logging practices to conduct malicious activities without detection, potentially prolonging their unauthorized access to systems.
+- An attacker could exploit log file race conditions in multi-threaded applications, potentially corrupting log data or gaining unauthorized access to sensitive information.
+- An attacker could perform replay attacks using information gleaned from logs, potentially reusing captured data to impersonate legitimate users or repeat authenticated actions.
+
 ## Implementation
 
 The following is a list of security logging implementation best practices.
