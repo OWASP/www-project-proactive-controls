@@ -35,7 +35,8 @@ Information disclosure occurs if the browser transmits information over unencryp
 
 Javascript based XSS attacks have been very common for decades. To reduce the potential impact of vulnerabilities, browsers offer rich defensive mechanisms that should reduce the potential impact of XSS attacks:
 - **Content Security Policy (CSP)**: CSP is a powerful tool that helps prevent a wide range of attacks including Cross-Site Scripting (XSS) and data injection. Strict CSP policies can effectively disable inline JavaScript and style, making it much harder for attackers to inject malicious content.  
-    Host Allowlist CSP: Blocking all third-party JavaScript can significantly reduce the attack surface and prevent the exploitation of vulnerabilities in third-party libraries.  
+    **Host Allowlist CSP**: Blocking all third-party JavaScript can significantly reduce the attack surface and prevent the exploitation of vulnerabilities in third-party libraries.  
+    **Strict CSP**: A CSP utilizing nonces or hashes in the 'script-src' directive (often referred to as "strict CSP") provides a robust mitigation against XSS vulnerabilities. Optionally, the use of the CSP 'strict-dynamic' keyword can help to streamline the implementation of a strict CSP and to ensure compatibility with third-party JavaScript libraries when required.
     **Trusted Types**: This is a browser API that helps prevent DOM-based cross-site scripting vulnerabilities by ensuring only secure data types can be inserted into the DOM.
 - The cookie’s **httpOnly** flag: while not a HTTP header, setting this flag prevents Javascript from accessing this cookie and should be done esp. For Session cookies.
 
@@ -54,6 +55,7 @@ Modern browsers do not only display HTML code but are used to interface with mul
 
 CSRF attacks abuse an existing trust relationship between the web browser and web sites.
 - Same-Origin Cookies: Marking cookies as SameSite can mitigate the risk of cross-origin information leakage, as well as provide some protection against cross-site request forgery attacks.
+- Fetch Metadata Request Headers: Checking Fetch Metadata request headers on the server-side allows deploying a strong defense-in-depth mechanism—a Resource Isolation Policy—to protect your application against common cross-origin attacks like CSRF.
 
 ## Vulnerabilities Prevented
 
@@ -69,10 +71,15 @@ Implementing these browser defenses can help mitigate a range of vulnerabilities
 - [Web Check](https://github.com/Lissy93/web-check)
 - [Security Headers](https://securityheaders.com/)
 - [Mozilla Observatory](https://observatory.mozilla.org/)
+- [CSP Evaluator](https://csp-evaluator.withgoogle.com/)
 
 ## References
 
 - [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+- [Strict Content Security Policy](https://web.dev/articles/strict-csp)
+- [Trusted Types](https://web.dev/articles/trusted-types)
 - [OWASP Secure Headers Project](https://owasp.org/www-project-secure-headers/)
+- [Security Headers Quick Reference](https://web.dev/articles/security-headers)
 - [Fetch Metadata Request Headers](https://www.w3.org/TR/fetch-metadata/)
+- [Fetch Metadata Resource Isolation Policy](https://web.dev/articles/fetch-metadata)
 - <https://caniuse.com/>
