@@ -1,6 +1,6 @@
 # Old Versions and Translations
 
-Starting with version `v4` in 2024, we do accept inclusion of translations into the OWASP Top 10 Proactive Controls directly and are only providing the English version.
+Starting with version `v4` in 2024, we don't accept inclusion of translations into the OWASP Top 10 Proactive Controls directly and are only providing the English version.
 
 We do encourage translators to create translated versions and host them themselves and will link to those external sites/documents if notified about them.
 
