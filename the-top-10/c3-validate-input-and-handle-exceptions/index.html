@@ -1239,7 +1239,7 @@
 
 <h1 id="c3-validate-all-input-handle-exceptions">C3: Validate all Input &amp; Handle Exceptions</h1>
 <h2 id="description">Description</h2>
-<p>Input validation is a programming technique that ensures only properly formatted data may enter a software system component. When the injection attack targets a client (for example JavaScript based attacks), web servers can perform quoting/encoding on the attacker-provided data before forwarding it to the client. </p>
+<p>Input validation is a programming technique that ensures only properly formatted data may enter a software system component. When the injection attack targets a client (for example JavaScript based attacks), web servers can perform quoting/encoding on the attacker-provided data before forwarding it to the client.</p>
 <p>Injection attacks commonly occur if an application confuses data input as executable commands and are often possible where input validation is forgotten or implemented wrong. For example, imagine that a web application accepts an email address as input from a user. The email address would be the expected “data”. Attackers now search for ways to confuse applications to execute this (supposed) data as commands. Different injection attacks target different areas:</p>
 <ul>
 <li>When an attacker tricks an application into interpreting user input (data) as SQL commands (or parts thereof), there is a SQL injection attack. The injected command executes within the database server.</li>
@@ -1312,15 +1312,19 @@ As a simple example, if the user object has a field privilege which specifies th
 <li>Executing System Commands with user input as parameters is prone to injection attacks. If feasible, this should be avoided.</li>
 </ul>
 <h4 id="javascript-injection-attacks">JavaScript Injection Attacks</h4>
-<p>A special case are JavaScript based Injection attacks (XSS). The injected malicious code is commonly executed within a victim’s browser. Typically, attackers try to steal the user’s session information from the browser and not directly execute commands (as they do on the server-side). In addition to server-side input filtering and output escaping, multiple client-side hardening measurements can be taken (these also protect against the special case of DOM-based XSS where no server-side logic is involved and thus cannot filter malicious code):
-- Mark sensitive cookies with httpOnly so JavaScript cannot access them
-- Utilize a Content-Security-Policy to reduce the attack-surface for JavaScript-based Attacks
-- Use a secure by default framework like Angular</p>
+<p>A special case are JavaScript based Injection attacks (XSS). The injected malicious code is commonly executed within a victim’s browser. Typically, attackers try to steal the user’s session information from the browser and not directly execute commands (as they do on the server-side). In addition to server-side input filtering and output escaping, multiple client-side hardening measurements can be taken (these also protect against the special case of DOM-based XSS where no server-side logic is involved and thus cannot filter malicious code):</p>
+<ul>
+<li>Mark sensitive cookies with httpOnly so JavaScript cannot access them</li>
+<li>Utilize a Content-Security-Policy to reduce the attack-surface for JavaScript-based Attacks</li>
+<li>Use a secure by default framework like Angular</li>
+</ul>
 <h4 id="validating-and-sanitizing-html">Validating and Sanitizing HTML</h4>
-<p>Consider an application that needs to accept HTML from users (via a WYSIWYG editor that represents content as HTML or features that directly accept HTML in input). In this situation, validation or escaping will not help.
-- Regular expressions are not expressive enough to understand the complexity of HTML5.
-- Encoding or escaping HTML will not help since it will cause the HTML not to render properly.</p>
-<p>Therefore, you need a library to parse and clean HTML formatted text. Please see the <a href="https://www.owasp.org/index.php/XSS_%28Cross_Site_Scripting%29_Prevention_Cheat_Sheet#RULE_.236_-_Sanitize_HTML_Markup_with_a_Library_Designed_for_the_Job">XSS Prevention Cheat Sheet on HTML Sanitization</a> for more information on HTML Sanitization.</p>
+<p>Consider an application that needs to accept HTML from users (via a WYSIWYG editor that represents content as HTML or features that directly accept HTML in input). In this situation, validation or escaping will not help.</p>
+<ul>
+<li>Regular expressions are not expressive enough to understand the complexity of HTML5.</li>
+<li>Encoding or escaping HTML will not help since it will cause the HTML not to render properly.</li>
+</ul>
+<p>Therefore, you need a library to parse and clean HTML formatted text. Please see the <a href="https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html">XSS Prevention Cheat Sheet on HTML Sanitization</a> for more information on HTML Sanitization.</p>
 <h3 id="special-case-validate-data-during-deserialization">Special Case: Validate Data During Deserialization</h3>
 <p>Some forms of input are so complex that validation can only minimally protect the application. For example, it’s dangerous to deserialize untrusted data or data that can be manipulated by an attacker. The only safe architectural pattern is to not accept serialized objects from untrusted sources or to only deserialize in limited capacity for only simple data types. You should avoid processing serialized data formats and use easier to defend formats such as JSON when possible.</p>
 <p>If that is not possible then consider a series of validation defenses when processing serialized data.</p>
@@ -1343,24 +1347,29 @@ As a simple example, if the user object has a field privilege which specifies th
 <li><a href="https://cwe.mitre.org/data/definitions/94.html">2023 CWE Top 25 - 23 Improper Control of Generation of Code ('Code Injection')</a></li>
 </ul>
 <h2 id="references">References</h2>
-<p>Regarding Input Validation:
-- <a href="https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html">OWASP Cheat Sheet: Input Validation</a>
-- <a href="https://www.owasp.org/index.php/IOS_Developer_Cheat_Sheet#Security_Decisions_via_Untrusted_Inputs_.28M7.29">OWASP Cheat Sheet: iOS - Security Decisions via Untrusted Inputs</a>
-- <a href="https://www.owasp.org/index.php/Testing_for_Input_Validation">OWASP Testing Guide: Testing for Input Validation</a>
-- <a href="https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet.html">Injection Prevention Cheat Sheet</a>
-- <a href="https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_in_Java_Cheat_Sheet.html">Injection Prevention Cheat Sheet in Java</a>
-- Hardening with CSP: <a href="https://csp.withgoogle.com/docs/index.html">CSP with Google</a>
-- Deploying CSP in Single Page Applications</p>
+<p>Regarding Input Validation:</p>
+<ul>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html">OWASP Cheat Sheet: Input Validation</a></li>
+<li><a href="https://www.owasp.org/index.php/Testing_for_Input_Validation">OWASP Testing Guide: Testing for Input Validation</a></li>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet.html">Injection Prevention Cheat Sheet</a></li>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_in_Java_Cheat_Sheet.html">Injection Prevention Cheat Sheet in Java</a></li>
+<li>Hardening with CSP: <a href="https://csp.withgoogle.com/docs/index.html">CSP with Google</a></li>
+<li>Deploying CSP in Single Page Applications</li>
+</ul>
 <h2 id="tools">Tools</h2>
-<p>Helping with Input Validation:
-- <a href="https://www.owasp.org/index.php/OWASP_Java_HTML_Sanitizer">OWASP Java HTML Sanitizer Project</a>
-- <a href="http://beanvalidation.org/">Java JSR-303/JSR-349 Bean Validation</a>
-- <a href="http://hibernate.org/validator/">Java Hibernate Validator</a><a href="https://commons.apache.org/proper/commons-validator/">Apache Commons Validator</a>PHP’s <a href="https://secure.php.net/manual/en/book.filter.php">filter functions</a></p>
-<p>Testing for Injection Attacks:
-- Sqlmap.py
-- OWASP ZAP-based scans
-Helping with Hardening:
-- <a href="https://csp-evaluator.withgoogle.com/">CSP Evaluator</a></p>
+<p>Helping with Input Validation:</p>
+<ul>
+<li><a href="https://www.owasp.org/index.php/OWASP_Java_HTML_Sanitizer">OWASP Java HTML Sanitizer Project</a></li>
+<li><a href="http://beanvalidation.org/">Java JSR-303/JSR-349 Bean Validation</a></li>
+<li><a href="http://hibernate.org/validator/">Java Hibernate Validator</a><a href="https://commons.apache.org/proper/commons-validator/">Apache Commons Validator</a>PHP’s <a href="https://secure.php.net/manual/en/book.filter.php">filter functions</a></li>
+</ul>
+<p>Testing for Injection Attacks:</p>
+<ul>
+<li>Sqlmap.py</li>
+<li>OWASP ZAP-based scans
+Helping with Hardening:</li>
+<li><a href="https://csp-evaluator.withgoogle.com/">CSP Evaluator</a></li>
+</ul>
 
 
 

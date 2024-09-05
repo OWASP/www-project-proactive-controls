@@ -1209,7 +1209,7 @@
 <p>Protect sensitive data such as passwords, credit card numbers, health records, personal information, and business secrets.</p>
 <p>Regulations exist to force companies to protect user’s personal information. The European Union values individual privacy, such that they created the EU General Data Protection Regulation GDPR). Financial data protection rules such as PCI Data Security Standard (PCI DSS) also exist to protect cardholder privacy.</p>
 <p>Cryptography is the art or science concerning the principles, means, and methods for rendering plain information unintelligible and restoring encrypted information to intelligible form. Individual user data requires cryptography to ensure it is properly cared for when stored.</p>
-<h4 id="classify-data-types-in-your-application">Classify data types in your application</h4>
+<h3 id="classify-data-types-in-your-application">Classify data types in your application</h3>
 <p>It’s critical to classify data in your system and determine which level of sensitivity each piece of data belongs to. Each data category can then be mapped to protection rules necessary for each level of sensitivity. For example, public marketing information that is not sensitive may be categorized as public data which is ok to place on the public website. Credit card numbers may be classified as private user data which will need to be encrypted while stored, processed or in transit.</p>
 <p>Data classification can also be mandated by legislation, e.g., GDPR when serving users within the European Union.</p>
 <p>Classify the data sent, processed, and stored in your system and determine what level of sensitivity the data belongs to. Categorize the data to define specific protection rules for each type. The rule creation enables your team to perform data minimization and try not to store sensitive data whenever possible.</p>
@@ -1253,15 +1253,19 @@ Keep keys and your other application-level secrets in a secrets vault like KeyWh
 <p>Sensitive data such as passwords, credit card numbers, health records, personal information and business secrets require extra protection, particularly if that data falls under privacy laws (EU’s General Data Protection Regulation GDPR), financial data protection rules such as PCI Data Security Standard (PCI DSS) or other regulations.
 Attackers can steal data from web and web service applications in a number of ways. For example, if sensitive information is sent over the internet without communications security, then an attacker on a shared wireless connection could capture and steal another user’s data. Also, an attacker could use SQL Injection to steal passwords and other credentials from an applications database and expose that information to the public.</p>
 <h4 id="use-current-cryptographic-protocols">Use current cryptographic protocols</h4>
-<p>When developing web applications, use TLSv1.2 or TLSv1.3, preferably TLSv1.3. If possible, investigate the usage of HTTP/2 or HTTP/3 as they warrant the usage of security TLS versions/algorithms.
-- Directly turn off other older protocols to avoid protocol downgrade attacks.
-- Do not offer HTTP. Disable both HTTP and SSL compression.
-- Always utilize a secure random number generator (RNG).</p>
+<p>When developing web applications, use TLSv1.2 or TLSv1.3, preferably TLSv1.3. If possible, investigate the usage of HTTP/2 or HTTP/3 as they warrant the usage of security TLS versions/algorithms.</p>
+<ul>
+<li>Directly turn off other older protocols to avoid protocol downgrade attacks.</li>
+<li>Do not offer HTTP. Disable both HTTP and SSL compression.</li>
+<li>Always utilize a secure random number generator (RNG).</li>
+</ul>
 <h4 id="instruct-clients-to-enforce-transport-level-encryption">Instruct Clients to enforce Transport Level Encryption</h4>
-<p>Web servers can instruct web browsers to uphold minimal transport-level security:
-- Use the Strict-Transport-Security Header to enforce opportunistic encryption and certificate validation checks.
-- Content-Security-Policy allows for automatic client-side upgrade from HTTP to HTTPS.
-- When setting cookies, always utilize the “secure” flag to prevent transmission over HTTP.</p>
+<p>Web servers can instruct web browsers to uphold minimal transport-level security:</p>
+<ul>
+<li>Use the Strict-Transport-Security Header to enforce opportunistic encryption and certificate validation checks.</li>
+<li>Content-Security-Policy allows for automatic client-side upgrade from HTTP to HTTPS.</li>
+<li>When setting cookies, always utilize the “secure” flag to prevent transmission over HTTP.</li>
+</ul>
 <h3 id="support-cryptographic-agility-cryptography-changes-over-time">Support Cryptographic Agility: Cryptography changes over Time</h3>
 <p>Cryptographic recommendations change over time. To allow for this, make cryptographic choices such as used algorithms or key sizes configurable. This is called <a href="https://en.wikipedia.org/wiki/Cryptographic_agility">Cryptographic Agility</a></p>
 <p>If the application needs to support high availability, design key-rollover procedures.</p>
@@ -1276,9 +1280,8 @@ Attackers can steal data from web and web service applications in a number of wa
 <li><a href="https://www.ssllabs.com/projects/best-practices/index.html">Ivan Ristic: SSL/TLS Deployment Best Practices</a></li>
 <li><a href="https://www.owasp.org/index.php/HTTP_Strict_Transport_Security_Cheat_Sheet">OWASP Cheat Sheet: HSTS</a></li>
 <li><a href="https://www.owasp.org/index.php/Cryptographic_Storage_Cheat_Sheet">OWASP Cheat Sheet: Cryptographic Storage</a></li>
-<li><a href="https://www.owasp.org/index.php/Password_Storage_Cheat_Sheet">OWASP Cheat Sheet: Password Storage</a></li>
-<li><a href="https://www.owasp.org/index.php/IOS_Developer_Cheat_Sheet#Insecure_Data_Storage_.28M1.29">OWASP Cheat Sheet: IOS Developer - Insecure Data Storage</a></li>
-<li><a href="https://www.owasp.org/index.php/Testing_for_Weak_SSL/TLS_Ciphers,_Insufficient_Transport_Layer_Protection_%28OTG-CRYPST-001%29">OWASP Testing Guide: Testing for TLS</a></li>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html">OWASP Cheat Sheet: Password Storage</a></li>
+<li><a href="https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/README">OWASP Web Security Testing Guide: Testing for Weak Cryptography</a></li>
 <li><a href="https://github.com/OWASP/wrongsecrets">OWASP WrongSecrets</a> : vulnerable application with example of how to NOT use secrets</li>
 </ul>
 <h2 id="tools">Tools</h2>

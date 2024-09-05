@@ -1326,11 +1326,13 @@ It is worth noting that biometrics, when employed as a single factor of authenti
 <p>HTTP on its own is a session-less protocol: no data is shared between requests. When you look at how we are using the web, this is clearly not what is user-visible as for example you log into a website and stay logged in during subsequent requests. This is possible as session-management has been implemented on top of HTTP.
 Once the initial successful user authentication has taken place, an application may choose to track and maintain this authentication state for a limited amount of time. This will allow the user to continue using the application without having to keep re-authentication with each request. Tracking of this user state is called Session Management.
 Session-Management can be roughly categorized in client- and server-side session management. In the former, all session data is stored within the client and transmitted on each request to the server. The latter stores session-specific data on the server, e.g., in a database, and only transmits an identifier to the client. The client then submits only the session-identifier on each request and the server retrieves the session-data from the server-side storage.</p>
-<p>From a security-perspective server-side sessions have multiple benefits:
-- Data is not directly stored on the client: this can be problematic, e.g., when handling sensitive data. In addition, client-side session-management solutions must ensure that client-side data has not been tampered with.
-- Less data is transmitted between client and server (which is not as relevant as network bandwidth has increased)
-- Server-side session-management allows for session-invalidation, e.g., a user can logout all of their sessions
-By default, always use server-side session management..</p>
+<p>From a security-perspective server-side sessions have multiple benefits:</p>
+<ul>
+<li>Data is not directly stored on the client: this can be problematic, e.g., when handling sensitive data. In addition, client-side session-management solutions must ensure that client-side data has not been tampered with.</li>
+<li>Less data is transmitted between client and server (which is not as relevant as network bandwidth has increased)</li>
+<li>Server-side session-management allows for session-invalidation, e.g., a user can logout all of their sessions
+By default, always use server-side session management..</li>
+</ul>
 <h2 id="threats">Threats</h2>
 <ul>
 <li>An attacker could hijack user sessions by stealing or predicting session tokens, potentially gaining unauthorized access to authenticated user accounts.</li>
@@ -1340,13 +1342,15 @@ By default, always use server-side session management..</p>
 <h2 id="implementation">Implementation</h2>
 <h3 id="when-using-passwords">When using Passwords</h3>
 <h4 id="password-requirements">Password Requirements</h4>
-<p>Passwords should comply with the following requirements at the very least:
-- be at least 8 characters in length if multi-factor authentication (MFA) and other controls are also used. If MFA is not possible, this should be increased to at least 10 characters
-- all printing ASCII characters as well as the space character should be acceptable in memorized secrets
-- encourage the use of long passwords and passphrases
-- remove complexity requirements as these have been found to be of limited effectiveness. Instead, the adoption of MFA or longer password lengths is recommended
-- ensure that passwords used are not commonly used passwords that have been already been leaked in a previous compromise. You may choose to block the top 1000 or 10000 most common passwords which meet the above length requirements and are found in compromised password lists. The following link contains the most commonly found passwords: <a href="https://github.com/danielmiessler/SecLists/tree/master/Passwords">https://github.com/danielmiessler/SecLists/tree/master/Passwords</a>
-- Enforce password rotation, to avoid potential breaches due to the fact the same password is being used for a very long period of time</p>
+<p>Passwords should comply with the following requirements at the very least:</p>
+<ul>
+<li>be at least 8 characters in length if multi-factor authentication (MFA) and other controls are also used. If MFA is not possible, this should be increased to at least 10 characters</li>
+<li>all printing ASCII characters as well as the space character should be acceptable in memorized secrets</li>
+<li>encourage the use of long passwords and passphrases</li>
+<li>remove complexity requirements as these have been found to be of limited effectiveness. Instead, the adoption of MFA or longer password lengths is recommended</li>
+<li>ensure that passwords used are not commonly used passwords that have been already been leaked in a previous compromise. You may choose to block the top 1000 or 10000 most common passwords which meet the above length requirements and are found in compromised password lists. The following link contains the most commonly found passwords: <a href="https://github.com/danielmiessler/SecLists/tree/master/Passwords">https://github.com/danielmiessler/SecLists/tree/master/Passwords</a></li>
+<li>Enforce password rotation, to avoid potential breaches due to the fact the same password is being used for a very long period of time</li>
+</ul>
 <h4 id="implement-secure-password-recovery-mechanism">Implement Secure Password Recovery Mechanism</h4>
 <p>It is common for an application to have a mechanism for a user to gain access to their account in the event they forget their password. A good design workflow for a password recovery feature will use multi-factor authentication elements. For example, it may ask a security question - something they know, and then send a generated token to a device - something they own.
 Please see the <a href="https://www.owasp.org/index.php/Forgot_Password_Cheat_Sheet">Forgot_Password_Cheat_Sheet</a> and <a href="https://www.owasp.org/index.php/Choosing_and_Using_Security_Questions_Cheat_Sheet">Choosing_and_Using_Security_Questions_Cheat_Sheet</a> for further details.</p>
@@ -1356,10 +1360,12 @@ Please see the <a href="https://www.owasp.org/index.php/Forgot_Password_Cheat_Sh
 <p>Typically server-side session management is implemented with HTTP cookies which are used to store a session-identifier. When a new session is requested, the server generates a new session-identifier and transmits it to the client (browser). On each subsequent request, the session-identifier is transmitted from the client to the server, and the server uses this session-identifier to lookup session-data within a server-side database.</p>
 <h4 id="session-generation-and-expiration">Session Generation and Expiration</h4>
 <p>User state is tracked in a session. This session is typically stored on the server for traditional web based session management. A session identifier is then given to the user so the user can identify which server-side session contains the correct user data. The client only needs to maintain this session identifier, which also keeps sensitive server-side session data off of the client.
-Here are a few controls to consider when building or implementing session management solutions:
-- Ensure that the session id is long, unique and random, i.e., is of high entropy.
-- The application should generate a new session during authentication and re-authentication.
-- The application should implement an idle timeout after a period of inactivity and an absolute maximum lifetime for each session, after which users must re-authenticate. The length of the timeouts should be inversely proportional with the value of the data protected.</p>
+Here are a few controls to consider when building or implementing session management solutions:</p>
+<ul>
+<li>Ensure that the session id is long, unique and random, i.e., is of high entropy.</li>
+<li>The application should generate a new session during authentication and re-authentication.</li>
+<li>The application should implement an idle timeout after a period of inactivity and an absolute maximum lifetime for each session, after which users must re-authenticate. The length of the timeouts should be inversely proportional with the value of the data protected.</li>
+</ul>
 <p>Please see the <a href="https://www.owasp.org/index.php/Session_Management_Cheat_Sheet">Session Management Cheat Sheet</a> further details. ASVS Section 3 covers additional session management requirements.</p>
 <h3 id="client-side-session-management">Client-Side Session-Management</h3>
 <p>Server-side sessions can be limiting for some forms of authentication. "Stateless services" allow for client side management of session data for performance purposes so the server has less of a burden to store user sessions.
@@ -1376,7 +1382,7 @@ Please note, that if you are using JWTs you have to make sure that the returned 
 <li>Please be aware, that while stating a path during cookie setup will limit the browser to only submit the cookie if the request lies within the stated path. This protects the cookie of one application from being accessed by another application within a different path on the same server. This protection is brittle: if the “other” application has an XSS vulnerability and the attacker can introduce iframes, the “path” protection can be circumvented.</li>
 <li>The ‘secure’ flag should be set to ensure the transfer is done via secure channel only (TLS).</li>
 <li>HttpOnly flag should be set to prevent the cookie from being accessed via JavaScript.</li>
-<li>Adding “<a href="https://www.owasp.org/index.php/SameSite">samesite</a>” attributes to cookies prevents <a href="https://caniuse.com/#search=samesite">some modern browsers</a> from sending cookies with cross-site requests and provides protection against cross-site request forgery and information leakage attacks.</li>
+<li>Adding “<a href="https://owasp.org/www-community/SameSite">samesite</a>” attributes to cookies prevents <a href="https://caniuse.com/#search=samesite">some modern browsers</a> from sending cookies with cross-site requests and provides protection against cross-site request forgery and information leakage attacks.</li>
 </ul>
 <h2 id="vulnerabilities-prevented">Vulnerabilities Prevented</h2>
 <ul>
