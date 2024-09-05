@@ -17,11 +17,12 @@ In modern cloud applications, when developers build applications, they are also 
 These are deployed on infrastructure created and configured via code, Infrastructure-as-code (IaC), using configurations applied at the application level ( including web server and database), at container, Function as a Service, or infrastructure level. For example, in the case of web applications, folder permissions need to follow the principle of least privilege to limit resource access rights. When web and mobile applications are deployed in production, the debugging should be disabled.
 
 Is it important that when developers put together their infrastructure components, they:
+
 1. Implement configurations based on the Least privilege principle - for example: ensure that your cloud storage (S3 or other) is configured to be private and accessed by the minimum amount of time
 2. Access is denied by default and allowed via an allowed list
 3. Use container images that have been scanned for package and component vulnerabilities and pulled from a private container registry
 4. Prefer declarative infrastructure configuration over manual configuration activities. On a low-level, utilize Infrastructure-as-Code templates for automated provisioning and configuration of your cloud and on-premises infrastructure. On a high-level utilize Policy-as-Code to enforce policies including privilege assignments.  
-    Using a declarative format allows those policies to be managed similar to source code: checked-in into a source code management system, versioned, access-controlled, subject to change management, etc.
+Using a declarative format allows those policies to be managed similar to source code: checked-in into a source code management system, versioned, access-controlled, subject to change management, etc.
 5. Traffic encryption - by default or do not implement unencrypted communication channels in the first place
 
 ### Continuous Configurations Verification

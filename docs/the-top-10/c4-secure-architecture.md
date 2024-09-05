@@ -39,7 +39,7 @@ This implies, that an system administrator has to make an explicit choice to int
 
 When focusing upon end-user interactions, this aspect is important for designing user interfaces and flows. When focusing upon developer interactions, develeper-facing facilities such as framework, APIs, network APIs should be designed that when using them with default values, only secure operations should occur. Think about this when designing your configuration files too
 
-### Clearly articulate what's trusted to do what, and ensure those relationships are enforced 
+### Clearly articulate what's trusted to do what, and ensure those relationships are enforced
 
 Clearly articulate what's trusted to do what, and ensure those relationships are enforced, e.g., trust boundaries deliniate blast radius and are enforced by controls, such as firewalls or gateways.
 

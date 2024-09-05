@@ -6,11 +6,10 @@ It is a common practice in software development to leverage libraries and framew
 
 When possible, the emphasis should be on using the existing secure features of frameworks rather than importing yet another third party libraries, which requires regular updates and maintenance. It is preferable to have developers take advantage of what they're already using instead of forcing yet another library on them.
 
-
 When incorporating third party libraries or frameworks into your software, it is important to consider the following two categories of best practices:
 
 1. Identify trusted libraries and frameworks to bring into your software.
-2. Monitor and update packages to ensure that your software is not vulnerable to the possible security vulnerabilities introduced by the third party components .
+2. Monitor and update packages to ensure that your software is not vulnerable to the possible security vulnerabilities introduced by the third party components.
 
 ## Threats
 
