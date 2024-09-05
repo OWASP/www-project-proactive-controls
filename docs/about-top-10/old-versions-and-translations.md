@@ -11,7 +11,7 @@ You can find the [OWASP Top 10 Proactive Controls 2018 (vv) on GitHub](https://g
 - English version: [pdf](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_Top_10_Proactive_Controls_V3.pdf), [docx](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_Top_10_Proactive_Controls_V3.docx), [pptx](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_Top_Ten_Proactive_Controls_v3.pptx)
 - Available Translations (in alphabetical order):
   - Arabic: [pdf](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_Top_10_Proactive_Controls_V3-AR.pdf)
-  - Brazilian Portugese: [pdf](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_TOP_10_Proactive_Controls_2018_V3_PT-BR.pdf)
+  - Brazilian Portuguese: [pdf](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_TOP_10_Proactive_Controls_2018_V3_PT-BR.pdf)
   - Chinese: [pdf](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_Top_10_Proactive_Controls_V3_Chinese.pdf)
   - Italian: [pdf](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_Top_10_Proactive_Controls_V3-IT.pdf)
   - Spanish: [pdf](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_TOP_10_Proactive_Controls_2018_V3_ES-AR.pdf)

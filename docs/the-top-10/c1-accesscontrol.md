@@ -30,7 +30,7 @@ Access Control design may start simple but can often become complex and feature-
 
 ### 2) Force Every Access Request to Go Through an Access Control Check
 
-Ensure that all access requests are forced to go through an access control verification layer. Technologies like Java filters or other automatic request processing mechanisms are ideal programming components that will ensure that all requests go through an access control check. This is refered to as _Policy Enforcement Point_ in [RFC 2904](https://datatracker.ietf.org/doc/html/rfc2904#section-4.3).
+Ensure that all access requests are forced to go through an access control verification layer. Technologies like Java filters or other automatic request processing mechanisms are ideal programming components that will ensure that all requests go through an access control check. This is referred to as _Policy Enforcement Point_ in [RFC 2904](https://datatracker.ietf.org/doc/html/rfc2904#section-4.3).
 
 ### 3) Consolidate the access control check
 
@@ -67,7 +67,7 @@ Be careful about this type of role-based programming in code. It has the followi
 
 - Role-based programming of this nature is fragile. It is easy to create incorrect or missing role checks in code.
 - Hard-Coded Roles do not allow for multi-tenancy. Extreme measures like forking the code or adding checks for each customer will be required to allow role-based systems to have different rules for different customers.
-- Large codebases with many access control checks can make it difficult to audit or verify the overall application access control policy.
+- Large code bases with many access control checks can make it difficult to audit or verify the overall application access control policy.
 - Hard coded roles can also be seen as a backdoor when discovered during audits.
 
 ### 7) ABAC Policy Enforcement Point Example

@@ -20,7 +20,7 @@ A fully compromised browser might not heed security guidance but if an adversary
 
 - An attacker could execute cross-site scripting (XSS) attacks by exploiting inadequate Content Security Policy settings, potentially injecting malicious scripts into web pages.
 - An attacker could perform clickjacking attacks by taking advantage of missing X-Frame-Options headers, potentially tricking users into unintended interactions with disguised web elements.
-- An attacker could gather sensitive information through Referer headers when proper Referrer-Policy is not set, potentially exposing private data or user activities.
+- An attacker could gather sensitive information through `Referer` HTTP headers when proper Referrer-Policy is not set, potentially exposing private data or user activities.
 - An attacker could exploit MIME type confusion vulnerabilities in the absence of X-Content-Type-Options headers, potentially executing malicious scripts disguised as benign file types.
 - An attacker could hijack user sessions by exploiting insecure cookie settings, potentially gaining unauthorized access to user accounts.
 - An attacker could perform DNS rebinding attacks in the absence of proper DNS pinning, potentially bypassing same-origin policy restrictions.
@@ -99,4 +99,4 @@ Implementing these browser defenses can help mitigate a range of vulnerabilities
 - [Security Headers Quick Reference](https://web.dev/articles/security-headers)
 - [Fetch Metadata Request Headers](https://www.w3.org/TR/fetch-metadata/)
 - [Fetch Metadata Resource Isolation Policy](https://web.dev/articles/fetch-metadata)
-- <https://caniuse.com/>
+- [Canisue.com](https://caniuse.com/)

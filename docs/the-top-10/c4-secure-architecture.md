@@ -17,7 +17,7 @@ There are design principles that lead to secure architectures:
 - If the application is only protected by security-by-obscurity, an attacker that reverse-engineers the application has full permissions as soon the obfuscation is cleared-up. In addtion, an attacker is able to monitor network traffic: while the obfuscation might be performed on the code-level, the operations on the network level can easily be analyzed.
 - A web-application with a complex authorization scheme is deployed. A new software developer is tasked with extending one of the components. Due to the complexity, they misconfigure the authorization scheme and an attacker is able to exploit IDOR.
 - A web-application with a complex authorization scheme is deployed. A new software developer adds a new plugin to the system. The system makes it hard to do the right thing, and all security configuration must be manually added to the plugin, by-default no security measures are taken. The new developer is not configuring anything thus the new plugin introduces an IDOR into the system.
-- A web-application has many components, all of which are exposed to the public internet. The resulting attack surface is massive. For example, a database management tool (e.g., phpmyadmin) is deployed. After a 0day was found in mysqladmin, the whole database was extracted. During normal use, nobody uses phpmyadmin.
+- A web-application has many components, all of which are exposed to the public internet. The resulting attack surface is massive. For example, a database management tool (e.g., `phpmyadmin`) is deployed. After a 0day was found in `mysqladmin`, the whole database was extracted. During normal use, nobody uses `phpmyadmin`.
 
 ## Implementation
 
@@ -25,23 +25,23 @@ The mantra "Complexity is the enemy of security" can be seen throughout this imp
 
 ### Design for Clarity and Transparency
 
-Architecture should focus upon simplicity: the designed software should be only as complex as the intended user's requirements warant. Focusing upon simplicity brings multiple benefits for the created software:
+Architecture should focus upon simplicity: the designed software should be only as complex as the intended user's requirements warrant. Focusing upon simplicity brings multiple benefits for the created software:
 
 - It is easier to reason about a simple system. This allows to reason about potential security impacts of changes.
 - Long-term maintenance is aided through the simpler design.
-- The design should focus upon transprency, i.e., the security should not depend upon security-by-obscurity.
+- The design should focus upon transparency, i.e., the security should not depend upon security-by-obscurity.
 
 ### Make it easy to do the right thing
 
 Two terms often heard are "security by design" and "security by default". The former implies, that the software system should be usable in a secure manner while the latter means that the initial configuration of the software system is secure.
 
-This implies, that an system administrator has to make an explicit choice to introduce insecure configuration into the system. In constrast, the path of least resistance should always result in a secure system.
+This implies, that an system administrator has to make an explicit choice to introduce insecure configuration into the system. In contrast, the path of least resistance should always result in a secure system.
 
-When focusing upon end-user interactions, this aspect is important for designing user interfaces and flows. When focusing upon developer interactions, develeper-facing facilities such as framework, APIs, network APIs should be designed that when using them with default values, only secure operations should occur. Think about this when designing your configuration files too
+When focusing upon end-user interactions, this aspect is important for designing user interfaces and flows. When focusing upon developer interactions, developer-facing facilities such as framework, APIs, network APIs should be designed that when using them with default values, only secure operations should occur. Think about this when designing your configuration files too
 
 ### Clearly articulate what's trusted to do what, and ensure those relationships are enforced
 
-Clearly articulate what's trusted to do what, and ensure those relationships are enforced, e.g., trust boundaries deliniate blast radius and are enforced by controls, such as firewalls or gateways.
+Clearly articulate what's trusted to do what, and ensure those relationships are enforced, e.g., trust boundaries delineate blast radius and are enforced by controls, such as firewalls or gateways.
 
 Attenuate what's allowed by careful validation at each step. Go deeper with threat modeling mnemonics like stride or methodologies like stride per element.
 

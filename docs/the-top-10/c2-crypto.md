@@ -10,7 +10,7 @@ Privacy is assurance that the confidentiality of, and access to, certain informa
 
 Protect sensitive data such as passwords, credit card numbers, health records, personal information, and business secrets.
 
-Regulations exist to force companies to protect user’s personal information. The European Union values individual privacy, such that they created the EU General Data Protection Regulation GDPR). Financial data protection rules such as PCI Data Security Standard (PCI DSS) also exist to protect cardholder privacy.
+Regulations exist to force companies to protect user’s personal information. The European Union values individual privacy, such that they created the EU General Data Protection Regulation GDPR. Financial data protection rules such as PCI Data Security Standard (PCI DSS) also exist to protect cardholder privacy.
 
 Cryptography is the art or science concerning the principles, means, and methods for rendering plain information unintelligible and restoring encrypted information to intelligible form. Individual user data requires cryptography to ensure it is properly cared for when stored.
 
@@ -43,7 +43,7 @@ When it comes to cryptography, there are a few simple rules:
 
 The first rule of sensitive data management is to avoid storing sensitive data when at all possible. If you must store sensitive data then make sure it is cryptographically protected in some way to avoid unauthorized disclosure and modification.
 Cryptography (or crypto) is one of the more advanced topics of information security and one whose understanding requires the most schooling and experience. It is difficult to get right because there are many approaches to encryption, each with advantages and disadvantages that need to be thoroughly understood by web solution architects and developers. In addition, serious cryptography research is typically based on advanced mathematics and number theory, providing a serious barrier to entry.
-Designing or building cryptographic algorithms is very error-prone (see side-channel attacks). Instead of building cryptographic capability from scratch, it is strongly recommended that peer-reviewed and open solutions be used, such as the Google Tink project, Libsodium, and secure storage capability built into many software frameworks and cloud services.
+Designing or building cryptographic algorithms is very error-prone (see side-channel attacks). Instead of building cryptographic capability from scratch, it is strongly recommended that peer-reviewed and open solutions be used, such as the Google `Tink` project, `Libsodium`, and secure storage capability built into many software frameworks and cloud services.
 
 #### Store passwords safely
 

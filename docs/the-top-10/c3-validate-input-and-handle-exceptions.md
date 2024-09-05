@@ -156,7 +156,9 @@ Helping with Input Validation:
 
 Testing for Injection Attacks:
 
-- Sqlmap.py
-- OWASP ZAP-based scans
+- [Sqlmap.py](https://sqlmap.org/)
+- [ZAP-based scans](https://www.zaproxy.org/)
+
 Helping with Hardening:
+
 - [CSP Evaluator](https://csp-evaluator.withgoogle.com/)
