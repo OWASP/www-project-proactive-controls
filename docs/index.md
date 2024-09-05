@@ -18,7 +18,7 @@ However, this document is a starting point rather than a comprehensive set of te
 
 A fully secure development process should include comprehensive requirements from a standard such as the OWASP ASVS in addition to including a range of software development activities described in maturity models such as [OWASP SAMM](https://www.owasp.org/index.php/OWASP_SAMM_Project) and [BSIMM](https://www.bsimm.com/).
 
-## Project Leaders (in alphabetical order)
+## Project Leaders
 
 * [Andreas Happe](mailto:andreas.happe@owasp.org), connect through [linkedin](https://www.linkedin.com/in/andreashappe/), [github](https://github.com/andreashappe), [twitter/x](https://twitter.com/andreashappe)
 * [Jim Manico](mailto:jim.manico@owasp.org), connect through [linkedin](https://www.linkedin.com/in/jmanico/), [github](https://github.com/jmanico), [twitter/x](https://twitter.com/manicode)
