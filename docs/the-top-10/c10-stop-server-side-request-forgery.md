@@ -7,6 +7,7 @@ While Injection Attacks typically target the victim server itself, Server-Side R
 ## Threats
 
 Examples of this contain:
+
 - If an SSRF attack is possible on an server within the DMZ, an attacker might be able to access other servers within the DMZ without passing a perimeter firewall
 - Many servers have local services running on localhost, often without any authentication/authorization as localhost. This can be abused by SSRF attacks.
 - If SSO is used, SSRF can be used to extract tokens/tickets/hashes from servers etc.
@@ -14,6 +15,7 @@ Examples of this contain:
 ## Implementation
 
 There multiple ways of preventing SSRF:
+
 - Input validation
 - If outgoing requests have to be made, check the target against an allow-list
 - If using XML, configure parsers securely to prevent XEE

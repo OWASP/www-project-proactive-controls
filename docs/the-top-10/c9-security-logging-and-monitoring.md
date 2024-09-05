@@ -7,6 +7,7 @@ Logging is a concept that most developers already use for debugging and diagnost
 ### Benefits of Security Logging
 
 Security logging can be used for:
+
 1. Feeding intrusion detection systems
 2. Forensic analysis and investigations
 3. Satisfying regulatory compliance requirements
@@ -14,6 +15,7 @@ Security logging can be used for:
 ### Logging for Intrusion Detection and Response
 
 Use logging to identify activity that indicates that a user is behaving maliciously. Potentially malicious activity to log includes:
+
 - Submitted data that is outside of an expected numeric range.
 - Submitted data that involves changes to data that should not be modifiable (select list, checkbox or other limited entry component).
 - Requests that violate server-side access control rules.
@@ -23,6 +25,7 @@ When your application encounters such activity, your application should at the v
 ### Secure Logging Design
 
 Logging solutions must be built and managed in a secure way. Secure Logging design may include the following:
+
 - Allow expected characters only and/or encode the input based on the target to prevent [log injection](https://www.owasp.org/index.php/Log_Injection) attacks. The preferred approach would be that the logging solution performs input escaping instead of dropping data: otherwise the logging solution might discard data which would be needed for a later analysis.
 - Do not log sensitive information. For example, do not log password, session ID, credit cards, or social security numbers.
 - Protect log integrity. An attacker may attempt to tamper with the logs. Therefore, the permission of log files and log changes audit should be considered.
@@ -43,6 +46,7 @@ Logging solutions must be built and managed in a secure way. Secure Logging desi
 ## Implementation
 
 The following is a list of security logging implementation best practices.
+
 - Follow a common logging format and approach within the system and across systems of an organization. An example of a common logging framework is the Apache Logging Services which helps provide logging consistency between Java, PHP, .NET, and C++ applications.
 - Do not log too much or too little. For example, make sure to always log the timestamp and identifying information including the source IP and user-id, but be careful not to log private (such as username) or confidential data (such as business data) unless extra care is taken.
 - Pay close attention to time syncing across nodes to ensure that timestamps are consistent.
@@ -57,4 +61,3 @@ The following is a list of security logging implementation best practices.
 - [OWASP Logging Guide](https://owasp.org/www-pdf-archive/OWASP_Logging_Guide.pdf)
 
 ## Tools
-

@@ -36,6 +36,7 @@ The following is a non-exhaustive list of potential Hardening mechanisms:
 ### Configure the Browser to prevent Information Disclosure
 
 Information disclosure occurs if the browser transmits information over unencrypted channels (HTTP instead of HTTPS) or sends our too much information in the first place (e.g., through the Referer-Header). The following mechanisms reduce the possibility of information disclosure:
+
 - **HTTP Strict Transport Security (HSTS)**: Ensures that browsers only connect to your website over HTTPS, preventing SSL stripping attacks.
 - **Content Security Policy (CSP)**: CSP policies can instruct the browser to automatically upgrade HTTP connections to HTTPS. In addition directives such as the form-src directive can be used to prevent forms from transmitting data to external sites.
 - **Referrer-Policy**: when navigating between pages, the browser’s HTTP request includes the current URL within the outgoing request. This URL can include sensitive information. Using Referrer-Policy, a web-site can unify the browser’s behavior and select which information should be transmitted between web sites.
@@ -44,6 +45,7 @@ Information disclosure occurs if the browser transmits information over unencryp
 ### Reduce the potential Impact of XSS
 
 Javascript based XSS attacks have been very common for decades. To reduce the potential impact of vulnerabilities, browsers offer rich defensive mechanisms that should reduce the potential impact of XSS attacks:
+
 - **Content Security Policy (CSP)**: CSP is a powerful tool that helps prevent a wide range of attacks including Cross-Site Scripting (XSS) and data injection. Strict CSP policies can effectively disable inline JavaScript and style, making it much harder for attackers to inject malicious content.  
     **Host Allowlist CSP**: Blocking all third-party JavaScript can significantly reduce the attack surface and prevent the exploitation of vulnerabilities in third-party libraries.  
     **Strict CSP**: A CSP utilizing nonces or hashes in the 'script-src' directive (often referred to as "strict CSP") provides a robust mitigation against XSS vulnerabilities. Optionally, the use of the CSP 'strict-dynamic' keyword can help to streamline the implementation of a strict CSP and to ensure compatibility with third-party JavaScript libraries when required.
@@ -53,23 +55,27 @@ Javascript based XSS attacks have been very common for decades. To reduce the po
 ### Prevent Clickjacking
 
 Clickjacking, also known as UI-redress attacks, try to confuse users by overlaying a malicious site on top of a benign one. The user believes to interact with the benign one while in reality they are interacting with the malicious one.
+
 - **X-Frame-Options (XFO)**: Prevents clickjacking attacks by ensuring your content is not embedded into other sites. This header is finicky to use, e.g., when used twice it is disabled.
 - **Content Security Policy (CSP)**: the different frame-\* directives allow for fine-grained control of which sites are allowed to include the current website as well as which other sites can be included within the current website.
 
 ### Control the Browser’s Advanced Capabilities
 
 Modern browsers do not only display HTML code but are used to interface with multiple system components such as WebCams, Microphones, USB Devices, etc. While many websites do not utilize those features, attackers can abuse those.
+
 - **Permission Policy**: through a permission policy a web-site can instruct the browser that the defined features will not be used by the web-site. For example, a web-site can state that it will never capture user audio. Even if an attacker is able to inject malicious code, they can thus not instruct the web-browser to capture audio.
 
 ### Prevent CSRF Attacks
 
 CSRF attacks abuse an existing trust relationship between the web browser and web sites.
+
 - Same-Origin Cookies: Marking cookies as SameSite can mitigate the risk of cross-origin information leakage, as well as provide some protection against cross-site request forgery attacks.
 - Fetch Metadata Request Headers: Checking Fetch Metadata request headers on the server-side allows deploying a strong defense-in-depth mechanism—a Resource Isolation Policy—to protect your application against common cross-origin attacks like CSRF.
 
 ## Vulnerabilities Prevented
 
 Implementing these browser defenses can help mitigate a range of vulnerabilities, including but not limited to:
+
 - Cross-Site Scripting (XSS)
 - Cross-Site Request Forgery (CSRF)
 - Clickjacking
@@ -78,6 +84,7 @@ Implementing these browser defenses can help mitigate a range of vulnerabilities
 - Abusing unintended browser hardware access (microphone, cameras, etc.)
 
 ## Tools
+
 - [Web Check](https://github.com/Lissy93/web-check)
 - [Security Headers](https://securityheaders.com/)
 - [Mozilla Observatory](https://observatory.mozilla.org/)

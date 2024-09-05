@@ -1,6 +1,7 @@
 # C1: Implement Access Control
 
 ## Description
+
 Access Control (or Authorization) is allowing or denying specific requests from a user, program, or process. With each access control decision, a given subject requests access to a given object. Access control is the process that considers the defined policy and determines if a given subject is allowed to access a given object.
 Access control also involves the act of granting and revoking those privileges.
 Access Control often applies on multiple levels, e.g., given an application with a database backend, it applies both on the business logic level as well as on a database row level. In addition, applications can offer multiple ways of performing operations (e.g., through APIs or the website). All those different levels and access paths must be aligned, i.e., use the same access control checks, to protect against security vulnerabilities.
@@ -46,7 +47,6 @@ There are many ways that this rule will manifest in the application code. Some e
 
 3. When a new feature is added to an application, all users should be denied to use it until it’s properly configured.
 
-
 ### 5) Principle of Least Privilege / Just in Time (JIT), Just Enough Access (JEA)
 
 An example of implementing that principle is to create dedicated privileged roles and accounts for every organization function that requires highly privileged activities and avoid using an “admin” role/account that is fully privileged daily.
@@ -70,15 +70,15 @@ Be careful about this type of role-based programming in code. It has the followi
 - Large codebases with many access control checks can make it difficult to audit or verify the overall application access control policy.
 - Hard coded roles can also be seen as a backdoor when discovered during audits.
 
-**7) ABAC Policy Enforcement Point Example**
+### 7) ABAC Policy Enforcement Point Example
 
 Please consider the following access control enforcement points using this following programming methodology:
 
-~~~ java
+```java
 if (user.hasPermission("DELETE_ACCOUNT")) {
     deleteAccount();
 }
-~~~
+```
 
 Attribute or feature-based access control checks of this nature are the starting point to building well-designed and feature-rich access control systems. This type of programming also allows for greater access control customization capability over time.
 
