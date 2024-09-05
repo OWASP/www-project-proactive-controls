@@ -696,6 +696,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#7-abac-policy-enforcement-point-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      7) ABAC Policy Enforcement Point Example
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1061,6 +1070,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#7-abac-policy-enforcement-point-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      7) ABAC Policy Enforcement Point Example
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1168,7 +1186,7 @@ There are many ways that this rule will manifest in the application code. Some e
 <li>Large codebases with many access control checks can make it difficult to audit or verify the overall application access control policy.</li>
 <li>Hard coded roles can also be seen as a backdoor when discovered during audits.</li>
 </ul>
-<p><strong>7) ABAC Policy Enforcement Point Example</strong></p>
+<h3 id="7-abac-policy-enforcement-point-example">7) ABAC Policy Enforcement Point Example</h3>
 <p>Please consider the following access control enforcement points using this following programming methodology:</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">user</span><span class="p">.</span><span class="na">hasPermission</span><span class="p">(</span><span class="s">&quot;DELETE_ACCOUNT&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="n">deleteAccount</span><span class="p">();</span>

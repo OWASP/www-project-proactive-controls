@@ -995,16 +995,20 @@
 <h2 id="description">Description</h2>
 <p>While Injection Attacks typically target the victim server itself, Server-Side Request Forgery (SSRF) attacks try to coerce the server to perform a request on behalf of the attacker. Why is this beneficial for the attacker? The outgoing request will be performed with the identity of the victim server and thus the attacker might execute operations with elevated operations.</p>
 <h2 id="threats">Threats</h2>
-<p>Examples of this contain:
-- If an SSRF attack is possible on an server within the DMZ, an attacker might be able to access other servers within the DMZ without passing a perimeter firewall
-- Many servers have local services running on localhost, often without any authentication/authorization as localhost. This can be abused by SSRF attacks.
-- If SSO is used, SSRF can be used to extract tokens/tickets/hashes from servers etc.</p>
+<p>Examples of this contain:</p>
+<ul>
+<li>If an SSRF attack is possible on an server within the DMZ, an attacker might be able to access other servers within the DMZ without passing a perimeter firewall</li>
+<li>Many servers have local services running on localhost, often without any authentication/authorization as localhost. This can be abused by SSRF attacks.</li>
+<li>If SSO is used, SSRF can be used to extract tokens/tickets/hashes from servers etc.</li>
+</ul>
 <h2 id="implementation">Implementation</h2>
-<p>There multiple ways of preventing SSRF:
-- Input validation
-- If outgoing requests have to be made, check the target against an allow-list
-- If using XML, configure parsers securely to prevent XEE
-Be aware of <a href="https://cheatsheetseries.owasp.org/assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_Orange_Tsai_Talk.pdf">Unicode and other Character transformations</a> when performing input validation.</p>
+<p>There multiple ways of preventing SSRF:</p>
+<ul>
+<li>Input validation</li>
+<li>If outgoing requests have to be made, check the target against an allow-list</li>
+<li>If using XML, configure parsers securely to prevent XEE
+Be aware of <a href="https://cheatsheetseries.owasp.org/assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_Orange_Tsai_Talk.pdf">Unicode and other Character transformations</a> when performing input validation.</li>
+</ul>
 <h2 id="vulnerabilities-prevented">Vulnerabilities Prevented</h2>
 <ul>
 <li><a href="https://owasp.org/Top10/A10_2021-Server-Side_Request_Forgery_%28SSRF%29/">A10:2021 – Server-Side Request Forgery (SSRF)</a></li>
