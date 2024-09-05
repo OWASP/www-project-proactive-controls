@@ -4,6 +4,13 @@
 
 “Secure-by-Default” means products are resilient against prevalent exploitation techniques out of the box without additional charge.<sup><sup>[\[2\]](#footnote-2)</sup></sup> The benefit of having an application secure from the start is that it removes the burden away from developers on how to lock a system down, providing them with an already secure product. It reduces the effort required to deploy products in a secure manner and gives greater confidence that they will remain secure over time.
 
+## Threats
+
+- An attacker could gain unauthorized access by exploiting default, weak, or well-known credentials that haven't been changed from their out-of-the-box state.
+- An attacker could take advantage of overly permissive default settings to access sensitive resources or perform unauthorized actions.
+- An attacker could gather sensitive information by probing unnecessarily enabled features or services that are active by default.
+- An attacker could conduct cross-site scripting (XSS) attacks by exploiting lenient default security headers that don't provide adequate protection against such threats.
+
 ## Implementation
 
 In modern cloud applications, when developers build applications, they are also building the infrastructure for their applications, making infrastructure decisions, including security-critical configurations, while writing their code.

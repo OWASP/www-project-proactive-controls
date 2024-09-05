@@ -43,6 +43,12 @@ From a security-perspective server-side sessions have multiple benefits:
 - Server-side session-management allows for session-invalidation, e.g., a user can logout all of their sessions
 By default, always use server-side session management..
 
+## Threats
+
+- An attacker could hijack user sessions by stealing or predicting session tokens, potentially gaining unauthorized access to authenticated user accounts.
+- An attacker could execute session fixation attacks by exploiting weak session management, forcing a user to use a known session identifier.
+- An attacker could perform cross-site request forgery (CSRF) attacks on authenticated sessions, tricking users into unknowingly executing unwanted actions on a web application.
+
 ## Implementation
 
 ### When using Passwords
