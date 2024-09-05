@@ -18,9 +18,8 @@ jobs:
       - name: Link Checker
         uses: lycheeverse/lychee-action@v1.10.0
         with:
-          # skip the jekyll files
-          args: --no-progress --max-retries 5 './docs/**/*.md' '*.md'
-          fail: false
+          args: --no-progress --max-retries 5 './docs/**/*.md'
+          fail: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 

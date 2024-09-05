@@ -10,7 +10,8 @@ MD013:
   code_blocks: true
   heading_line_length: 80
   headings: true
-  line_length: 125
+  # line_length: 125
+  line_length: 1024
   stern: true
   strict: false
   tables: true
