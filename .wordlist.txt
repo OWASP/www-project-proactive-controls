@@ -5,6 +5,7 @@ Adriaan
 AES
 Andreas
 APIs
+AppSec
 Aref
 ASVS
 Baillon
@@ -37,6 +38,13 @@ Datz
 de
 decrypt
 Der
+deserialization
+deserialize
+deserializes
+DevOps
+DevOpsSec
+DevSecOps
+DevSlop
 docx
 DOM
 Dracea
@@ -55,6 +63,7 @@ Goldschmidt
 Grandval
 Graziani
 Grossman
+HackerCombat
 Happe
 Hashicorp
 Heyes
@@ -64,8 +73,11 @@ Hiroshi
 Hsiang
 HSTS
 Hsu
+httpOnly
 HTTPS
 IaC
+IDOR
+ISC
 Ishaq
 Ivashchenko
 Jasmin
@@ -73,6 +85,7 @@ JEA
 JIT
 Joubert
 JSON
+JSR
 JWS
 JWT
 JWTs
@@ -94,9 +107,11 @@ Nagai
 NIST
 nonces
 OKADA
+oneconsult's
 OpenSAMM
 Osama
 OTP
+owasp
 OWASP
 Pagel
 PassKeys
@@ -110,6 +125,7 @@ Riotaro
 RNG
 SameSite
 SAMM
+Sanitization
 SAST
 SBOM
 SBOMs
@@ -128,6 +144,8 @@ SSRF
 SSRFMap
 SSTI
 Taras
+TechBeacon
+Teil
 Temmar
 Terraform
 Terrascan
@@ -137,10 +155,13 @@ ThreeHoolagins
 ThunderSon
 Timo
 TLS
+Transformative
 Trivy
 TruffleHog
 UCDavies
 UI
+untrusted
+Validator
 venv
 Vries
 Watanabe
