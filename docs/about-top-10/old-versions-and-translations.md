@@ -6,7 +6,7 @@ We do encourage translators to create translated versions and host them themselv
 
 ## OWASP Top 10 Proactive Controls 2018 (v3)
 
-You can find the [OWASP Top 10 Proactive Controls 2018 (vv) on GitHub](https://github.com/OWASP/www-project-proactive-controls/tree/master/v3):
+You can find the [OWASP Top 10 Proactive Controls 2018 on GitHub](https://github.com/OWASP/www-project-proactive-controls/tree/master/v3):
 
 - English version: [pdf](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_Top_10_Proactive_Controls_V3.pdf), [docx](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_Top_10_Proactive_Controls_V3.docx), [pptx](https://github.com/OWASP/www-project-proactive-controls/blob/master/v3/OWASP_Top_Ten_Proactive_Controls_v3.pptx)
 - Available Translations (in alphabetical order):

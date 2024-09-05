@@ -48,7 +48,7 @@ The OWASP Top 10 Proactive Controls 2018 (v3) were released.
 
 ## 2016
 
-The OWASP Top 10 Proactive Controls 2016 (v2) were released on Jan, 14th 2016.
+The OWASP Top 10 Proactive Controls 2016 (v2) were released on Jan 14, 2016.
 
 - \[1 Oct 2016\] Presented at [PHPNW16](http://conference.phpnw.org.uk/phpnw16/speakers/katy-anton/)
 - \[5 July 2016\] Featured in [Incorporating Security Best Practices     into Agile   Teams](https://www.thoughtworks.com/insights/blog/incorporating-security-best-practices-agile-teams)

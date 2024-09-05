@@ -18,7 +18,7 @@ There multiple ways of preventing SSRF:
 
 - Input validation
 - If outgoing requests have to be made, check the target against an allow-list
-- If using XML, configure parsers securely to prevent XEE
+- If using XML, configure parser securely to prevent XEE
 Be aware of [Unicode and other Character transformations](https://cheatsheetseries.owasp.org/assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_Orange_Tsai_Talk.pdf) when performing input validation.
 
 ## Vulnerabilities Prevented

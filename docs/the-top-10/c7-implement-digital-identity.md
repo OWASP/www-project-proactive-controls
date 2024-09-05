@@ -109,7 +109,7 @@ Browser cookies are a common method for web applications to store session identi
   - Please be aware, that while stating a path during cookie setup will limit the browser to only submit the cookie if the request lies within the stated path. This protects the cookie of one application from being accessed by another application within a different path on the same server. This protection is brittle: if the “other” application has an XSS vulnerability and the attacker can introduce iframes, the “path” protection can be circumvented.
 - The ‘secure’ flag should be set to ensure the transfer is done via secure channel only (TLS).
 - HttpOnly flag should be set to prevent the cookie from being accessed via JavaScript.
-- Adding “[samesite](https://owasp.org/www-community/SameSite)” attributes to cookies prevents [some modern browsers](https://caniuse.com/#search=samesite) from sending cookies with cross-site requests and provides protection against cross-site request forgery and information leakage attacks.
+- Adding “[SameSite](https://owasp.org/www-community/SameSite)” attributes to cookies prevents [some modern browsers](https://caniuse.com/#search=samesite) from sending cookies with cross-site requests and provides protection against cross-site request forgery and information leakage attacks.
 
 ## Vulnerabilities Prevented
 

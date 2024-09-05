@@ -14,7 +14,7 @@ Injection attacks commonly occur if an application confuses data input as execut
 
 An application should check that data is **syntactically** and **semantically** valid (in that order) before using it in any way (including displaying it back to the user).
 
-- **Syntactic validity** means that the data is in the expected form. For example, an application may allow users to select a four-digit “account ID” to perform some operation. The application should assume the user is entering a SQL injection payload and check that the data entered by the user is precisely four digits in length and consists only of numbers (in addition to utilizing proper query parameterization).
+- **Syntactic validity** means that the data is in the expected form. For example, an application may allow users to select a four-digit “account ID” to perform some operation. The application should assume the user is entering a SQL injection payload and check that the data entered by the user is precisely four digits in length and consists only of numbers (in addition to utilizing proper query parametrization).
 
 - **Semantic validity** includes only accepting input within an acceptable range for application functionality and context. For example, a start date must be before an end date when choosing date ranges.
 
