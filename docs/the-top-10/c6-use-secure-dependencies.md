@@ -12,6 +12,13 @@ When incorporating third party libraries or frameworks into your software, it is
 1. Identify trusted libraries and frameworks to bring into your software.
 2. Monitor and update packages to ensure that your software is not vulnerable to the possible security vulnerabilities introduced by the third party components .
 
+## Threats
+
+- An attacker could exploit known vulnerabilities in outdated third-party components to gain unauthorized access or execute malicious code.
+- An attacker could conduct supply chain attacks by compromising libraries or frameworks used in the development process, potentially inserting malicious code into the final product.
+- An attacker could extract sensitive information by exploiting insecure configurations in third-party components that haven't been properly hardened.
+- An attacker could launch denial of service attacks by targeting known vulnerabilities in external libraries, potentially disrupting the availability of services.
+
 ## Implementation
 
 Below each of these categories are further detailed to help secure your software.

@@ -16,6 +16,16 @@ While the changing browser feature set can be problematic, typically newer brows
 
 A fully compromised browser might not heed security guidance but if an adversary was able to take full control of a browser, they already have far more damaging attack paths than just ignoring security guidance.
 
+## Threats
+
+- An attacker could execute cross-site scripting (XSS) attacks by exploiting inadequate Content Security Policy settings, potentially injecting malicious scripts into web pages.
+- An attacker could perform clickjacking attacks by taking advantage of missing X-Frame-Options headers, potentially tricking users into unintended interactions with disguised web elements.
+- An attacker could gather sensitive information through Referer headers when proper Referrer-Policy is not set, potentially exposing private data or user activities.
+- An attacker could exploit MIME type confusion vulnerabilities in the absence of X-Content-Type-Options headers, potentially executing malicious scripts disguised as benign file types.
+- An attacker could hijack user sessions by exploiting insecure cookie settings, potentially gaining unauthorized access to user accounts.
+- An attacker could perform DNS rebinding attacks in the absence of proper DNS pinning, potentially bypassing same-origin policy restrictions.
+- An attacker could exploit cross-origin resource sharing (CORS) misconfigurations to gain unauthorized access to resources, potentially compromising data confidentiality and integrity.
+
 ## Implementation
 
 Typically, there are two (Security Header specific) ways that web applications can use to instruct web browsers about security: HTTP headers and HTML tags.

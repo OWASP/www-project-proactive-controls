@@ -24,6 +24,13 @@ Classify the data sent, processed, and stored in your system and determine what 
 
 For example, public marketing information that is not sensitive may be categorized as public data, which is okay to place on the public website and does not need to be encrypted. Credit card numbers need to be encrypted while stored, processed, and in transit.
 
+## Threats
+
+- An attacker could exploit weak or outdated encryption algorithms to decrypt sensitive information.
+- Improperly stored encryption keys could be compromised, leading to unauthorized data access.
+- An attacker can perform SQL Injection attacks to steal encrypted data from databases.
+- Failure to implement proper key management could result in unauthorized access to encrypted data.
+
 ## Implementation
 
 When it comes to cryptography, there are a few simple rules:

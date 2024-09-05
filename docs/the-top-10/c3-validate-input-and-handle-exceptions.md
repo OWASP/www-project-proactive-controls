@@ -18,6 +18,17 @@ An application should check that data is **syntactically** and **semantically** 
 
  - **Semantic validity** includes only accepting input within an acceptable range for application functionality and context. For example, a start date must be before an end date when choosing date ranges.
 
+## Threats
+
+- An attacker could exploit SQL injection vulnerabilities by submitting malicious input to manipulate database queries, potentially gaining unauthorized access to sensitive data.
+- An attacker could perform cross-site scripting (XSS) attacks by injecting malicious scripts into web pages, which are then executed in other users' browsers, potentially stealing session tokens or personal information.
+- An attacker could execute arbitrary code remotely by injecting malicious commands into system calls or APIs, potentially taking control of the target system.
+- An attacker could trigger buffer overflow errors by supplying input exceeding expected lengths, potentially overwriting memory and executing arbitrary code.
+- An attacker could launch denial of service attacks by overwhelming systems with malformed or excessive input, potentially rendering services unavailable to legitimate users.
+- An attacker could access unauthorized files and directories through path traversal attacks, potentially exposing sensitive system files or configuration data.
+- An attacker could insert malicious payloads into XML documents to exploit XML parsing vulnerabilities, potentially leading to information disclosure or system compromise.
+- An attacker could inject malicious templates into server-side template engines, potentially achieving remote code execution on the server.
+- An attacker could confuse applications and bypass security controls through HTTP parameter pollution attacks, potentially manipulating application logic or accessing restricted functionality.
 ## Implementation
 
 Protection against Injection Attacks is typically based upon a defense-in-depth approach and incorporates input filtering, output escaping, and utilization of hardening mechanisms. The former two are only dependent upon implemented security measures, and the latter is mostly dependent upon client-support, e.g., when protecting against XSS, filtering XSS from input and escaping output data server-side would prevent XSS regardless of the used web browser; adding a Content-Security-Policy prevents XSS, but only if the user’s browser supports it. Due to this, security must never depend upon optional hardening measures alone.
