@@ -1095,7 +1095,7 @@
 
 <h1 id="c4-address-security-from-the-start">C4: Address Security from the Start</h1>
 <h2 id="description">Description</h2>
-<p>When designing a new application, creating a secure architecture prevents vulnerabilties before they even become part of the application. This prevents costly repairs and repudiation problems.</p>
+<p>When designing a new application, creating a secure architecture prevents vulnerabilities before they even become part of the application. This prevents costly repairs and repudiation problems.</p>
 <p>There are design principles that lead to secure architectures:</p>
 <ul>
 <li><strong>keep it simple, stupid</strong> (KISS): the easier an application is to understand, the easier it is to reason about its components and their interactions. This allows to reason about the application's security behavior.</li>
@@ -1106,7 +1106,7 @@
 </ul>
 <h2 id="threats">Threats</h2>
 <ul>
-<li>If the application is only protected by security-by-obscurity, an attacker that reverse-engineers the application has full permissions as soon the obfuscation is cleared-up. In addtion, an attacker is able to monitor network traffic: while the obfuscation might be performed on the code-level, the operations on the network level can easily be analyzed.</li>
+<li>If the application is only protected by security-by-obscurity, an attacker that reverse-engineers the application has full permissions as soon the obfuscation is cleared-up. In addition, an attacker is able to monitor network traffic: while the obfuscation might be performed on the code-level, the operations on the network level can easily be analyzed.</li>
 <li>A web-application with a complex authorization scheme is deployed. A new software developer is tasked with extending one of the components. Due to the complexity, they misconfigure the authorization scheme and an attacker is able to exploit IDOR.</li>
 <li>A web-application with a complex authorization scheme is deployed. A new software developer adds a new plugin to the system. The system makes it hard to do the right thing, and all security configuration must be manually added to the plugin, by-default no security measures are taken. The new developer is not configuring anything thus the new plugin introduces an IDOR into the system.</li>
 <li>A web-application has many components, all of which are exposed to the public internet. The resulting attack surface is massive. For example, a database management tool (e.g., <code>phpmyadmin</code>) is deployed. After a 0day was found in <code>mysqladmin</code>, the whole database was extracted. During normal use, nobody uses <code>phpmyadmin</code>.</li>
