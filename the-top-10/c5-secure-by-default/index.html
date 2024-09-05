@@ -708,6 +708,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#threats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Threats
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#implementation" class="md-nav__link">
     <span class="md-ellipsis">
       Implementation
@@ -935,6 +944,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#threats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Threats
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#implementation" class="md-nav__link">
     <span class="md-ellipsis">
       Implementation
@@ -1006,6 +1024,13 @@
 <h1 id="c5-secure-by-default-configurations">C5: Secure By Default Configurations</h1>
 <h2 id="description">Description</h2>
 <p>“Secure-by-Default” means products are resilient against prevalent exploitation techniques out of the box without additional charge.<sup><sup><a href="#footnote-2">[2]</a></sup></sup> The benefit of having an application secure from the start is that it removes the burden away from developers on how to lock a system down, providing them with an already secure product. It reduces the effort required to deploy products in a secure manner and gives greater confidence that they will remain secure over time.</p>
+<h2 id="threats">Threats</h2>
+<ul>
+<li>An attacker could gain unauthorized access by exploiting default, weak, or well-known credentials that haven't been changed from their out-of-the-box state.</li>
+<li>An attacker could take advantage of overly permissive default settings to access sensitive resources or perform unauthorized actions.</li>
+<li>An attacker could gather sensitive information by probing unnecessarily enabled features or services that are active by default.</li>
+<li>An attacker could conduct cross-site scripting (XSS) attacks by exploiting lenient default security headers that don't provide adequate protection against such threats.</li>
+</ul>
 <h2 id="implementation">Implementation</h2>
 <p>In modern cloud applications, when developers build applications, they are also building the infrastructure for their applications, making infrastructure decisions, including security-critical configurations, while writing their code.
 These are deployed on infrastructure created and configured via code, Infrastructure-as-code (IaC), using configurations applied at the application level ( including web server and database), at container, Function as a Service, or infrastructure level. For example, in the case of web applications, folder permissions need to follow the principle of least privilege to limit resource access rights. When web and mobile applications are deployed in production, the debugging should be disabled.</p>

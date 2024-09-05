@@ -825,6 +825,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#threats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Threats
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#implementation" class="md-nav__link">
     <span class="md-ellipsis">
       Implementation
@@ -986,6 +995,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#threats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Threats
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#implementation" class="md-nav__link">
     <span class="md-ellipsis">
       Implementation
@@ -1060,6 +1078,18 @@ When your application encounters such activity, your application should at the v
 - Do not log sensitive information. For example, do not log password, session ID, credit cards, or social security numbers.
 - Protect log integrity. An attacker may attempt to tamper with the logs. Therefore, the permission of log files and log changes audit should be considered.
 - Forward logs from distributed systems to a central, secure logging service. This will ensure log data cannot be lost if one node is compromised. This also allows for centralized or even automated monitoring.</p>
+<h2 id="threats">Threats</h2>
+<ul>
+<li>An attacker could perform log injection attacks by manipulating log entries, potentially inserting malicious data or commands into log files.</li>
+<li>An attacker could gain unauthorized access to sensitive information through overly verbose logging practices that inadvertently capture and store confidential data.</li>
+<li>An attacker could engage in log tampering to cover tracks of malicious activities, potentially erasing or modifying evidence of their intrusion.</li>
+<li>An attacker could launch denial of service attacks by overwhelming logging systems with a flood of data, potentially disrupting normal system operations or obscuring other malicious actions.</li>
+<li>An attacker could gain unauthorized access to log files due to improper access controls, potentially exposing sensitive system information or user data.</li>
+<li>An attacker could engage in log forging to create false audit trails, potentially misleading investigators or framing innocent parties for malicious activities.</li>
+<li>An attacker could take advantage of insufficient logging practices to conduct malicious activities without detection, potentially prolonging their unauthorized access to systems.</li>
+<li>An attacker could exploit log file race conditions in multi-threaded applications, potentially corrupting log data or gaining unauthorized access to sensitive information.</li>
+<li>An attacker could perform replay attacks using information gleaned from logs, potentially reusing captured data to impersonate legitimate users or repeat authenticated actions.</li>
+</ul>
 <h2 id="implementation">Implementation</h2>
 <p>The following is a list of security logging implementation best practices.
 - Follow a common logging format and approach within the system and across systems of an organization. An example of a common logging framework is the Apache Logging Services which helps provide logging consistency between Java, PHP, .NET, and C++ applications.

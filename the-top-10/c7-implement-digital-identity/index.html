@@ -798,6 +798,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#threats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Threats
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#implementation" class="md-nav__link">
     <span class="md-ellipsis">
       Implementation
@@ -1121,6 +1130,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#threats" class="md-nav__link">
+    <span class="md-ellipsis">
+      Threats
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#implementation" class="md-nav__link">
     <span class="md-ellipsis">
       Implementation
@@ -1313,6 +1331,12 @@ Session-Management can be roughly categorized in client- and server-side session
 - Less data is transmitted between client and server (which is not as relevant as network bandwidth has increased)
 - Server-side session-management allows for session-invalidation, e.g., a user can logout all of their sessions
 By default, always use server-side session management..</p>
+<h2 id="threats">Threats</h2>
+<ul>
+<li>An attacker could hijack user sessions by stealing or predicting session tokens, potentially gaining unauthorized access to authenticated user accounts.</li>
+<li>An attacker could execute session fixation attacks by exploiting weak session management, forcing a user to use a known session identifier.</li>
+<li>An attacker could perform cross-site request forgery (CSRF) attacks on authenticated sessions, tricking users into unknowingly executing unwanted actions on a web application.</li>
+</ul>
 <h2 id="implementation">Implementation</h2>
 <h3 id="when-using-passwords">When using Passwords</h3>
 <h4 id="password-requirements">Password Requirements</h4>
