@@ -14,7 +14,7 @@ Regulations exist to force companies to protect user’s personal information. T
 
 Cryptography is the art or science concerning the principles, means, and methods for rendering plain information unintelligible and restoring encrypted information to intelligible form. Individual user data requires cryptography to ensure it is properly cared for when stored.
 
-#### Classify data types in your application
+### Classify data types in your application
 
 It’s critical to classify data in your system and determine which level of sensitivity each piece of data belongs to. Each data category can then be mapped to protection rules necessary for each level of sensitivity. For example, public marketing information that is not sensitive may be categorized as public data which is ok to place on the public website. Credit card numbers may be classified as private user data which will need to be encrypted while stored, processed or in transit.
 
@@ -75,6 +75,7 @@ Attackers can steal data from web and web service applications in a number of wa
 #### Use current cryptographic protocols
 
 When developing web applications, use TLSv1.2 or TLSv1.3, preferably TLSv1.3. If possible, investigate the usage of HTTP/2 or HTTP/3 as they warrant the usage of security TLS versions/algorithms.
+
 - Directly turn off other older protocols to avoid protocol downgrade attacks.
 - Do not offer HTTP. Disable both HTTP and SSL compression.
 - Always utilize a secure random number generator (RNG).
@@ -82,6 +83,7 @@ When developing web applications, use TLSv1.2 or TLSv1.3, preferably TLSv1.3. If
 #### Instruct Clients to enforce Transport Level Encryption
 
 Web servers can instruct web browsers to uphold minimal transport-level security:
+
 - Use the Strict-Transport-Security Header to enforce opportunistic encryption and certificate validation checks.
 - Content-Security-Policy allows for automatic client-side upgrade from HTTP to HTTPS.
 - When setting cookies, always utilize the “secure” flag to prevent transmission over HTTP.
@@ -103,9 +105,8 @@ If the application needs to support high availability, design key-rollover proce
 - [Ivan Ristic: SSL/TLS Deployment Best Practices](https://www.ssllabs.com/projects/best-practices/index.html)
 - [OWASP Cheat Sheet: HSTS](https://www.owasp.org/index.php/HTTP_Strict_Transport_Security_Cheat_Sheet)
 - [OWASP Cheat Sheet: Cryptographic Storage](https://www.owasp.org/index.php/Cryptographic_Storage_Cheat_Sheet)
-- [OWASP Cheat Sheet: Password Storage](https://www.owasp.org/index.php/Password_Storage_Cheat_Sheet)
-- [OWASP Cheat Sheet: IOS Developer - Insecure Data Storage](https://www.owasp.org/index.php/IOS_Developer_Cheat_Sheet#Insecure_Data_Storage_.28M1.29)
-- [OWASP Testing Guide: Testing for TLS](https://www.owasp.org/index.php/Testing_for_Weak_SSL/TLS_Ciphers,_Insufficient_Transport_Layer_Protection_%28OTG-CRYPST-001%29)
+- [OWASP Cheat Sheet: Password Storage](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html)
+- [OWASP Web Security Testing Guide: Testing for Weak Cryptography](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/README)
 - [OWASP WrongSecrets](https://github.com/OWASP/wrongsecrets) : vulnerable application with example of how to NOT use secrets
 
 ## Tools

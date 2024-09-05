@@ -38,6 +38,7 @@ Once the initial successful user authentication has taken place, an application 
 Session-Management can be roughly categorized in client- and server-side session management. In the former, all session data is stored within the client and transmitted on each request to the server. The latter stores session-specific data on the server, e.g., in a database, and only transmits an identifier to the client. The client then submits only the session-identifier on each request and the server retrieves the session-data from the server-side storage.
 
 From a security-perspective server-side sessions have multiple benefits:
+
 - Data is not directly stored on the client: this can be problematic, e.g., when handling sensitive data. In addition, client-side session-management solutions must ensure that client-side data has not been tampered with.
 - Less data is transmitted between client and server (which is not as relevant as network bandwidth has increased)
 - Server-side session-management allows for session-invalidation, e.g., a user can logout all of their sessions
@@ -54,7 +55,9 @@ By default, always use server-side session management..
 ### When using Passwords
 
 #### Password Requirements
+
 Passwords should comply with the following requirements at the very least:
+
 - be at least 8 characters in length if multi-factor authentication (MFA) and other controls are also used. If MFA is not possible, this should be increased to at least 10 characters
 - all printing ASCII characters as well as the space character should be acceptable in memorized secrets
 - encourage the use of long passwords and passphrases
@@ -79,6 +82,7 @@ Typically server-side session management is implemented with HTTP cookies which 
 
 User state is tracked in a session. This session is typically stored on the server for traditional web based session management. A session identifier is then given to the user so the user can identify which server-side session contains the correct user data. The client only needs to maintain this session identifier, which also keeps sensitive server-side session data off of the client.
 Here are a few controls to consider when building or implementing session management solutions:
+
 - Ensure that the session id is long, unique and random, i.e., is of high entropy.
 - The application should generate a new session during authentication and re-authentication.
 - The application should implement an idle timeout after a period of inactivity and an absolute maximum lifetime for each session, after which users must re-authenticate. The length of the timeouts should be inversely proportional with the value of the data protected.
@@ -105,7 +109,7 @@ Browser cookies are a common method for web applications to store session identi
   - Please be aware, that while stating a path during cookie setup will limit the browser to only submit the cookie if the request lies within the stated path. This protects the cookie of one application from being accessed by another application within a different path on the same server. This protection is brittle: if the “other” application has an XSS vulnerability and the attacker can introduce iframes, the “path” protection can be circumvented.
 - The ‘secure’ flag should be set to ensure the transfer is done via secure channel only (TLS).
 - HttpOnly flag should be set to prevent the cookie from being accessed via JavaScript.
-- Adding “[samesite](https://www.owasp.org/index.php/SameSite)” attributes to cookies prevents [some modern browsers](https://caniuse.com/#search=samesite) from sending cookies with cross-site requests and provides protection against cross-site request forgery and information leakage attacks.
+- Adding “[samesite](https://owasp.org/www-community/SameSite)” attributes to cookies prevents [some modern browsers](https://caniuse.com/#search=samesite) from sending cookies with cross-site requests and provides protection against cross-site request forgery and information leakage attacks.
 
 ## Vulnerabilities Prevented
 

@@ -2,7 +2,7 @@
 
 ## Description
 
-Input validation is a programming technique that ensures only properly formatted data may enter a software system component. When the injection attack targets a client (for example JavaScript based attacks), web servers can perform quoting/encoding on the attacker-provided data before forwarding it to the client. 
+Input validation is a programming technique that ensures only properly formatted data may enter a software system component. When the injection attack targets a client (for example JavaScript based attacks), web servers can perform quoting/encoding on the attacker-provided data before forwarding it to the client.
 
 Injection attacks commonly occur if an application confuses data input as executable commands and are often possible where input validation is forgotten or implemented wrong. For example, imagine that a web application accepts an email address as input from a user. The email address would be the expected “data”. Attackers now search for ways to confuse applications to execute this (supposed) data as commands. Different injection attacks target different areas:
 
@@ -16,7 +16,7 @@ An application should check that data is **syntactically** and **semantically** 
 
 - **Syntactic validity** means that the data is in the expected form. For example, an application may allow users to select a four-digit “account ID” to perform some operation. The application should assume the user is entering a SQL injection payload and check that the data entered by the user is precisely four digits in length and consists only of numbers (in addition to utilizing proper query parameterization).
 
- - **Semantic validity** includes only accepting input within an acceptable range for application functionality and context. For example, a start date must be before an end date when choosing date ranges.
+- **Semantic validity** includes only accepting input within an acceptable range for application functionality and context. For example, a start date must be before an end date when choosing date ranges.
 
 ## Threats
 
@@ -29,6 +29,7 @@ An application should check that data is **syntactically** and **semantically** 
 - An attacker could insert malicious payloads into XML documents to exploit XML parsing vulnerabilities, potentially leading to information disclosure or system compromise.
 - An attacker could inject malicious templates into server-side template engines, potentially achieving remote code execution on the server.
 - An attacker could confuse applications and bypass security controls through HTTP parameter pollution attacks, potentially manipulating application logic or accessing restricted functionality.
+
 ## Implementation
 
 Protection against Injection Attacks is typically based upon a defense-in-depth approach and incorporates input filtering, output escaping, and utilization of hardening mechanisms. The former two are only dependent upon implemented security measures, and the latter is mostly dependent upon client-support, e.g., when protecting against XSS, filtering XSS from input and escaping output data server-side would prevent XSS regardless of the used web browser; adding a Content-Security-Policy prevents XSS, but only if the user’s browser supports it. Due to this, security must never depend upon optional hardening measures alone.
@@ -38,6 +39,7 @@ Protection against Injection Attacks is typically based upon a defense-in-depth 
 Never trust provided data! Screen all data for malicious patterns or, even better, check all data against an allow list.
 
 #### Allowlisting vs Denylisting
+
 There are two general approaches to performing syntactic validation, commonly known as allow and deny lists:
 
 - Denylisting or **denylist validation** attempts to check that given data does not contain “known bad” content. For example, a web application may block input containing the exact text &lt;SCRIPT&gt; to help prevent XSS. However, this defense could be evaded with a lowercase script tag or a script tag of mixed case.
@@ -96,6 +98,7 @@ Even if malicious data has passed the input checking, applications can prevent i
 #### JavaScript Injection Attacks
 
 A special case are JavaScript based Injection attacks (XSS). The injected malicious code is commonly executed within a victim’s browser. Typically, attackers try to steal the user’s session information from the browser and not directly execute commands (as they do on the server-side). In addition to server-side input filtering and output escaping, multiple client-side hardening measurements can be taken (these also protect against the special case of DOM-based XSS where no server-side logic is involved and thus cannot filter malicious code):
+
 - Mark sensitive cookies with httpOnly so JavaScript cannot access them
 - Utilize a Content-Security-Policy to reduce the attack-surface for JavaScript-based Attacks
 - Use a secure by default framework like Angular
@@ -103,11 +106,14 @@ A special case are JavaScript based Injection attacks (XSS). The injected malici
 #### Validating and Sanitizing HTML
 
 Consider an application that needs to accept HTML from users (via a WYSIWYG editor that represents content as HTML or features that directly accept HTML in input). In this situation, validation or escaping will not help.
+
 - Regular expressions are not expressive enough to understand the complexity of HTML5.
 - Encoding or escaping HTML will not help since it will cause the HTML not to render properly.
 
-Therefore, you need a library to parse and clean HTML formatted text. Please see the [XSS Prevention Cheat Sheet on HTML Sanitization](https://www.owasp.org/index.php/XSS_%28Cross_Site_Scripting%29_Prevention_Cheat_Sheet#RULE_.236_-_Sanitize_HTML_Markup_with_a_Library_Designed_for_the_Job) for more information on HTML Sanitization.
+Therefore, you need a library to parse and clean HTML formatted text. Please see the [XSS Prevention Cheat Sheet on HTML Sanitization](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html) for more information on HTML Sanitization.
+
 ### Special Case: Validate Data During Deserialization
+
 Some forms of input are so complex that validation can only minimally protect the application. For example, it’s dangerous to deserialize untrusted data or data that can be manipulated by an attacker. The only safe architectural pattern is to not accept serialized objects from untrusted sources or to only deserialize in limited capacity for only simple data types. You should avoid processing serialized data formats and use easier to defend formats such as JSON when possible.
 
 If that is not possible then consider a series of validation defenses when processing serialized data.
@@ -132,8 +138,8 @@ If that is not possible then consider a series of validation defenses when proce
 ## References
 
 Regarding Input Validation:
+
 - [OWASP Cheat Sheet: Input Validation](https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html)
-- [OWASP Cheat Sheet: iOS - Security Decisions via Untrusted Inputs](https://www.owasp.org/index.php/IOS_Developer_Cheat_Sheet#Security_Decisions_via_Untrusted_Inputs_.28M7.29)
 - [OWASP Testing Guide: Testing for Input Validation](https://www.owasp.org/index.php/Testing_for_Input_Validation)
 - [Injection Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet.html)
 - [Injection Prevention Cheat Sheet in Java](https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_in_Java_Cheat_Sheet.html)
@@ -143,11 +149,13 @@ Regarding Input Validation:
 ## Tools
 
 Helping with Input Validation:
+
 - [OWASP Java HTML Sanitizer Project](https://www.owasp.org/index.php/OWASP_Java_HTML_Sanitizer)
 - [Java JSR-303/JSR-349 Bean Validation](http://beanvalidation.org/)
 - [Java Hibernate Validator](http://hibernate.org/validator/)[Apache Commons Validator](https://commons.apache.org/proper/commons-validator/)PHP’s [filter functions](https://secure.php.net/manual/en/book.filter.php)
 
 Testing for Injection Attacks:
+
 - Sqlmap.py
 - OWASP ZAP-based scans
 Helping with Hardening:
