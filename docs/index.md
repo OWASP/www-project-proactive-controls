@@ -4,7 +4,7 @@ Insecure software is undermining our financial, healthcare, defense, energy, and
 
 ## Aim & Objective
 
-The goal of the **OWASP Top 10 Proactive Controls project** (OPC) is to raise awareness about application security by describing the most important areas of concern that software developers must be aware of. We encourage you to use the OWASP Proactive Controls to get your developers started with application security. Developers can learn from the mistakes of other organizations. We hope that the OWASP Proactive Controls is useful to your efforts in building secure software.
+The goal of the **OWASP Top 10 Proactive Controls project** is to raise awareness about application security by describing the most important areas of concern that software developers must be aware of. We encourage you to use the OWASP Proactive Controls to get your developers started with application security. Developers can learn from the mistakes of other organizations. We hope that the OWASP Proactive Controls is useful to your efforts in building secure software.
 
 ## Target Audience
 
