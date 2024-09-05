@@ -1153,7 +1153,7 @@ Authorization (verifying access to specific features or resources) is not equiva
 Access Control design may start simple but can often become complex and feature-heavy security control. When evaluating the access control capability of software frameworks, ensure that your access control functionality will allow for customization for your specific access control feature need.</li>
 </ul>
 <h3 id="2-force-every-access-request-to-go-through-an-access-control-check">2) Force Every Access Request to Go Through an Access Control Check</h3>
-<p>Ensure that all access requests are forced to go through an access control verification layer. Technologies like Java filters or other automatic request processing mechanisms are ideal programming components that will ensure that all requests go through an access control check. This is refered to as <em>Policy Enforcement Point</em> in <a href="https://datatracker.ietf.org/doc/html/rfc2904#section-4.3">RFC 2904</a>.</p>
+<p>Ensure that all access requests are forced to go through an access control verification layer. Technologies like Java filters or other automatic request processing mechanisms are ideal programming components that will ensure that all requests go through an access control check. This is referred to as <em>Policy Enforcement Point</em> in <a href="https://datatracker.ietf.org/doc/html/rfc2904#section-4.3">RFC 2904</a>.</p>
 <h3 id="3-consolidate-the-access-control-check">3) Consolidate the access control check</h3>
 <p>Use a single access control procedure or routine. This prevents the scenario where you have multiple access control implementations, where most are correct, but some are flawed. By using a centralized approach, you can focus security resources on reviewing and fixing one central library or function that performs the access control check, and then reuse it throughout your code base and organization.</p>
 <h3 id="4-deny-by-default">4) Deny by Default</h3>
@@ -1183,7 +1183,7 @@ There are many ways that this rule will manifest in the application code. Some e
 <ul>
 <li>Role-based programming of this nature is fragile. It is easy to create incorrect or missing role checks in code.</li>
 <li>Hard-Coded Roles do not allow for multi-tenancy. Extreme measures like forking the code or adding checks for each customer will be required to allow role-based systems to have different rules for different customers.</li>
-<li>Large codebases with many access control checks can make it difficult to audit or verify the overall application access control policy.</li>
+<li>Large code bases with many access control checks can make it difficult to audit or verify the overall application access control policy.</li>
 <li>Hard coded roles can also be seen as a backdoor when discovered during audits.</li>
 </ul>
 <h3 id="7-abac-policy-enforcement-point-example">7) ABAC Policy Enforcement Point Example</h3>
