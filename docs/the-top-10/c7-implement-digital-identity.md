@@ -6,7 +6,7 @@ Digital Identity is a unique representation of an individual, organization (or a
 
 Session management is the process by which a server maintains the state of the user’s authentication so that the user may continue to use the system without re-authenticating.
 Digital identity, authentication, and session management are very complex topics. We're scratching the surface of the topic of Digital Identity here. Ensure that your most capable engineering talent is responsible for maintaining the complexity involved with most Identity solutions.
-The [NIST Special Publication 800-63B: Digital Identity Guidelines (Authentication and Lifecycle Management](https://pages.nist.gov/800-63-3/sp800-63b.html) provide solid guidance on implementing digital identity, authentication, and session management controls. Below are some recommendations for secure implementation to ensure strong digital identity controls are implemented in applications.
+The [NIST Special Publication 800-63B: Digital Identity Guidelines (Authentication and Life Cycle Management](https://pages.nist.gov/800-63-3/sp800-63b.html) provide solid guidance on implementing digital identity, authentication, and session management controls. Below are some recommendations for secure implementation to ensure strong digital identity controls are implemented in applications.
 
 ### Authentication Assurance Levels
 

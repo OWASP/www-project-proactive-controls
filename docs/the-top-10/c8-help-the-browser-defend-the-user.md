@@ -24,7 +24,7 @@ A fully compromised browser might not heed security guidance but if an adversary
 - An attacker could exploit MIME type confusion vulnerabilities in the absence of X-Content-Type-Options headers, potentially executing malicious scripts disguised as benign file types.
 - An attacker could hijack user sessions by exploiting insecure cookie settings, potentially gaining unauthorized access to user accounts.
 - An attacker could perform DNS rebinding attacks in the absence of proper DNS pinning, potentially bypassing same-origin policy restrictions.
-- An attacker could exploit cross-origin resource sharing (CORS) misconfigurations to gain unauthorized access to resources, potentially compromising data confidentiality and integrity.
+- An attacker could exploit a cross-origin resource sharing (CORS) misconfiguration to gain unauthorized access to resources, potentially compromising data confidentiality and integrity.
 
 ## Implementation
 
@@ -38,19 +38,19 @@ The following is a non-exhaustive list of potential Hardening mechanisms:
 Information disclosure occurs if the browser transmits information over unencrypted channels (HTTP instead of HTTPS) or sends our too much information in the first place (e.g., through the Referer-Header). The following mechanisms reduce the possibility of information disclosure:
 
 - **HTTP Strict Transport Security (HSTS)**: Ensures that browsers only connect to your website over HTTPS, preventing SSL stripping attacks.
-- **Content Security Policy (CSP)**: CSP policies can instruct the browser to automatically upgrade HTTP connections to HTTPS. In addition directives such as the form-src directive can be used to prevent forms from transmitting data to external sites.
+- **Content Security Policy (CSP)**: CSP policies can instruct the browser to automatically upgrade HTTP connections to HTTPS. In addition directives such as the 'form-src' directive can be used to prevent forms from transmitting data to external sites.
 - **Referrer-Policy**: when navigating between pages, the browser’s HTTP request includes the current URL within the outgoing request. This URL can include sensitive information. Using Referrer-Policy, a web-site can unify the browser’s behavior and select which information should be transmitted between web sites.
 - The cookie’s **secure** flag: while not a HTTP header, this security flag is related to information disclosure. If set, the web browser will not transmit a cookie over unencrypted HTTP transports.
 
 ### Reduce the potential Impact of XSS
 
-Javascript based XSS attacks have been very common for decades. To reduce the potential impact of vulnerabilities, browsers offer rich defensive mechanisms that should reduce the potential impact of XSS attacks:
+JavaScript based XSS attacks have been very common for decades. To reduce the potential impact of vulnerabilities, browsers offer rich defensive mechanisms that should reduce the potential impact of XSS attacks:
 
 - **Content Security Policy (CSP)**: CSP is a powerful tool that helps prevent a wide range of attacks including Cross-Site Scripting (XSS) and data injection. Strict CSP policies can effectively disable inline JavaScript and style, making it much harder for attackers to inject malicious content.  
     **Host Allowlist CSP**: Blocking all third-party JavaScript can significantly reduce the attack surface and prevent the exploitation of vulnerabilities in third-party libraries.  
     **Strict CSP**: A CSP utilizing nonces or hashes in the 'script-src' directive (often referred to as "strict CSP") provides a robust mitigation against XSS vulnerabilities. Optionally, the use of the CSP 'strict-dynamic' keyword can help to streamline the implementation of a strict CSP and to ensure compatibility with third-party JavaScript libraries when required.
     **Trusted Types**: This is a browser API that helps prevent DOM-based cross-site scripting vulnerabilities by ensuring only secure data types can be inserted into the DOM.
-- The cookie’s **httpOnly** flag: while not a HTTP header, setting this flag prevents Javascript from accessing this cookie and should be done esp. For Session cookies.
+- The cookie’s **httpOnly** flag: while not a HTTP header, setting this flag prevents JavaScript from accessing this cookie and should be done esp. For Session cookies.
 
 ### Prevent Clickjacking
 

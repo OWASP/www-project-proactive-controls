@@ -12,11 +12,11 @@ The best-known OWASP document is the [OWASP Top 10](https://owasp.org/Top10/). T
 
 ## OWASP SAMM
 
-[Software Assurance Maturity Model (SAMM)](https://www.opensamm.org/) is an open framework to help organizations implement a strategy for maturing the software security tailored to the specific risks of the organization. . [SAMM](https://owaspsamm.org/about/) supports the complete software lifecycle and can be used to identify what
+[Software Assurance Maturity Model (SAMM)](https://www.opensamm.org/) is an open framework to help organizations implement a strategy for maturing the software security tailored to the specific risks of the organization. . [SAMM](https://owaspsamm.org/about/) supports the complete software life cycle and can be used to identify what
 
 ## Threat Modeling in General
 
-Threat Modeling is an important part of secure application development, which can help identify potential security threats, derive security requirements, and tailor security controls to prevent potential threats. Successful use of security requirements involves four steps: discovery, documentation, implementation, and verification of the correct implementation of the functionality within an application. Threat modelling is one way to derive security requirements. Other sources are: industry standards, applicable laws, history of past vulnerabilities. Modeling tools, like [OWASP Threat Dragon](https://owasp.org/www-project-threat-dragon/) can be used to create threat model diagrams as part of a secure development lifecycle.
+Threat Modeling is an important part of secure application development, which can help identify potential security threats, derive security requirements, and tailor security controls to prevent potential threats. Successful use of security requirements involves four steps: discovery, documentation, implementation, and verification of the correct implementation of the functionality within an application. Threat modelling is one way to derive security requirements. Other sources are: industry standards, applicable laws, history of past vulnerabilities. Modeling tools, like [OWASP Threat Dragon](https://owasp.org/www-project-threat-dragon/) can be used to create threat model diagrams as part of a secure development life cycle.
 
 ## Domain-Specific Documents
 

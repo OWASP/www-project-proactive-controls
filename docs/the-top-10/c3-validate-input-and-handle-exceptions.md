@@ -84,7 +84,7 @@ More examples are available in the [OWASP Mass Assignment Cheat Sheet](https://w
 
 ### Limits of Input Validation
 
-Input validation does not always make data “safe” since certain complex input forms may be “valid” but still dangerous. For example, a valid email address may contain a SQL injection attack, or a valid URL may contain a Cross Site Scripting attack. Additional defenses besides input validation should always be applied to data, such as query parameterization or escaping.
+Input validation does not always make data “safe” since certain complex input forms may be “valid” but still dangerous. For example, a valid email address may contain a SQL injection attack, or a valid URL may contain a Cross Site Scripting attack. Additional defenses besides input validation should always be applied to data, such as query parametrization or escaping.
 
 ### Use mechanisms that uphold the separation of data and commands
 

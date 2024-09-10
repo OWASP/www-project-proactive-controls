@@ -53,7 +53,7 @@ An example of implementing that principle is to create dedicated privileged role
 
 To further improve the security, you can implement Just-in-Time (JIT) or Just-enough-Access (JEA): ensure that all users, programs, or processes are only given just enough access to achieve their current mission. This access should be provided just in time, when the subject makes the request, and the access should be granted for a short time. Be wary of systems that do not provide granular access control configuration capabilities.
 
-### 6) Do not Hardcode Roles
+### 6) Do not Hard-code Roles
 
 Many application frameworks default to access control that is role based. It is common to find application code filled with checks of this nature.
 

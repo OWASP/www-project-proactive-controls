@@ -18,7 +18,7 @@ This list was originally created by the current project leads with contributions
 
 ## Security Controls
 
-The description of each control has the same structure. The control itself has an unique name preceeded by the control number: **Cx: Control Name**, e.g., *C1: Implement Access Control*.
+The description of each control has the same structure. The control itself has an unique name preceded by the control number: **Cx: Control Name**, e.g., *C1: Implement Access Control*.
 
 Each control has the same sections:
 

@@ -13,13 +13,13 @@ This section describes secure access to all data stores, including both relation
 
 SQL Injection occurs when untrusted user input is dynamically added to a SQL query in an insecure manner, often via basic string concatenation. SQL Injection is one of the most dangerous application security risks. SQL Injection is easy to exploit and could lead to the entire database being stolen, wiped, or modified. The application can even be used to run dangerous commands against the operating system hosting your database, thereby giving an attacker a foothold on your network.
 
-In order to mitigate SQL injection, untrusted input should be prevented from being interpreted as part of a SQL command. The best way to do this is with the programming technique known as 'Query Parameterization'. This defense should be applied to SQL, OQL, as well as stored procedure construction.
+In order to mitigate SQL injection, untrusted input should be prevented from being interpreted as part of a SQL command. The best way to do this is with the programming technique known as 'Query Parametrization'. This defense should be applied to SQL, OQL, as well as stored procedure construction.
 
-A good list of query parameterization examples in ASP, ColdFusion, C#, Delphi, .NET, Go, Java, Perl, PHP, PL/SQL, PostgreSQL, Python, R, Ruby and Scheme can be found at [http://bobby-tables.com](http://bobby-tables.com/) and the [OWASP Cheat Sheet on Query Parameterization](https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html).
+A good list of query parameterization examples in ASP, ColdFusion, C#, Delphi, .NET, Go, Java, Perl, PHP, PL/SQL, PostgreSQL, Python, R, Ruby and Scheme can be found at [http://bobby-tables.com](http://bobby-tables.com/) and the [OWASP Cheat Sheet on Query Parametrization](https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html).
 
-#### Caution on Query Parameterization
+#### Caution on Query Parametrization
 
-Certain locations in a database query are not parameterizable. These locations are different for each database vendor. Be certain to do very careful exact-match validation or manual escaping when confronting database query parameters that cannot be bound to a parameterized query. Also, while the use of parameterized queries largely has a positive impact on performance, certain parameterized queries in specific database implementations will affect performance negatively. Be sure to test queries for performance; especially complex queries with extensive like clause or text searching capabilities.
+Certain locations in a database query can not be used with parametrization. These locations are different for each database vendor. Be certain to do very careful exact-match validation or manual escaping when confronting database query parameters that cannot be bound to a parameterized query. Also, while the use of parameterized queries largely has a positive impact on performance, certain parameterized queries in specific database implementations will affect performance negatively. Be sure to test queries for performance; especially complex queries with extensive like clause or text searching capabilities.
 
 ### Secure Configuration
 
@@ -46,7 +46,7 @@ A quick guidance on providing a secure communication mean can be found in the [D
 
 ## References
 
-* [OWASP Cheat Sheet: Query Parameterization](https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html)
+* [OWASP Cheat Sheet: Query Parametrization](https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html)
 * [OWASP Cheat Sheet: Database Security](https://cheatsheetseries.owasp.org/cheatsheets/Database_Security_Cheat_Sheet.html)
 * [Bobby Tables: A guide to preventing SQL injection](http://bobby-tables.com/)
 * [CIS Database Hardening Standards](https://www.cisecurity.org/cis-benchmarks/)

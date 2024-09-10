@@ -96,7 +96,7 @@ Server-side sessions can be limiting for some forms of authentication. "Stateles
 
 JSON Web Token (JWT) is an open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed. A JWT token is created during authentication and is verified by the server (or servers) before any processing.
 
-However, JWT's are often not saved by the server after initial creation. JWT's are typically created and then handed to a client without being saved by the server in any way. The integrity of the token is maintained through the use of digital signatures so a server can later verify that the JWT is still valid and was not tampered with since its creation.
+However, JWTs are often not saved by the server after initial creation. JWT's are typically created and then handed to a client without being saved by the server in any way. The integrity of the token is maintained through the use of digital signatures so a server can later verify that the JWT is still valid and was not tampered with since its creation.
 
 This approach is both stateless and portable in the way that client and server technologies can be different yet still interact.
 

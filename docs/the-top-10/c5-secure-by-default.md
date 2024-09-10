@@ -38,7 +38,7 @@ As part of software development, a developer needs to ensure that software is co
 
 ## References
 
-- OWASP Cheat Sheet: [Infrastructure as Code Security Cheatsheet](https://cheatsheetseries.owasp.org/cheatsheets/Infrastructure_as_Code_Security_Cheat_Sheet.html)
+- OWASP Cheat Sheet: [Infrastructure as Code Security Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Infrastructure_as_Code_Security_Cheat_Sheet.html)
 - OWASP ASVS: [Application Security Verification Standard V14 Configuration](https://github.com/OWASP/ASVS/blob/master/5.0/en/0x22-V14-Config.md)
 - [Cloud security guidance - NCSC.GOV.UK](https://www.ncsc.gov.uk/collection/cloud-security)
 

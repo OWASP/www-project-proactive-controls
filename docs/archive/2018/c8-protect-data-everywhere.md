@@ -8,11 +8,11 @@ Attackers can steal data from web and webservice applications in a number of way
 
 ## Data Classification
 
-It's critical to classify data in your system and determine which level of sensitivity each piece of data belongs to. Each data category can then be mapped to protection rules necessary for each level of sensitivity. For example, public marketing information that is not sensitive may be categorized as public data which is ok to place on the public website. Credit card numbers may be classified as private user data which may need to be encrypted while stored or in transit.
+It's critical to classify data in your system and determine which level of sensitivity each piece of data belongs to. Each data category can then be mapped to protection rules necessary for each level of sensitivity. For example, public marketing information that is not sensitive may be categorized as public data which is okay to place on the public website. Credit card numbers may be classified as private user data which may need to be encrypted while stored or in transit.
 
 ## Encrypting Data in Transit
 
-When transmitting sensitive data over any network, end-to-end communications security (or encryption-in-transit) of some kind should be considered. TLS is by far the most common and widely supported cryptographic protocol for communications security. It is used by many types of applications (web, webservice, mobile) to communicate over a network in a secure fashion. TLS must be properly configured in a variety of ways in order to properly defend secure communications.
+When transmitting sensitive data over any network, end-to-end communications security (or encryption-in-transit) of some kind should be considered. TLS is by far the most common and widely supported cryptographic protocol for communications security. It is used by many types of applications (web, web service, mobile) to communicate over a network in a secure fashion. TLS must be properly configured in a variety of ways in order to properly defend secure communications.
 
 The primary benefit of transport layer security is the protection of web application data from unauthorized disclosure and modification when it is transmitted between clients (web browsers) and the web application server, and between the web application server and back end and other non-browser based enterprise components.
 
@@ -46,7 +46,7 @@ When an immutable datatype such as `string` is used to store secrets, secrets ca
 Even if you try to nullify the string value, it still remains in the memory.
 `string` is an immutable type and cannot be changed. When you modify a string (try to overwrite it), a new copy of it is created.
 This means another copy of the unprotected secret will remain in the memory.
-Furthermore, there is no gurantee when garbage collector is going to clean up the secret.
+Furthermore, there is no guarantee when garbage collector is going to clean up the secret.
 This increases exposure of plaintext secrets in the memory.
 
 If secrets remain unprotected in the memory, they can get disclosed on the disk or external log aggregators
@@ -60,7 +60,7 @@ For an example implementation see [this post](https://discuss.secdim.com/t/do-no
 
 Applications contain numerous "secrets" that are needed for security operations. These include certificates, SQL connection passwords, third party service account credentials, passwords, SSH keys, encryption keys and more. The unauthorized disclosure or modification of these secrets could lead to complete system compromise. In managing application secrets, consider the following.
 
-* Don't store secrets in code, config files or pass them through environment variables. Use tools like [GitRob](https://github.com/michenriksen/gitrob) or [TruffleHog](https://github.com/dxa4481/truffleHog) to scan code repos for secrets.
+* Don't store secrets in code, config files or pass them through environment variables. Use tools like [GitRob](https://github.com/michenriksen/gitrob) or [TruffleHog](https://github.com/dxa4481/truffleHog) to scan code repositories for secrets.
 * Keep keys and your other application-level secrets in a secrets vault like [KeyWhiz](https://github.com/square/keywhiz) or [Hashicorp's Vault project](https://www.vaultproject.io/) or [Amazon KMS](https://aws.amazon.com/kms/) to provide secure storage and access to application-level secrets at run-time.
 
 ## Vulnerabilities Prevented

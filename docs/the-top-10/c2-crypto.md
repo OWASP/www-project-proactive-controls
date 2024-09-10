@@ -2,7 +2,7 @@
 
 ## Description
 
-Sensitive data such as passwords, credit card numbers, health records, personal information and business secrets require extra protection, particularly if that data falls under privacy laws (EU’s General Data Protection Regulation GDPR), financial data protection rules such as PCI Data Security Standard (PCI DSS) or other regulations.
+Sensitive data such as passwords, credit card numbers, health records, personal information and business secrets require extra protection, particularly if that data falls under privacy laws (EU's General Data Protection Regulation GDPR), financial data protection rules such as PCI Data Security Standard (PCI DSS) or other regulations.
 
 Attackers can steal data from web and web service applications in a number of ways. For example, if sensitive information is sent over the internet without communications security, then an attacker on a shared wireless connection could capture and steal another user’s data. Also, an attacker could use SQL Injection to steal passwords and other credentials from an applications database and expose that information to the public.
 
@@ -16,7 +16,7 @@ Cryptography is the art or science concerning the principles, means, and methods
 
 ### Classify data types in your application
 
-It’s critical to classify data in your system and determine which level of sensitivity each piece of data belongs to. Each data category can then be mapped to protection rules necessary for each level of sensitivity. For example, public marketing information that is not sensitive may be categorized as public data which is ok to place on the public website. Credit card numbers may be classified as private user data which will need to be encrypted while stored, processed or in transit.
+It’s critical to classify data in your system and determine which level of sensitivity each piece of data belongs to. Each data category can then be mapped to protection rules necessary for each level of sensitivity. For example, public marketing information that is not sensitive may be categorized as public data which is okay to place on the public website. Credit card numbers may be classified as private user data which will need to be encrypted while stored, processed or in transit.
 
 Data classification can also be mandated by legislation, e.g., GDPR when serving users within the European Union.
 
@@ -53,10 +53,10 @@ Do not store the passwords in plain text anywhere in the database. Always use a 
 #### Special Case: Application Secrets management
 
 Applications contain numerous “secrets” that are needed for security operations. These include certificates, SQL connection passwords, third party service account credentials, passwords, SSH keys, encryption keys and more. The unauthorized disclosure or modification of these secrets could lead to complete system compromise. In managing application secrets, consider the following:
-Don’t store secrets in code, config files or pass them through environment variables. Use tools like GitRob or TruffleHog to scan code repos for secrets. Your code should be written in a way that even if your code would be disclosed, e.g., due to a defective configured github repository, your running applications are still secure.
-Keep keys and your other application-level secrets in a secrets vault like KeyWhiz or Hashicorp’s Vault project , Amazon KMS, or AWS Secrets Manager to provide secure storage and access to application-level secrets at run-time. Many web-frameworks such as Ruby on Rails provide integrated ways of dealing with secrets and credentials.
+Don’t store secrets in code, config files or pass them through environment variables. Use tools like GitRob or TruffleHog to scan code repositories for secrets. Your code should be written in a way that even if your code would be disclosed, e.g., due to a defective configured github repository, your running applications are still secure.
+Keep keys and your other application-level secrets in a secrets vault like KeyWhiz or Hashicorp's Vault project , Amazon KMS, or AWS Secrets Manager to provide secure storage and access to application-level secrets at run-time. Many web-frameworks such as Ruby on Rails provide integrated ways of dealing with secrets and credentials.
 
-#### Key Lifecycle
+#### Key Life Cycle
 
 Secret keys are used in applications with a number of sensitive functions. For example, secret keys can be used to sign JWTs, protect credit cards, provide various forms of authentication as well as facilitate other sensitive security features. In managing keys, a number of rules should be followed including
 

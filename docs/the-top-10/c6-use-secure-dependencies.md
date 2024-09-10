@@ -46,9 +46,9 @@ New security vulnerabilities are disclosed every day and are published in public
 
 2. **Perform continuous checks.** Use your SBOMs together with periodic or continuous monitoring tools such as OWASP dependency-track to automatically detect well-known publicly disclosed vulnerabilities.
 
-3. **Verify for security early and often** - integrate SCA tools in early stages of software development, to gain visibility in the number and criticality of security vulnerabilities of the software and its dependencies from every stage of the software development lifecycle.
+3. **Verify for security early and often** - integrate SCA tools in early stages of software development, to gain visibility in the number and criticality of security vulnerabilities of the software and its dependencies from every stage of the software development life cycle.
 
-4. **Proactively** update libraries and components. Updating software must be a recurring task that occurs throughout the lifecycle of the application or product, from ideation to retirement.
+4. **Proactively** update libraries and components. Updating software must be a recurring task that occurs throughout the life cycle of the application or product, from ideation to retirement.
 
 ## Vulnerabilities Prevented
 
@@ -56,7 +56,7 @@ Secure frameworks and libraries can help to prevent a wide range of web applicat
 
 ## References
 
-- OWASP Cheat Sheet: [Third Party Javascript Management](https://cheatsheetseries.owasp.org/cheatsheets/Third_Party_Javascript_Management_Cheat_Sheet.html#sandboxing-content)
+- OWASP Cheat Sheet: [Third Party JavaScript Management](https://cheatsheetseries.owasp.org/cheatsheets/Third_Party_Javascript_Management_Cheat_Sheet.html#sandboxing-content)
 - [OpenSSF Scorecard - Security health metrics for Open Source](https://github.com/ossf/scorecard)
 
 ## Tools
