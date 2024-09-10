@@ -1809,7 +1809,7 @@ Keep keys and your other application-level secrets in a secrets vault like KeyWh
 <li>Build application features to support and handle key rotation gracefully. This can happen on a periodic base or after a key has been compromised.</li>
 </ul>
 <h3 id="protect-data-in-transit">Protect data in transit</h3>
-<p>Sensitive data such as passwords, credit card numbers, health records, personal information and business secrets require extra protection, particularly if that data falls under privacy laws (EU’s General Data Protection Regulation GDPR), financial data protection rules such as PCI Data Security Standard (PCI DSS) or other regulations.
+<p>Sensitive data such as passwords, credit card numbers, health records, personal information and business secrets require extra protection, particularly if that data falls under privacy laws (EU's General Data Protection Regulation GDPR), financial data protection rules such as PCI Data Security Standard (PCI DSS) or other regulations.
 Attackers can steal data from web and web service applications in a number of ways. For example, if sensitive information is sent over the internet without communications security, then an attacker on a shared wireless connection could capture and steal another user’s data. Also, an attacker could use SQL Injection to steal passwords and other credentials from an applications database and expose that information to the public.</p>
 <h4 id="use-current-cryptographic-protocols">Use current cryptographic protocols</h4>
 <p>When developing web applications, use TLSv1.2 or TLSv1.3, preferably TLSv1.3. If possible, investigate the usage of HTTP/2 or HTTP/3 as they warrant the usage of security TLS versions/algorithms.</p>

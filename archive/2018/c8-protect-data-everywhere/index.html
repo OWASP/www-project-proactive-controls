@@ -1313,9 +1313,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#secret-lifecycle" class="md-nav__link">
+  <a href="#secret-life-cycle" class="md-nav__link">
     <span class="md-ellipsis">
-      Secret Lifecycle
+      Secret Life Cycle
     </span>
   </a>
   
@@ -1563,9 +1563,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#secret-lifecycle" class="md-nav__link">
+  <a href="#secret-life-cycle" class="md-nav__link">
     <span class="md-ellipsis">
-      Secret Lifecycle
+      Secret Life Cycle
     </span>
   </a>
   
@@ -1642,7 +1642,7 @@
 <h1 id="c8-protect-data-everywhere">C8: Protect Data Everywhere</h1>
 <h2 id="description">Description</h2>
 <p>Sensitive data such as passwords, credit card numbers, health records, personal information and business secrets require extra protection, particularly if that data falls under privacy laws (EU's General Data Protection Regulation GDPR), financial data protection rules such as PCI Data Security Standard (PCI DSS) or other regulations.</p>
-<p>Attackers can steal data from web and webservice applications in a number of ways. For example, if sensitive information in sent over the internet  without communications security, then an attacker on a shared wireless connection could see and steal another user's data. Also, an attacker could use SQL Injection to steal passwords and other credentials from an applications database and expose that information to the public.</p>
+<p>Attackers can steal data from web and web-service applications in a number of ways. For example, if sensitive information in sent over the internet  without communications security, then an attacker on a shared wireless connection could see and steal another user's data. Also, an attacker could use SQL Injection to steal passwords and other credentials from an applications database and expose that information to the public.</p>
 <h2 id="data-classification">Data Classification</h2>
 <p>It's critical to classify data in your system and determine which level of sensitivity each piece of data belongs to. Each data category can then be mapped to protection rules necessary for each level of sensitivity. For example, public marketing information that is not sensitive may be categorized as public data which is okay to place on the public website. Credit card numbers may be classified as private user data which may need to be encrypted while stored or in transit.</p>
 <h2 id="encrypting-data-in-transit">Encrypting Data in Transit</h2>
@@ -1655,7 +1655,7 @@
 <h3 id="mobile-application-secure-local-storage">Mobile Application: Secure Local Storage</h3>
 <p>Mobile applications are at particular risk of data leakage because mobile devices are regularly lost or stolen yet contain sensitive data.</p>
 <p>As a general rule, only the minimum data required should be stored on the mobile device. But if you must store sensitive data on a mobile device, then sensitive data should be stored within each mobile operating systems specific data storage directory. On Android this will be the Android keystore and on iOS this will be the iOS keychain.</p>
-<h3 id="secret-lifecycle">Secret Lifecycle</h3>
+<h3 id="secret-life-cycle">Secret Life Cycle</h3>
 <p>Secret keys can be used in a number of sensitive functions. For example, they can be used to sign JWTs, encrypt credit cards, sign hash, provide various forms of authentication and more. In managing keys, a number of precautious should be adhered including but not limited to the following:</p>
 <ul>
 <li>Ensure that any secret key is protected from unauthorized access</li>
