@@ -1666,12 +1666,12 @@
 </ul>
 <h3 id="secret-datatype">Secret Datatype</h3>
 <p>When an immutable datatype such as <code>string</code> is used to store secrets, secrets can remain plaintext in the memory for a long time.
-Even if you try to nullify the string value, it still remains in the memory. 
-<code>string</code> is an immutable type and cannot be changed. When you modify a string (try to overwrite it), a new copy of it is created. 
-This means another copy of the unprotected secret will remain in the memory. 
+Even if you try to nullify the string value, it still remains in the memory.
+<code>string</code> is an immutable type and cannot be changed. When you modify a string (try to overwrite it), a new copy of it is created.
+This means another copy of the unprotected secret will remain in the memory.
 Furthermore, there is no gurantee when garbage collector is going to clean up the secret.
 This increases exposure of plaintext secrets in the memory.</p>
-<p>If secrets remain unprotected in the memory, they can get disclosed on the disk or external log aggregators 
+<p>If secrets remain unprotected in the memory, they can get disclosed on the disk or external log aggregators
 through a number of scenarios: server crash logs, caching, serialisation or memory paging.</p>
 <p>A safe way to handle secret is by using <strong>Read Once</strong> pattern.
 Read once is a defensive design pattern where a value can be only accessed once. After the first read, value is cleared from memory, and subsequent access is not possible.
@@ -1694,8 +1694,6 @@ For an example implementation see <a href="https://discuss.secdim.com/t/do-not-u
 <li><a href="https://www.owasp.org/index.php/HTTP_Strict_Transport_Security_Cheat_Sheet">OWASP Cheat Sheet: HSTS</a></li>
 <li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html">OWASP Cheat Sheet: Cryptographic Storage</a></li>
 <li><a href="https://www.owasp.org/index.php/Password_Storage_Cheat_Sheet">OWASP Cheat Sheet: Password Storage</a></li>
-<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Secrets_Management_CheatSheet.html">OWASP Cheat Sheet: Secrets Management</a></li>
-<li><a href="https://www.owasp.org/index.php/IOS_Developer_Cheat_Sheet#Insecure_Data_Storage_.28M1.29">OWASP Cheat Sheet: IOS Developer - Insecure Data Storage</a></li>
 <li><a href="https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/01-Testing_for_Weak_Transport_Layer_Security">OWASP Testing Guide: Testing for TLS</a></li>
 <li><a href="https://discuss.secdim.com/t/do-not-use-string-to-store-secret-it-gets-disclosed/247">Do not use String to store secret. It gets disclosed</a></li>
 </ul>
@@ -1716,9 +1714,6 @@ For an example implementation see <a href="https://discuss.secdim.com/t/do-not-u
 
 
 
-
-  
-  
 
 
 

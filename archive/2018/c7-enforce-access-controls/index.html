@@ -1652,7 +1652,7 @@ There are several different types of access control design that should be consid
 <li>Attribute Based Access Control (ABAC) will grant or deny user requests based on arbitrary attributes of the user and arbitrary attributes of the object, and environment conditions that may be globally recognized and more relevant to the policies at hand.</li>
 </ul>
 <h2 id="access-control-design-principles">Access Control Design Principles</h2>
-<p>The following "positive" access control design requirements should be considered at the initial stages of application development. </p>
+<p>The following "positive" access control design requirements should be considered at the initial stages of application development.</p>
 <h3 id="1-design-access-control-thoroughly-up-front">1) Design Access Control Thoroughly Up Front</h3>
 <p>Once you have chosen a specific access control design pattern, it is often difficult and time consuming to re-engineer access control in your application with a new pattern. Access Control is one of the main areas of application security design that must be thoroughly designed up front, especially when addressing requirements like multi-tenancy and horizontal (data dependent) access control.</p>
 <p>Access Control design may start simple but can often grow into a complex and feature-heavy security control. When evaluating access control capability of software frameworks, ensure that your access control functionality will allow for customization for your specific access control feature need.</p>
@@ -1668,20 +1668,22 @@ There are several different types of access control design that should be consid
 <h3 id="4-principle-of-least-privilege">4) Principle of Least Privilege</h3>
 <p>Ensure that all users, programs, or processes are only given as least or as little necessary access as possible. Be wary of systems that do not provide granular access control configuration capabilities.</p>
 <h3 id="5-dont-hardcode-roles">5) Don't Hardcode Roles</h3>
-<p>Many application frameworks default to access control that is role based. It is common to find application code that is filled with checks of this nature.
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>    if (user.hasRole(&quot;ADMIN&quot;)) || (user.hasRole(&quot;MANAGER&quot;)) {
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>        deleteAccount();
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    }
+<p>Many application frameworks default to access control that is role based. It is common to find application code that is filled with checks of this nature.</p>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">user</span><span class="p">.</span><span class="na">hasRole</span><span class="p">(</span><span class="s">&quot;ADMIN&quot;</span><span class="p">))</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="p">(</span><span class="n">user</span><span class="p">.</span><span class="na">hasRole</span><span class="p">(</span><span class="s">&quot;MANAGER&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">        </span><span class="n">deleteAccount</span><span class="p">();</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="p">}</span>
 </span></code></pre></div>
-Be careful about this type of role-based programming in code. It has the following limitations or dangers.
-* Role based programming of this nature is fragile. It is easy to create incorrect or missing role checks in code.
-* Role based programming does not allow for multi-tenancy. Extreme measures like forking the code or added checks for each customer will be required to allow role based systems to have different rules for different customers.
-* Role based programming does not allow for data-specific or horizontal access control rules.
-* Large codebases with many access control checks can be difficult to audit or verify the overall application access control policy.</p>
+<p>Be careful about this type of role-based programming in code. It has the following limitations or dangers.</p>
+<ul>
+<li>Role based programming of this nature is fragile. It is easy to create incorrect or missing role checks in code.</li>
+<li>Role based programming does not allow for multi-tenancy. Extreme measures like forking the code or added checks for each customer will be required to allow role based systems to have different rules for different customers.</li>
+<li>Role based programming does not allow for data-specific or horizontal access control rules.</li>
+<li>Large codebases with many access control checks can be difficult to audit or verify the overall application access control policy.</li>
+</ul>
 <p>Instead, please consider the following access control programming methodology:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>    if (user.hasAccess(&quot;DELETE_ACCOUNT&quot;)) {
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>        deleteAccount();
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>    }
+<div class="language-java highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">user</span><span class="p">.</span><span class="na">hasAccess</span><span class="p">(</span><span class="s">&quot;DELETE_ACCOUNT&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">        </span><span class="n">deleteAccount</span><span class="p">();</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="p">}</span>
 </span></code></pre></div>
 <p>Attribute or feature-based access control checks of this nature are the starting point to building well-designed and feature-rich access control systems. This type of programming also allows for greater access control customization capability over time.</p>
 <h3 id="6-log-all-access-control-events">6) Log All Access Control Events</h3>
@@ -1694,22 +1696,15 @@ Be careful about this type of role-based programming in code. It has the followi
 <h2 id="references">References</h2>
 <ul>
 <li><a href="https://www.owasp.org/index.php/Access_Control_Cheat_Sheet">OWASP Cheat Sheet: Access Control</a></li>
-<li><a href="https://www.owasp.org/index.php/IOS_Developer_Cheat_Sheet#Remediations_5">OWASP Cheat Sheet:  iOS Developer - Poor Authorization and Authentication</a></li>
 <li><a href="https://www.owasp.org/index.php/Testing_for_Authorization">OWASP Testing Guide: Testing for Authorization</a></li>
 </ul>
 <h2 id="tools">Tools</h2>
-<ul>
-<li><a href="https://www.owasp.org/index.php/ZAP">OWASP ZAP</a> with the optional <a href="https://github.com/zaproxy/zap-extensions/wiki/HelpAddonsAccessControlConcepts">Access Control Testing</a> add-on</li>
-</ul>
 
 
 
 
 
 
-
-  
-  
 
 
 

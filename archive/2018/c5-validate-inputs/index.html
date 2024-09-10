@@ -1247,6 +1247,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Regular Expressions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caution-potential-for-denial-of-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caution: Potential for Denial of Service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caution-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caution: Complexity
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1578,6 +1602,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Regular Expressions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#caution-potential-for-denial-of-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caution: Potential for Denial of Service
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caution-complexity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Caution: Complexity
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -1698,28 +1746,32 @@ When building secure software, allowlisting is the recommended minimal approach.
 <div class="language-text highlight"><pre><span></span><code>^[a-z0-9_]{3,16}$
 </code></pre></div>
 <p>This regular expression allows only lowercase letters, numbers and the underscore character. The username is also restricted to a length of 3 and 16 characters.</p>
-<p><strong>Caution: Potential for Denial of Service</strong></p>
+<h4 id="caution-potential-for-denial-of-service">Caution: Potential for Denial of Service</h4>
 <p>Care should be exercised when creating regular expressions. Poorly designed expressions may result in potential denial of service conditions (aka <a href="https://www.owasp.org/index.php/Regular_expression_Denial_of_Service_-_ReDoS">ReDoS</a> ). Various tools can test to verify that regular expressions are not vulnerable to ReDoS.</p>
-<p><strong>Caution: Complexity</strong></p>
+<h4 id="caution-complexity">Caution: Complexity</h4>
 <p>Regular expressions are just one way to accomplish validation. Regular expressions can be difficult to maintain or understand for some developers. Other validation alternatives involve writing validation methods programmatically which can be easier to maintain for some developers.</p>
 <h3 id="limits-of-input-validation">Limits of Input Validation</h3>
 <p><strong>Input validation does not always make data "safe" since certain forms of complex input may be "valid" but still dangerous. For example, a valid email address may contain a SQL injection attack or a valid URL may contain a Cross Site Scripting attack</strong>. Additional defenses besides input validation should always be applied to data such as query parameterization or escaping.</p>
 <h3 id="challenges-of-validating-serialized-data">Challenges of Validating Serialized Data</h3>
 <p>Some forms of input are so complex that validation can only minimally protect the application. For example, it's dangerous to deserialize untrusted data or data that can be manipulated by an attacker. The only safe architectural pattern is to not accept serialized objects from untrusted sources or to only deserialize in limited capacity for only simple data types. You should avoid processing serialized data formats and use easier to defend formats such as JSON when possible.</p>
-<p>If that is not possible then consider a series of validation defenses when processing serialized data.
-* Implement integrity checks or encryption of the serialized objects to prevent hostile object creation or data tampering.
-* Enforce strict type constraints during deserialization before object creation; typically code is expecting a definable set of classes. Bypasses to this technique have been demonstrated.
-* Isolate code that deserializes, such that it runs in very low privilege environments, such as temporary containers.
-* Log security deserialization exceptions and failures, such as where the incoming type is not the expected type, or the deserialization throws exceptions.
-* Restrict or monitor incoming and outgoing network connectivity from containers or servers that deserialize.
-* Monitor deserialization, alerting if a user deserializes constantly.</p>
+<p>If that is not possible then consider a series of validation defenses when processing serialized data.</p>
+<ul>
+<li>Implement integrity checks or encryption of the serialized objects to prevent hostile object creation or data tampering.</li>
+<li>Enforce strict type constraints during deserialization before object creation; typically code is expecting a definable set of classes. Bypasses to this technique have been demonstrated.</li>
+<li>Isolate code that deserializes, such that it runs in very low privilege environments, such as temporary containers.</li>
+<li>Log security deserialization exceptions and failures, such as where the incoming type is not the expected type, or the deserialization throws exceptions.</li>
+<li>Restrict or monitor incoming and outgoing network connectivity from containers or servers that deserialize.</li>
+<li>Monitor deserialization, alerting if a user deserializes constantly.</li>
+</ul>
 <h3 id="unexpected-user-input-mass-assignment">Unexpected User Input (Mass Assignment)</h3>
 <p>Some frameworks support automatic binding of HTTP requests parameters to server-side objects used by the application. This auto-binding feature can allow an attacker to update server-side objects that were not meant to be modified. The attacker can possibly modify their access control level or circumvent the intended business logic of the application with this feature.</p>
 <p>This attack has a number of names including: mass assignment, autobinding and object injection.</p>
 <p>As a simple example, if the user object has a field named <code>privilege</code> which specifies the user's privilege level in the application, a malicious user can look for pages where user data is modified and add <code>privilege=admin</code> to the HTTP parameters sent.  If auto-binding is enabled in an insecure fashion, the server-side object representing the user will be modified accordingly.</p>
-<p>Two approaches can be used to handle this:
-* Avoid binding input directly and use Data Transfer Objects (DTOs) instead.
-* Enable auto-binding but set up allowlist rules for each page or feature to define which fields are allowed to be auto-bound.</p>
+<p>Two approaches can be used to handle this:</p>
+<ul>
+<li>Avoid binding input directly and use Data Transfer Objects (DTOs) instead.</li>
+<li>Enable auto-binding but set up allowlist rules for each page or feature to define which fields are allowed to be auto-bound.</li>
+</ul>
 <p>More examples are available in the <a href="https://www.owasp.org/index.php/Mass_Assignment_Cheat_Sheet">OWASP Mass Assignment Cheat Sheet</a>.</p>
 <h3 id="validating-and-sanitizing-html">Validating and Sanitizing HTML</h3>
 <p>Consider an application that needs to accept HTML from users (via a WYSIWYG editor that represents content as HTML or features that directly accept HTML in input). In this situation validation or escaping will not help.</p>
@@ -1739,7 +1791,6 @@ When building secure software, allowlisting is the recommended minimal approach.
 <h2 id="references">References</h2>
 <ul>
 <li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Input_Validation_Cheat_Sheet.html">OWASP Cheat Sheet: Input Validation</a></li>
-<li><a href="https://www.owasp.org/index.php/IOS_Developer_Cheat_Sheet#Security_Decisions_via_Untrusted_Inputs_.28M7.29">OWASP Cheat Sheet: iOS - Security Decisions via Untrusted Inputs</a></li>
 <li><a href="https://www.owasp.org/index.php/Testing_for_Input_Validation">OWASP Testing Guide: Testing for Input Validation</a></li>
 </ul>
 <h2 id="tools">Tools</h2>
@@ -1757,9 +1808,6 @@ When building secure software, allowlisting is the recommended minimal approach.
 
 
 
-
-  
-  
 
 
 

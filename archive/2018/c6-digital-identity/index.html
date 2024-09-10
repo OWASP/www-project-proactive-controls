@@ -1278,6 +1278,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Implement Secure Password Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#php-example-for-password-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      PHP Example for Password Storage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1627,6 +1642,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Implement Secure Password Storage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#php-example-for-password-storage" class="md-nav__link">
+    <span class="md-ellipsis">
+      PHP Example for Password Storage
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1775,7 +1805,7 @@
 <p>Please see the <a href="https://www.owasp.org/index.php/Forgot_Password_Cheat_Sheet">Forgot Password Cheat Sheet</a> and <a href="https://www.owasp.org/index.php/Choosing_and_Using_Security_Questions_Cheat_Sheet">Choosing and Using Security Questions Cheat Sheet</a> for further details.</p>
 <h4 id="implement-secure-password-storage">Implement Secure Password Storage</h4>
 <p>In order to provide strong authentication controls, an application must securely store user credentials. Furthermore, cryptographic controls should be in place such that if a credential (e.g., a password) is compromised, the attacker does not immediately have access to this information.</p>
-<p><strong>PHP Example for Password Storage</strong></p>
+<h5 id="php-example-for-password-storage">PHP Example for Password Storage</h5>
 <p>Below is an example for secure password hashing in PHP using <code>password_hash()</code> function (available since 5.5.0) which defaults to using the bcrypt algorithm. The example uses a work factor of 15.</p>
 <div class="language-text highlight"><pre><span></span><code>&lt;?php
  $cost = 15;
@@ -1785,10 +1815,12 @@
 <p>Please see the <a href="https://www.owasp.org/index.php/Password_Storage_Cheat_Sheet">OWASP Password Storage Cheat Sheet</a> for further details.</p>
 <h3 id="level-2-multi-factor-authentication">Level 2 : Multi-Factor Authentication</h3>
 <p>NIST 800-63b AAL level 2 is reserved for higher-risk applications that contain "self-asserted PII or other personal information made available online." At AAL level 2 multi-factor authentication is required including OTP or other forms of multi-factor implementation.</p>
-<p>Multi-factor authentication (MFA) ensures that users are who they claim to be by requiring them to identify themselves with a combination of:
-* Something you know – password or PIN
-* Something you own – token or phone
-* Something you are – biometrics, such as a fingerprint</p>
+<p>Multi-factor authentication (MFA) ensures that users are who they claim to be by requiring them to identify themselves with a combination of:</p>
+<ul>
+<li>Something you know – password or PIN</li>
+<li>Something you own – token or phone</li>
+<li>Something you are – biometrics, such as a fingerprint</li>
+</ul>
 <p>Using passwords as a sole factor provides weak security. Multi-factor solutions provide a more robust solution by requiring an attacker to acquire more than one element to authenticate with the service.</p>
 <p>It is worth noting that biometrics, when employed as a single factor of authentication, are not considered acceptable secrets for digital authentication. They can be obtained online or by taking a picture of someone with a camera phone (e.g., facial images) with or without their knowledge, lifted from objects someone touches (e.g., latent fingerprints), or captured with high resolution images (e.g., iris patterns). Biometrics must be used only as part of multi-factor authentication with a physical authenticator (something you own). For example, accessing a multi-factor one-time password (OTP) device that will generate a one-time password that the user manually enters for the verifier.</p>
 <h3 id="level-3-cryptographic-based-authentication">Level 3 : Cryptographic Based Authentication</h3>
@@ -1810,7 +1842,7 @@
 <li>When browser cookies are used as the mechanism for tracking the session of an authenticated user,  these should be accessible to a minimum set of domains and paths and should be tagged to expire at, or soon after, the session's validity period.</li>
 <li>The 'secure' flag should be set to ensure the transfer is done via secure channel only (TLS).</li>
 <li>HttpOnly flag should be set to prevent the cookie from  being accessed via JavaScript.</li>
-<li>Adding "<a href="https://www.owasp.org/index.php/SameSite">SameSite</a>" attributes to cookies prevents some <a href="https://caniuse.com/#search=samesite">modern browsers</a> from sending cookies with cross-site requests and provides protection against cross-site request forgery and information leakage attacks.</li>
+<li>Adding "SameSite" attributes to cookies prevents some <a href="https://caniuse.com/#search=samesite">modern browsers</a> from sending cookies with cross-site requests and provides protection against cross-site request forgery and information leakage attacks.</li>
 </ul>
 <h4 id="tokens">Tokens</h4>
 <p>Server-side sessions can be limiting for some forms of authentication. "Stateless services" allow for client side management of session data for performance purposes so they server has less of a burden to store and verify user session. These "stateless" applications generate a short-lived access token which can be used to authenticate a client request without sending the user's credentials after the initial authentication.</p>
@@ -1818,8 +1850,7 @@
 <p>JSON Web Token (JWT) is an open standard (<a href="https://tools.ietf.org/html/rfc7519">RFC 7519</a>) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed. A JWT token is created during authentication and is verified by the server (or servers) before any processing.</p>
 <p>However, JWT's are often not saved by the server after initial creation. JWT's are typically created and then handed to a client without being saved by the server in any way. The integrity of the token is maintained through the use of digital signatures so a server can later verify that the JWT is still valid and was not tampered with since its creation.</p>
 <p>This approach is both stateless and portable in the way that client and server technologies can be different yet still interact.</p>
-<p><strong>Caution</strong></p>
-<p>Digital identity, authentication and session management are very big topics. We're scratching the surface of the topic of Digital Identity here. Ensure that your most capable engineering talent is responsible for maintaining the complexity involved with most Identity solutions.</p>
+<p><strong>Caution: Digital identity, authentication and session management are very big topics</strong>. We're scratching the surface of the topic of Digital Identity here. Ensure that your most capable engineering talent is responsible for maintaining the complexity involved with most Identity solutions.</p>
 <h2 id="vulnerabilities-prevented">Vulnerabilities Prevented</h2>
 <ul>
 <li><a href="https://www.owasp.org/index.php/Top_10-2017_A2-Broken_Authentication">OWASP Top 10 2017 A2- Broken Authentication and Session Management</a></li>
@@ -1832,7 +1863,6 @@
 <li><a href="https://www.owasp.org/index.php/Password_Storage_Cheat_Sheet">OWASP Cheat Sheet: Forgot Password</a></li>
 <li><a href="https://www.owasp.org/index.php/Choosing_and_Using_Security_Questions_Cheat_Sheet">OWASP Cheat Sheet: Choosing and Using Security Questions</a></li>
 <li><a href="https://www.owasp.org/index.php/Session_Management_Cheat_Sheet">OWASP Cheat Sheet: Session Management</a></li>
-<li><a href="https://www.owasp.org/index.php/IOS_Developer_Cheat_Sheet">OWASP Cheat Sheet: IOS Developer</a></li>
 <li><a href="https://www.owasp.org/index.php/Testing_for_authentication">OWASP Testing Guide: Testing for Authentication</a></li>
 <li><a href="https://pages.nist.gov/800-63-3/sp800-63-3.html">NIST Special Publication 800-63 Revision 3 - Digital Identity Guidelines</a></li>
 </ul>
@@ -1846,9 +1876,6 @@
 
 
 
-
-  
-  
 
 
 

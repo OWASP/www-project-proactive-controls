@@ -1571,10 +1571,12 @@
 <h2 id="description">Description</h2>
 <p>Logging is a concept that most developers already use for debugging and diagnostic purposes. Security logging is an equally basic concept: to log security information during the runtime operation of an application. Monitoring is the live review of application and security logs using various forms of automation. The same tools and patterns can be used for operations, debugging and security purposes.</p>
 <h2 id="benefits-of-security-logging">Benefits of Security Logging</h2>
-<p>Security logging can be used for:
-1. Feeding intrusion detection systems
-2. Forensic analysis and investigations
-3. Satisfying regulatory compliance requirements</p>
+<p>Security logging can be used for:</p>
+<ol>
+<li>Feeding intrusion detection systems</li>
+<li>Forensic analysis and investigations</li>
+<li>Satisfying regulatory compliance requirements</li>
+</ol>
 <h2 id="security-logging-implementation">Security Logging Implementation</h2>
 <p>The following is a list of security logging implementation best practices.</p>
 <ul>
@@ -1590,7 +1592,7 @@
 <li>Requests that violate server-side access control rules.</li>
 <li>A more comprehensive list of possible detection points is available <a href="https://cheatsheetseries.owasp.org/cheatsheets/Application_Logging_Vocabulary_Cheat_Sheet.html">here</a>.</li>
 </ul>
-<p>When your application encounters such activity, your application should at the very least log the activity and mark it as a high severity issue.  Ideally, your application should also respond to a possible identified attack, by for example invalidating the user’s session and locking the user's account. The response mechanisms allows the software to react in realtime to possible identified attacks. </p>
+<p>When your application encounters such activity, your application should at the very least log the activity and mark it as a high severity issue.  Ideally, your application should also respond to a possible identified attack, by for example invalidating the user’s session and locking the user's account. The response mechanisms allows the software to react in realtime to possible identified attacks.</p>
 <h2 id="secure-logging-design">Secure Logging Design</h2>
 <p>Logging solutions must be built and managed in a secure way. Secure Logging design may include the following:</p>
 <ul>
@@ -1602,7 +1604,7 @@
 <h2 id="references">References</h2>
 <ul>
 <li><a href="https://www.owasp.org/index.php/Log_Injection">OWASP Log injection</a></li>
-<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html">OWASP Cheat Sheet: Logging</a> How to properly implement logging in an application </li>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html">OWASP Cheat Sheet: Logging</a> How to properly implement logging in an application</li>
 <li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Application_Logging_Vocabulary_Cheat_Sheet.html">OWASP Cheat Sheet: Application Logging Vocabulary</a> A standard vocabulary for logging security events</li>
 </ul>
 <h2 id="tools">Tools</h2>
@@ -1615,9 +1617,6 @@
 
 
 
-
-  
-  
 
 
 
