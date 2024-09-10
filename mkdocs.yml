@@ -11,6 +11,7 @@ theme:
     - navigation.sections
     - navigation.tracking
     - navigation.path
+    - navigation.tabs
     - navigation.top
     - search.suggest
     - search.highlight
@@ -59,26 +60,72 @@ copyright: |
   </span><br><span style="font-size: smaller">OWASP &#174; is a registered trademark of the OWASP Foundation, Inc.</span> <span>This website uses cookies to analyze our traffic and only share that information with our analytics partners. <a href="https://github.com/OWASP/owasp-mastg/blob/master/about_cookies.md">Learn more</a>.</span>
 
 nav:
-  - 'Introduction':
-    - 'About this Project': index.md
-    - 'About OWASP': introduction/about-owasp.md
-    - 'How to contribute?': introduction/contributing.md
-    - 'Related OWASP Projects': introduction/related-owasp-projects.md
-  - 'About the Top 10':
-    - 'In the News': about-top-10/in-the-news.md
-    - 'Our Contributors': about-top-10/contributors.md
-    - 'Old Versions and Translations': about-top-10/old-versions-and-translations.md
-  - 'The Top 10 List':
-    - "Introduction": the-top-10/introduction.md
-    - "C1: Implement Access Control": the-top-10/c1-accesscontrol.md
-    - "C2: Use Cryptography the proper way": the-top-10/c2-crypto.md
-    - "C3: Validate all Input & Handle Exceptions": the-top-10/c3-validate-input-and-handle-exceptions.md
-    - "C4: Address Security from the Start": the-top-10/c4-secure-architecture.md
-    - "C5: Secure By Default Configurations": the-top-10/c5-secure-by-default.md
-    - "C6: Keep your Components Secure": the-top-10/c6-use-secure-dependencies.md
-    - "C7: Implement Digital Identity": the-top-10/c7-implement-digital-identity.md
-    - "C8: Leverage Browser Security Features": the-top-10/c8-help-the-browser-defend-the-user.md
-    - "C9: Implement Security Logging and Monitoring": the-top-10/c9-security-logging-and-monitoring.md
-    - "C10: Stop Server Side Request Forgery": the-top-10/c10-stop-server-side-request-forgery.md
-  - 'Final Word': final-word.md
+  - 'Current Top 10 (WIP, 2024)':
+    - 'Introduction':
+      - 'About this Project': index.md
+      - 'About OWASP': introduction/about-owasp.md
+      - 'How to contribute?': introduction/contributing.md
+      - 'Related OWASP Projects': introduction/related-owasp-projects.md
+    - 'About the Top 10':
+      - 'In the News': about-top-10/in-the-news.md
+      - 'Our Contributors': about-top-10/contributors.md
+      - 'Old Versions and Translations': about-top-10/old-versions-and-translations.md
+    - 'The Top 10 List':
+      - "Introduction": the-top-10/introduction.md
+      - "C1: Implement Access Control": the-top-10/c1-accesscontrol.md
+      - "C2: Use Cryptography the proper way": the-top-10/c2-crypto.md
+      - "C3: Validate all Input & Handle Exceptions": the-top-10/c3-validate-input-and-handle-exceptions.md
+      - "C4: Address Security from the Start": the-top-10/c4-secure-architecture.md
+      - "C5: Secure By Default Configurations": the-top-10/c5-secure-by-default.md
+      - "C6: Keep your Components Secure": the-top-10/c6-use-secure-dependencies.md
+      - "C7: Implement Digital Identity": the-top-10/c7-implement-digital-identity.md
+      - "C8: Leverage Browser Security Features": the-top-10/c8-help-the-browser-defend-the-user.md
+      - "C9: Implement Security Logging and Monitoring": the-top-10/c9-security-logging-and-monitoring.md
+      - "C10: Stop Server Side Request Forgery": the-top-10/c10-stop-server-side-request-forgery.md
+    - 'Final Word': final-word.md
+  - 'Top 10 2018':
+    - 'About OWASP': archive/2018/0x01-about-owasp.md
+    - 'About Project': archive/2018/0x02-about-project.md
+    - 'About Structure': archive/2018/0x03-about-structure.md
+    - 'Introduction': archive/2018/0x04-introduction.md
+    - 'C1: Define Security Requirements': archive/2018/c1-security-requirements.md
+    - 'C2: Leverage Security Frameworks and Libraries': archive/2018/c2-leverage-security-frameworks-libraries.md
+    - 'C3: Secure Database Access': archive/2018/c3-secure-database.md
+    - 'C4: Encode and Escape Data': archive/2018/c4-encode-escape-data.md
+    - 'C5: Validate All Inputs': archive/2018/c5-validate-inputs.md
+    - 'C6: Implement Digital Identity': archive/2018/c6-digital-identity.md
+    - 'C7: Enforce Access Controls': archive/2018/c7-enforce-access-controls.md
+    - 'C8: Protect Data Everywhere': archive/2018/c8-protect-data-everywhere.md
+    - 'C9: Implement Security Logging and Monitoring': archive/2018/c9-security-logging.md
+    - 'C10: Handle All Errors and Exceptions': archive/2018/c10-errors-exceptions.md
+    - 'Final Word': archive/2018/final-word.md
+  - 'Top 10 2016': archive/2016/index.md
+  - 'Top 10 2014': archive/2014/index.md
 
+plugins:
+  - search
+  - redirects:
+      redirect_maps:
+        'v4/en/introduction.md': 'index.md'
+        'v4/en/0x02-about-project.md': 'index.md'
+        'v4/en/0x03-about-structure.md': 'the-top-10/introduction.md'
+        'v4/en/c1-accesscontrol.md': 'the-top-10/c1-accesscontrol.md'
+        'v4/en/c2-crypto.md': 'the-top-10/c2-crypto.md'
+        'v4/en/c3-validate-input-and-handle-exceptions.md': 'the-top-10/c3-validate-input-and-handle-exceptions.md'
+        'v4/en/c4-secure-architecture.md': 'the-top-10/c4-secure-architecture.md'
+        'v4/en/c5-secure-by-default.md': 'the-top-10/c5-secure-by-default.md'
+        'v4/en/c6-use-secure-dependencies.md': 'the-top-10/c6-use-secure-dependencies.md'
+        'v4/en/c7-implement-digital-identity.md': 'the-top-10/c7-implement-digital-identity.md'
+        'v4/en/c8-help-the-browser-defend-the-user.md': 'the-top-10/c8-help-the-browser-defend-the-user.md'
+        'v4/en/c9-security-logging-and-monitoring.md': 'the-top-10/c9-security-logging-and-monitoring.md'
+        'v4/en/c10-stop-server-side-request-forgery.md': 'the-top-10/c10-stop-server-side-request-forgery.md'
+        'v3/en/0x04-introduction': 'archive/2018/0x04-introduction.md'
+        'v3/en/c1-security-requirements': 'archive/2018/c1-security-requirements.md'
+        'v3/en/c2-leverage-security-frameworks-libraries': 'archive/2018/c2-leverage-security-frameworks-libraries.md'
+        'v3/en/c3-secure-database': 'archive/2018/c3-secure-database.md'
+        'v3/en/c5-validate-inputs': 'archive/2018/c5-validate-inputs.md'
+        'v3/en/c6-digital-identity': 'archive/2018/c6-digital-identity.md'
+        'v3/en/c7-enforce-access-controls': 'archive/2018/c7-enforce-access-controls.md'
+        'v3/en/c8-protect-data-everywhere': 'archive/2018/c8-protect-data-everywhere.md'
+        'v3/en/c9-security-logging': 'archive/2018/c9-security-logging.md'
+        'v3/en/c10-errors-exceptions': 'archive/2018/c10-errors-exceptions.md'

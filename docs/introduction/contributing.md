@@ -4,7 +4,7 @@ Please don’t hesitate to contact the OWASP Proactive Control project with your
 
 You can contact maintainers directly, use our [project-top10-proactive-controls OWASP slack channel](https://owasp.slack.com/archives/C07KNHZAN1H), or visit [our github page](https://github.com/OWASP/www-project-proactive-controls).
 
-You find the source code of the current version of the OWASP Top 10 Proactive Controls in the `docs/` directory within the git repository.
+You find the source code of the current version of the OWASP Top 10 Proactive Controls in the `docs/` directory within the git repository. Please focus upon contributions for the current version, not archived versions within `docs/archive`.
 
 When you check [our open issues on github](https://github.com/OWASP/www-project-proactive-controls/issues), you can see that some issues are tagged with `help wanted` or `good first issue`. Choose these if you want to help out the project!
 

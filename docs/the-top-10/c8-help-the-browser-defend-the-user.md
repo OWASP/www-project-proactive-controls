@@ -4,7 +4,7 @@
 
 Browsers are the gateway to the web for most users. As such, it's critical to employ robust security measures to protect the user from various threats. This section outlines the techniques and policies that can be implemented to bolster browser security.
 
-While we are currently focusing upon traditional web browsers, please note that there is a diverse world of other client programs out there, ranging from API clients to smart-tvs.
+While we are currently focusing upon traditional web browsers, please note that there is a diverse world of other client programs out there, ranging from API clients to smart-TVs.
 
 ### Opportunistic Security and Browser-Support
 
@@ -99,4 +99,4 @@ Implementing these browser defenses can help mitigate a range of vulnerabilities
 - [Security Headers Quick Reference](https://web.dev/articles/security-headers)
 - [Fetch Metadata Request Headers](https://www.w3.org/TR/fetch-metadata/)
 - [Fetch Metadata Resource Isolation Policy](https://web.dev/articles/fetch-metadata)
-- [Canisue.com](https://caniuse.com/)
+- [Caniuse.com](https://caniuse.com/)

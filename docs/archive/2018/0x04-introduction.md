@@ -15,16 +15,16 @@ One of the main goals of this document is to provide concrete practical guidance
 ## The Top 10 Proactive Controls
 The list is ordered by importance with list item number 1 being the most important:
 
-* C1: Define Security Requirements
-* C2: Leverage Security Frameworks and Libraries
-* C3: Secure Database Access
-* C4: Encode and Escape Data
-* C5: Validate All Inputs
-* C6: Implement Digital Identity
-* C7: Enforce Access Controls
-* C8: Protect Data Everywhere
-* C9: Implement Security Logging and Monitoring
-* C10: Handle All Errors and Exceptions
+* OWASP-2018-C1: Define Security Requirements
+* OWASP-2018-C2: Leverage Security Frameworks and Libraries
+* OWASP-2018-C3: Secure Database Access
+* OWASP-2018-C4: Encode and Escape Data
+* OWASP-2018-C5: Validate All Inputs
+* OWASP-2018-C6: Implement Digital Identity
+* OWASP-2018-C7: Enforce Access Controls
+* OWASP-2018-C8: Protect Data Everywhere
+* OWASP-2018-C9: Implement Security Logging and Monitoring
+* OWASP-2018-C10: Handle All Errors and Exceptions
 
 ## How this List Was Created
 
