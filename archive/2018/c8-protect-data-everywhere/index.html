@@ -1644,9 +1644,9 @@
 <p>Sensitive data such as passwords, credit card numbers, health records, personal information and business secrets require extra protection, particularly if that data falls under privacy laws (EU's General Data Protection Regulation GDPR), financial data protection rules such as PCI Data Security Standard (PCI DSS) or other regulations.</p>
 <p>Attackers can steal data from web and webservice applications in a number of ways. For example, if sensitive information in sent over the internet  without communications security, then an attacker on a shared wireless connection could see and steal another user's data. Also, an attacker could use SQL Injection to steal passwords and other credentials from an applications database and expose that information to the public.</p>
 <h2 id="data-classification">Data Classification</h2>
-<p>It's critical to classify data in your system and determine which level of sensitivity each piece of data belongs to. Each data category can then be mapped to protection rules necessary for each level of sensitivity. For example, public marketing information that is not sensitive may be categorized as public data which is ok to place on the public website. Credit card numbers may be classified as private user data which may need to be encrypted while stored or in transit.</p>
+<p>It's critical to classify data in your system and determine which level of sensitivity each piece of data belongs to. Each data category can then be mapped to protection rules necessary for each level of sensitivity. For example, public marketing information that is not sensitive may be categorized as public data which is okay to place on the public website. Credit card numbers may be classified as private user data which may need to be encrypted while stored or in transit.</p>
 <h2 id="encrypting-data-in-transit">Encrypting Data in Transit</h2>
-<p>When transmitting sensitive data over any network, end-to-end communications security (or encryption-in-transit) of some kind should be considered. TLS is by far the most common and widely supported cryptographic protocol for communications security. It is used by many types of applications (web, webservice, mobile) to communicate over a network in a secure fashion. TLS must be properly configured in a variety of ways in order to properly defend secure communications.</p>
+<p>When transmitting sensitive data over any network, end-to-end communications security (or encryption-in-transit) of some kind should be considered. TLS is by far the most common and widely supported cryptographic protocol for communications security. It is used by many types of applications (web, web service, mobile) to communicate over a network in a secure fashion. TLS must be properly configured in a variety of ways in order to properly defend secure communications.</p>
 <p>The primary benefit of transport layer security is the protection of web application data from unauthorized disclosure and modification when it is transmitted between clients (web browsers) and the web application server, and between the web application server and back end and other non-browser based enterprise components.</p>
 <h2 id="encrypting-data-at-rest">Encrypting Data at Rest</h2>
 <p>The first rule of sensitive data management is to avoid storing sensitive data when at all possible. If you must store sensitive data then make sure it's cryptographically protected in some way to avoid unauthorized disclosure and modification.</p>
@@ -1669,7 +1669,7 @@
 Even if you try to nullify the string value, it still remains in the memory.
 <code>string</code> is an immutable type and cannot be changed. When you modify a string (try to overwrite it), a new copy of it is created.
 This means another copy of the unprotected secret will remain in the memory.
-Furthermore, there is no gurantee when garbage collector is going to clean up the secret.
+Furthermore, there is no guarantee when garbage collector is going to clean up the secret.
 This increases exposure of plaintext secrets in the memory.</p>
 <p>If secrets remain unprotected in the memory, they can get disclosed on the disk or external log aggregators
 through a number of scenarios: server crash logs, caching, serialisation or memory paging.</p>
@@ -1679,7 +1679,7 @@ For an example implementation see <a href="https://discuss.secdim.com/t/do-not-u
 <h3 id="application-secrets-management">Application Secrets Management</h3>
 <p>Applications contain numerous "secrets" that are needed for security operations. These include certificates, SQL connection passwords, third party service account credentials, passwords, SSH keys, encryption keys and more. The unauthorized disclosure or modification of these secrets could lead to complete system compromise. In managing application secrets, consider the following.</p>
 <ul>
-<li>Don't store secrets in code, config files or pass them through environment variables. Use tools like <a href="https://github.com/michenriksen/gitrob">GitRob</a> or <a href="https://github.com/dxa4481/truffleHog">TruffleHog</a> to scan code repos for secrets.</li>
+<li>Don't store secrets in code, config files or pass them through environment variables. Use tools like <a href="https://github.com/michenriksen/gitrob">GitRob</a> or <a href="https://github.com/dxa4481/truffleHog">TruffleHog</a> to scan code repositories for secrets.</li>
 <li>Keep keys and your other application-level secrets in a secrets vault like <a href="https://github.com/square/keywhiz">KeyWhiz</a> or <a href="https://www.vaultproject.io/">Hashicorp's Vault project</a> or <a href="https://aws.amazon.com/kms/">Amazon KMS</a> to provide secure storage and access to application-level secrets at run-time.</li>
 </ul>
 <h2 id="vulnerabilities-prevented">Vulnerabilities Prevented</h2>

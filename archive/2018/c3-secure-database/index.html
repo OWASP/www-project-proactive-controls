@@ -1182,9 +1182,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#caution-on-query-parameterization" class="md-nav__link">
+  <a href="#caution-on-query-parametrization" class="md-nav__link">
     <span class="md-ellipsis">
-      Caution on Query Parameterization
+      Caution on Query Parametrization
     </span>
   </a>
   
@@ -1516,9 +1516,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#caution-on-query-parameterization" class="md-nav__link">
+  <a href="#caution-on-query-parametrization" class="md-nav__link">
     <span class="md-ellipsis">
-      Caution on Query Parameterization
+      Caution on Query Parametrization
     </span>
   </a>
   
@@ -1608,10 +1608,10 @@
 </ol>
 <h3 id="secure-queries">Secure Queries</h3>
 <p>SQL Injection occurs when untrusted user input is dynamically added to a SQL query in an insecure manner, often via basic string concatenation. SQL Injection is one of the most dangerous application security risks. SQL Injection is easy to exploit and could lead to the entire database being stolen, wiped, or modified. The application can even be used to run dangerous commands against the operating system hosting your database, thereby giving an attacker a foothold on your network.</p>
-<p>In order to mitigate SQL injection, untrusted input should be prevented from being interpreted as part of a SQL command. The best way to do this is with the programming technique known as 'Query Parameterization'. This defense should be applied to SQL, OQL, as well as stored procedure construction.</p>
-<p>A good list of query parameterization examples in ASP, ColdFusion, C#, Delphi, .NET, Go, Java, Perl, PHP, PL/SQL, PostgreSQL, Python, R, Ruby and Scheme can be found at <a href="http://bobby-tables.com/">http://bobby-tables.com</a> and the <a href="https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html">OWASP Cheat Sheet on Query Parameterization</a>.</p>
-<h4 id="caution-on-query-parameterization">Caution on Query Parameterization</h4>
-<p>Certain locations in a database query are not parameterizable. These locations are different for each database vendor. Be certain to do very careful exact-match validation or manual escaping when confronting database query parameters that cannot be bound to a parameterized query. Also, while the use of parameterized queries largely has a positive impact on performance, certain parameterized queries in specific database implementations will affect performance negatively. Be sure to test queries for performance; especially complex queries with extensive like clause or text searching capabilities.</p>
+<p>In order to mitigate SQL injection, untrusted input should be prevented from being interpreted as part of a SQL command. The best way to do this is with the programming technique known as 'Query Parametrization'. This defense should be applied to SQL, OQL, as well as stored procedure construction.</p>
+<p>A good list of query parameterization examples in ASP, ColdFusion, C#, Delphi, .NET, Go, Java, Perl, PHP, PL/SQL, PostgreSQL, Python, R, Ruby and Scheme can be found at <a href="http://bobby-tables.com/">http://bobby-tables.com</a> and the <a href="https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html">OWASP Cheat Sheet on Query Parametrization</a>.</p>
+<h4 id="caution-on-query-parametrization">Caution on Query Parametrization</h4>
+<p>Certain locations in a database query can not be used with parametrization. These locations are different for each database vendor. Be certain to do very careful exact-match validation or manual escaping when confronting database query parameters that cannot be bound to a parameterized query. Also, while the use of parameterized queries largely has a positive impact on performance, certain parameterized queries in specific database implementations will affect performance negatively. Be sure to test queries for performance; especially complex queries with extensive like clause or text searching capabilities.</p>
 <h3 id="secure-configuration">Secure Configuration</h3>
 <p>Unfortunately, database management systems do not always ship in a "secure by default" configuration. Care must be taken to ensure that the security controls available from the Database Management System (DBMS) and hosting platform are enabled and properly configured. There are standards, guides, and benchmarks available for most common DBMS.</p>
 <p>A quick guidance on providing a secure configuration can be found in the <a href="https://cheatsheetseries.owasp.org/cheatsheets/Database_Security_Cheat_Sheet.html#database-configuration-and-hardening">Database Cheat Sheet</a>.</p>
@@ -1628,7 +1628,7 @@
 </ul>
 <h2 id="references">References</h2>
 <ul>
-<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html">OWASP Cheat Sheet: Query Parameterization</a></li>
+<li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html">OWASP Cheat Sheet: Query Parametrization</a></li>
 <li><a href="https://cheatsheetseries.owasp.org/cheatsheets/Database_Security_Cheat_Sheet.html">OWASP Cheat Sheet: Database Security</a></li>
 <li><a href="http://bobby-tables.com/">Bobby Tables: A guide to preventing SQL injection</a></li>
 <li><a href="https://www.cisecurity.org/cis-benchmarks/">CIS Database Hardening Standards</a></li>

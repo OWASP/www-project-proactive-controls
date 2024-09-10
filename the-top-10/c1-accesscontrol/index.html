@@ -836,9 +836,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#6-do-not-hardcode-roles" class="md-nav__link">
+  <a href="#6-do-not-hard-code-roles" class="md-nav__link">
     <span class="md-ellipsis">
-      6) Do not Hardcode Roles
+      6) Do not Hard-code Roles
     </span>
   </a>
   
@@ -1621,9 +1621,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#6-do-not-hardcode-roles" class="md-nav__link">
+  <a href="#6-do-not-hard-code-roles" class="md-nav__link">
     <span class="md-ellipsis">
-      6) Do not Hardcode Roles
+      6) Do not Hard-code Roles
     </span>
   </a>
   
@@ -1732,7 +1732,7 @@ There are many ways that this rule will manifest in the application code. Some e
 <h3 id="5-principle-of-least-privilege-just-in-time-jit-just-enough-access-jea">5) Principle of Least Privilege / Just in Time (JIT), Just Enough Access (JEA)</h3>
 <p>An example of implementing that principle is to create dedicated privileged roles and accounts for every organization function that requires highly privileged activities and avoid using an “admin” role/account that is fully privileged daily.</p>
 <p>To further improve the security, you can implement Just-in-Time (JIT) or Just-enough-Access (JEA): ensure that all users, programs, or processes are only given just enough access to achieve their current mission. This access should be provided just in time, when the subject makes the request, and the access should be granted for a short time. Be wary of systems that do not provide granular access control configuration capabilities.</p>
-<h3 id="6-do-not-hardcode-roles">6) Do not Hardcode Roles</h3>
+<h3 id="6-do-not-hard-code-roles">6) Do not Hard-code Roles</h3>
 <p>Many application frameworks default to access control that is role based. It is common to find application code filled with checks of this nature.</p>
 <div class="language-java highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">user</span><span class="p">.</span><span class="na">hasRole</span><span class="p">(</span><span class="s">&quot;ADMIN&quot;</span><span class="p">))</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="p">(</span><span class="n">user</span><span class="p">.</span><span class="na">hasRole</span><span class="p">(</span><span class="s">&quot;MANAGER&quot;</span><span class="p">))</span><span class="w"> </span><span class="p">{</span>
 </span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="n">deleteAccount</span><span class="p">();</span>
