@@ -54,5 +54,5 @@ To be secure against canonicalization related attacks means an application shoul
 ## Tools
 
 * [OWASP Java Encoder Project](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project)
-* [AntiXSSEncoder](https://docs.microsoft.com/en-us/dotnet/api/system.web.security.antixss.antixssencoder?redirectedfrom=MSDN&view=netframework-4.7.2)
+* [AntiXssEncoder](https://docs.microsoft.com/en-us/dotnet/api/system.web.security.antixss.antixssencoder?redirectedfrom=MSDN&view=netframework-4.7.2)
 * [Zend\Escaper](https://framework.zend.com/blog/2017-05-16-zend-escaper.html) - examples of contextual encoding

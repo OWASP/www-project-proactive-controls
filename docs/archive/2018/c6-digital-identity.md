@@ -2,7 +2,7 @@
 
 ## Description
 
-Digital Identity is the unique representation of a user (or other subject) as they engage in an online transaction. Authentication is the process of verifying that an individual or entity is who they claim to be. Session management is a process by which a server maintains the state of the users authentication so that the user may continue to use the system without re-authenticating. The [NIST Special Publication 800-63B: Digital Identity Guidelines (Authentication and Lifecycle Management)](https://pages.nist.gov/800-63-3/sp800-63b.html) provides solid guidance on implementing digital identity, authentication and session management controls.
+Digital Identity is the unique representation of a user (or other subject) as they engage in an online transaction. Authentication is the process of verifying that an individual or entity is who they claim to be. Session management is a process by which a server maintains the state of the users authentication so that the user may continue to use the system without re-authenticating. The [NIST Special Publication 800-63B: Digital Identity Guidelines (Authentication and Life Cycle Management)](https://pages.nist.gov/800-63-3/sp800-63b.html) provides solid guidance on implementing digital identity, authentication and session management controls.
 
 Below are some recommendations for secure implementation.
 
@@ -96,7 +96,7 @@ Server-side sessions can be limiting for some forms of authentication. "Stateles
 
 JSON Web Token (JWT) is an open standard ([RFC 7519](https://tools.ietf.org/html/rfc7519)) that defines a compact and self-contained way for securely transmitting information between parties as a JSON object. This information can be verified and trusted because it is digitally signed. A JWT token is created during authentication and is verified by the server (or servers) before any processing.
 
-However, JWTs are often not saved by the server after initial creation. JWT's are typically created and then handed to a client without being saved by the server in any way. The integrity of the token is maintained through the use of digital signatures so a server can later verify that the JWT is still valid and was not tampered with since its creation.
+However, JWTs are often not saved by the server after initial creation. JWTs are typically created and then handed to a client without being saved by the server in any way. The integrity of the token is maintained through the use of digital signatures so a server can later verify that the JWT is still valid and was not tampered with since its creation.
 
 This approach is both stateless and portable in the way that client and server technologies can be different yet still interact.
 

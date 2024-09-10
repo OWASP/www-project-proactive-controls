@@ -4,7 +4,7 @@
 
 Sensitive data such as passwords, credit card numbers, health records, personal information and business secrets require extra protection, particularly if that data falls under privacy laws (EU's General Data Protection Regulation GDPR), financial data protection rules such as PCI Data Security Standard (PCI DSS) or other regulations.
 
-Attackers can steal data from web and webservice applications in a number of ways. For example, if sensitive information in sent over the internet  without communications security, then an attacker on a shared wireless connection could see and steal another user's data. Also, an attacker could use SQL Injection to steal passwords and other credentials from an applications database and expose that information to the public.
+Attackers can steal data from web and web-service applications in a number of ways. For example, if sensitive information in sent over the internet  without communications security, then an attacker on a shared wireless connection could see and steal another user's data. Also, an attacker could use SQL Injection to steal passwords and other credentials from an applications database and expose that information to the public.
 
 ## Data Classification
 
@@ -30,7 +30,7 @@ Mobile applications are at particular risk of data leakage because mobile device
 
 As a general rule, only the minimum data required should be stored on the mobile device. But if you must store sensitive data on a mobile device, then sensitive data should be stored within each mobile operating systems specific data storage directory. On Android this will be the Android keystore and on iOS this will be the iOS keychain.
 
-### Secret Lifecycle
+### Secret Life Cycle
 
 Secret keys can be used in a number of sensitive functions. For example, they can be used to sign JWTs, encrypt credit cards, sign hash, provide various forms of authentication and more. In managing keys, a number of precautious should be adhered including but not limited to the following:
 

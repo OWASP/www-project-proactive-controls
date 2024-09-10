@@ -8,7 +8,7 @@ Injection attacks commonly occur if an application confuses data input as execut
 
 - When an attacker tricks an application into interpreting user input (data) as SQL commands (or parts thereof), there is a SQL injection attack. The injected command executes within the database server.
 - Remote command injection (RCE) happens if an application confuses user data with commands that execute on the web application server/host. Server-Side Template Injections are another example of injections executed within the application server.
-- When Javascript-Injections happen, a web application has accepted user data but is coerced to execute that data as code. Injected javascript code is typically executed within another user’s web browser, thus not directly attacking the web server but other users.
+- When JavaScript-Injections happen, a web application has accepted user data but is coerced to execute that data as code. Injected JavaScript code is typically executed within another user’s web browser, thus not directly attacking the web server but other users.
 
 ### Syntactic and Semantic Validity
 

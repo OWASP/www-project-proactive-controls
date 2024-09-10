@@ -40,7 +40,7 @@ Deny by default is the principle that if a request is not specifically allowed, 
 
 Ensure that all users, programs, or processes are only given as least or as little necessary access as possible. Be wary of systems that do not provide granular access control configuration capabilities.
 
-### 5) Don't Hardcode Roles
+### 5) Don't Hard-Code Roles
 
 Many application frameworks default to access control that is role based. It is common to find application code that is filled with checks of this nature.
 
@@ -55,7 +55,7 @@ Be careful about this type of role-based programming in code. It has the followi
 * Role based programming of this nature is fragile. It is easy to create incorrect or missing role checks in code.
 * Role based programming does not allow for multi-tenancy. Extreme measures like forking the code or added checks for each customer will be required to allow role based systems to have different rules for different customers.
 * Role based programming does not allow for data-specific or horizontal access control rules.
-* Large codebases with many access control checks can be difficult to audit or verify the overall application access control policy.
+* Large code-bases with many access control checks can be difficult to audit or verify the overall application access control policy.
 
 Instead, please consider the following access control programming methodology:
 

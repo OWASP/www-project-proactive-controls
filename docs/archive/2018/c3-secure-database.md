@@ -15,11 +15,11 @@ SQL Injection occurs when untrusted user input is dynamically added to a SQL que
 
 In order to mitigate SQL injection, untrusted input should be prevented from being interpreted as part of a SQL command. The best way to do this is with the programming technique known as 'Query Parametrization'. This defense should be applied to SQL, OQL, as well as stored procedure construction.
 
-A good list of query parameterization examples in ASP, ColdFusion, C#, Delphi, .NET, Go, Java, Perl, PHP, PL/SQL, PostgreSQL, Python, R, Ruby and Scheme can be found at [http://bobby-tables.com](http://bobby-tables.com/) and the [OWASP Cheat Sheet on Query Parametrization](https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html).
+A good list of query parametrization examples in ASP, ColdFusion, C#, Delphi, .NET, Go, Java, Perl, PHP, PL/SQL, PostgreSQL, Python, R, Ruby and Scheme can be found at [https://bobby-tables.com](https://bobby-tables.com/) and the [OWASP Cheat Sheet on Query Parametrization](https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html).
 
 #### Caution on Query Parametrization
 
-Certain locations in a database query can not be used with parametrization. These locations are different for each database vendor. Be certain to do very careful exact-match validation or manual escaping when confronting database query parameters that cannot be bound to a parameterized query. Also, while the use of parameterized queries largely has a positive impact on performance, certain parameterized queries in specific database implementations will affect performance negatively. Be sure to test queries for performance; especially complex queries with extensive like clause or text searching capabilities.
+Certain locations in a database query can not be used with parametrization. These locations are different for each database vendor. Be certain to do very careful exact-match validation or manual escaping when confronting database query parameters that cannot be bound to a parametrized query. Also, while the use of parametrized queries largely has a positive impact on performance, certain parametrized queries in specific database implementations will affect performance negatively. Be sure to test queries for performance; especially complex queries with extensive like clause or text searching capabilities.
 
 ### Secure Configuration
 
