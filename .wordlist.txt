@@ -1,3 +1,4 @@
+
 AAL
 ABAC
 Abdessamad
@@ -7,6 +8,7 @@ allowlist
 allowlisting
 Allowlisting
 Andreas
+AntiXssEncoder
 APIs
 AppSec
 Aref
@@ -16,6 +18,8 @@ autobinding
 backend
 Baillon
 bcrypt
+biometrics
+Biometrics
 Braiterman
 BSIMM
 caniuse
@@ -75,7 +79,9 @@ Dracea
 DSS
 DTOs
 Elnaggar
+Escaper
 Estrin
+EU's
 Eyal
 Fenstrom
 Frédéric
@@ -85,12 +91,14 @@ GDPR
 github
 GitRob
 Goldschmidt
+goto
 Grandval
 Graziani
 Grossman
 HackerCombat
 Happe
 Hashicorp
+Hashicorp's
 Heyes
 Hidenori
 Hiroaki
@@ -143,10 +151,12 @@ Massimiliano
 MASVS
 Microservices
 Miessler
+misconfiguration
 Misconfiguration
 misconfigure
 mkdocs
 Mohammed
+nabla
 Nagai
 NCSC
 NIST
@@ -167,12 +177,15 @@ owasp
 OWASP
 Pagel
 parametrization
+parametrized
 PassKeys
 PCI
 pdf
 PHPNW
 PII
+plaintext
 pptx
+precautious
 programmatically
 py
 RBAC
@@ -204,6 +217,7 @@ Snyk
 Soares
 SQLi
 Sqlmap
+src
 SSL
 SSLLabs
 sslyze
@@ -241,11 +255,13 @@ verifier
 Vries
 Watanabe
 WebAuthn
+WebCams
 webhooks
 WrongSecrets
 www
 XEE
 XFO
 XSS
+Zend
 Zend
 Zudilin

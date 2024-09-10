@@ -22,7 +22,7 @@ Starting with .NET 4.5 , the Anti-Cross Site Scripting library is part of the fr
 
 #### Zend Framework 2
 
-In Zend Framework 2 (ZF2), ``Zend\Escaper`` can be used for encoding the output. For contextual encoding examples see [Context-specific escaping with zend-escaper](https://framework.zend.com/blog/2017-05-16-zend-escaper.html).
+In Zend Framework 2, ``Zend\Escaper`` can be used for encoding the output. For contextual encoding examples see [Context-specific escaping with Zend-Escaper](https://framework.zend.com/blog/2017-05-16-zend-escaper.html).
 
 ### Other Types of Encoding and Injection Defense
 
