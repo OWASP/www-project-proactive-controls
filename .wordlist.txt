@@ -9,6 +9,7 @@ allowlisting
 Allowlisting
 Andreas
 AntiXssEncoder
+AntiXSSEncoder
 APIs
 AppSec
 Aref
@@ -41,6 +42,7 @@ Clickjacking
 Cloudmapper
 Coiro
 ColdFusion
+conf
 config
 CORS
 Coursera

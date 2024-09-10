@@ -16,7 +16,7 @@ For examples of the OWASP Java Encoder providing contextual output encoding see:
 
 #### .NET Encoding Examples
 
-Starting with .NET 4.5 , the Anti-Cross Site Scripting library is part of the framework, but not enabled by default. You can specify to use AntiXssEncoder from this library as the default encoder for your entire application using the web.conf settings. When applied is important to contextual encode your output - that means to use the right function from the AntiXSSEncoder library for the appropriate location of data in document.
+Starting with .NET 4.5 , the Anti-Cross Site Scripting library is part of the framework, but not enabled by default. You can specify to use AntiXssEncoder from this library as the default encoder for your entire application using the `web.conf` settings. When applied is important to contextual encode your output - that means to use the right function from the AntiXSSEncoder library for the appropriate location of data in document.
 
 #### PHP Encoding Examples
 
