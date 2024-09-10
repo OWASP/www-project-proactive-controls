@@ -25,7 +25,7 @@ This list was originally created by the current project leads with contributions
 
 ## Target Audience
 
-This document is primarily written for developers. However, development managers, product owners, Q/A professionals, program managers, and anyone involved in building software can also benefit from this document. 
+This document is primarily written for developers. However, development managers, product owners, Q/A professionals, program managers, and anyone involved in building software can also benefit from this document.
 
 ## How to Use this Document
 

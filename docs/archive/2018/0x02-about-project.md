@@ -22,6 +22,6 @@ This document is released under the Creative Commons Attribution ShareAlike 3.0 
 
 ## Contributors
 
-* Chris Romeo  &nbsp; | Dan Anderson  &nbsp; |  David Cybuck 
+* Chris Romeo  &nbsp; | Dan Anderson  &nbsp; |  David Cybuck
 * Dave Ferguson | Josh Grossman | Osama Elnaggar
 * Colin Watson &nbsp; | Rick Mitchell &nbsp; |  And many more…  

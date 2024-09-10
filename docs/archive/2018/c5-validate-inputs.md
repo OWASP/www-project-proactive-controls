@@ -86,6 +86,7 @@ Consider an application that needs to accept HTML from users (via a WYSIWYG edit
 Therefore, you need a library that can parse and clean HTML formatted text. Please see the [XSS Prevention Cheat Sheet on HTML Sanitization](https://www.owasp.org/index.php/XSS_(Cross_Site_Scripting)_Prevention_Cheat_Sheet#RULE_.236_-_Sanitize_HTML_Markup_with_a_Library_Designed_for_the_Job) for more information on HTML Sanitization.
 
 ### Validation Functionality in Libraries and Frameworks
+
 All languages and most frameworks provide validation libraries or functions which should be leveraged to validate data. Validation libraries typically cover common data types, length requirements, integer ranges, "is null" checks and more. Many validation libraries and frameworks allow you to define your own regular expression or logic for custom validation in a way that allows the programmer to leverage that functionality throughout your application. Examples of validation functionality include PHP’s [filter functions](https://secure.php.net/manual/en/filter.examples.validation.php) or the [Hibernate Validator](http://hibernate.org/validator/) for Java. Examples of HTML Sanitizers include [Ruby on Rails sanitize method](http://edgeapi.rubyonrails.org/classes/ActionView/Helpers/SanitizeHelper.html), [OWASP Java HTML Sanitizer](https://www.owasp.org/index.php/OWASP_Java_HTML_Sanitizer_Project) or [DOMPurify](https://github.com/cure53/DOMPurify).
 
 ## Vulnerabilities Prevented

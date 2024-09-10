@@ -36,7 +36,7 @@ This story contains the same message as the traditional requirement from ASVS, w
 
 ## Implementation
 
-Successful use of security requirements involves four steps. The process includes discovering / selecting, documenting, implementing, and then confirming correct implementation of new security features and functionality within an application. 
+Successful use of security requirements involves four steps. The process includes discovering / selecting, documenting, implementing, and then confirming correct implementation of new security features and functionality within an application.
 
 ### Discovery and Selection
 
@@ -46,7 +46,7 @@ The process begins with discovery and selection of security requirements. In thi
 
 During investigation and documentation, the developer reviews the existing application against the new set of security requirements to determine whether the application currently meets the requirement or if some development is required. This investigation culminates in the documentation of the results of the review.
 
-### Implementation
+### Implementation Phase
 
 After the need is determined for development, the developer must now modify the application in some way to add the new functionality or eliminate an insecure option. In this phase the developer first determines the design required to address the requirement, and then completes the code changes to meet the requirement.
 
