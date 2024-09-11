@@ -92,6 +92,7 @@ Attribute or feature-based access control checks of this nature are the starting
 
 - [OWASP Cheat Sheet: Authorization Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)
 - [OWASP Cheat Sheet: Logging Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html)
+- [OWASP Cheat Sheet: Insecure Direct Object Reference Prevention Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Insecure_Direct_Object_Reference_Prevention_Cheat_Sheet.html)
 - [OWASP ASVS V4 Access Control](https://owasp.org/www-project-application-security-verification-standard/)
 - [OWASP Testing Guide: Authorization Testing](https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/05-Authorization_Testing/)
 - [OAuth2.0](https://oauth.net/2/) protocol for authorization
