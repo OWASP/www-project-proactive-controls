@@ -2,146 +2,146 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://top10proactive.owasp.org/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/final-word/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/about-top-10/contributors/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/about-top-10/in-the-news/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/about-top-10/old-versions-and-translations/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/archive/2014/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/archive/2016/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/archive/2018/0x01-about-owasp/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/archive/2018/0x02-about-project/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/archive/2018/0x03-about-structure/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/archive/2018/0x04-introduction/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/archive/2018/c1-security-requirements/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/archive/2018/c10-errors-exceptions/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/archive/2018/c2-leverage-security-frameworks-libraries/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/archive/2018/c3-secure-database/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/archive/2018/c4-encode-escape-data/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/archive/2018/c5-validate-inputs/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/archive/2018/c6-digital-identity/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/archive/2018/c7-enforce-access-controls/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/archive/2018/c8-protect-data-everywhere/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/archive/2018/c9-security-logging/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/archive/2018/final-word/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/introduction/about-owasp/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/introduction/contributing/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/introduction/related-owasp-projects/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/the-top-10/c1-accesscontrol/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/the-top-10/c10-stop-server-side-request-forgery/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/the-top-10/c2-crypto/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/the-top-10/c3-validate-input-and-handle-exceptions/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/the-top-10/c4-secure-architecture/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/the-top-10/c5-secure-by-default/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/the-top-10/c6-use-secure-dependencies/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/the-top-10/c7-implement-digital-identity/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
-         <loc>https://top10proactive.owasp.org/the-top-10/c8-help-the-browser-defend-the-user/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <loc>https://top10proactive.owasp.org/the-top-10/c8-leverage-browser-security-features/</loc>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/the-top-10/c9-security-logging-and-monitoring/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
     <url>
          <loc>https://top10proactive.owasp.org/the-top-10/introduction/</loc>
-         <lastmod>2024-09-10</lastmod>
+         <lastmod>2024-09-11</lastmod>
     </url>
 </urlset>
