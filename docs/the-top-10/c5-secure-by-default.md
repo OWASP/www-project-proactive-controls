@@ -2,7 +2,7 @@
 
 ## Description
 
-“Secure-by-Default” means products are resilient against prevalent exploitation techniques out of the box without additional charge.<sup><sup>[\[2\]](#footnote-2)</sup></sup> The benefit of having an application secure from the start is that it removes the burden away from developers on how to lock a system down, providing them with an already secure product. It reduces the effort required to deploy products in a secure manner and gives greater confidence that they will remain secure over time.
+“Secure-by-Default” means products are resilient against prevalent exploitation techniques out of the box without additional charge. The benefit of having an application secure from the start is that it removes the burden away from developers on how to lock a system down, providing them with an already secure product. It reduces the effort required to deploy products in a secure manner and gives greater confidence that they will remain secure over time.
 
 ## Threats
 
