@@ -4,7 +4,7 @@
 
 Browsers are the gateway to the web for most users. As such, it's critical to employ robust security measures to protect the user from various threats. This section outlines the techniques and policies that can be implemented to bolster browser security.
 
-While we are currently focusing upon traditional web browsers, please note that there is a diverse world of other client programs out there, ranging from API clients to smart-TVs.
+While we are currently focusing upon traditional web browsers, please note that there is a diverse world of other client programs out there, ranging from mobile apps, API clients to smart-TVs. We encourage to verify what client-side security features are supported by your client and use the respective HTTP headers to configure them.
 
 ### Opportunistic Security and Browser-Support
 

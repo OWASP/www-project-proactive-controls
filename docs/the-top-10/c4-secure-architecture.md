@@ -12,6 +12,15 @@ There are design principles that lead to secure architectures:
 - **Identify and minimize your exposed components** ("attack surface"): attackers cannot attack what's not there.
 - **Design for Defense-in-Depth**: think about what happens, if a component is breached and about the potential blast radius of an attack.
 
+### Usage of Third-Party Components such as Libraries and Frameworks
+
+While it might be possible to implement all requirements manually, it is highly recommended to base one's architecture upon established and well-maintained third-party components. This has multiple benefits:
+
+- **Don't reimplement the wheel** and learn from (security) failures of others. Often, existing libraries and frameworks have undergone a security audit and security issues have been identified and eventually remediated. Benefit from the security works of others!
+- **Secure Defaults**: more and more frameworks offer defensive and secure defaults. To enable risky behavior, manual developer interaction is needed.
+- **But keep them up to date**. While you gain benefits from using maintained frameworks, you know have the maintenance burden of tracking their new releases for security notes.
+- **Don't fight the framework**. If using a framework feels like you are fighting it each and every step, then maybe this concrete framework is not a good match for your development style or architecture (or vice versa).
+
 ## Threats
 
 - If the application is only protected by security-by-obscurity, an attacker that reverse-engineers the application has full permissions as soon the obfuscation is cleared-up. In addition, an attacker is able to monitor network traffic: while the obfuscation might be performed on the code-level, the operations on the network level can easily be analyzed.
