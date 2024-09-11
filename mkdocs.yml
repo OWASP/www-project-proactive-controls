@@ -79,7 +79,7 @@ nav:
       - "C5: Secure By Default Configurations": the-top-10/c5-secure-by-default.md
       - "C6: Keep your Components Secure": the-top-10/c6-use-secure-dependencies.md
       - "C7: Implement Digital Identity": the-top-10/c7-implement-digital-identity.md
-      - "C8: Leverage Browser Security Features": the-top-10/c8-help-the-browser-defend-the-user.md
+      - "C8: Leverage Browser Security Features": the-top-10/c8-leverage-browser-security-features.md
       - "C9: Implement Security Logging and Monitoring": the-top-10/c9-security-logging-and-monitoring.md
       - "C10: Stop Server Side Request Forgery": the-top-10/c10-stop-server-side-request-forgery.md
     - 'Final Word': final-word.md
@@ -116,7 +116,7 @@ plugins:
         'v4/en/c5-secure-by-default.md': 'the-top-10/c5-secure-by-default.md'
         'v4/en/c6-use-secure-dependencies.md': 'the-top-10/c6-use-secure-dependencies.md'
         'v4/en/c7-implement-digital-identity.md': 'the-top-10/c7-implement-digital-identity.md'
-        'v4/en/c8-help-the-browser-defend-the-user.md': 'the-top-10/c8-help-the-browser-defend-the-user.md'
+        'v4/en/c8-help-the-browser-defend-the-user.md': 'the-top-10/c8-leverage-browser-security-features.md'
         'v4/en/c9-security-logging-and-monitoring.md': 'the-top-10/c9-security-logging-and-monitoring.md'
         'v4/en/c10-stop-server-side-request-forgery.md': 'the-top-10/c10-stop-server-side-request-forgery.md'
         'v3/en/0x04-introduction.md': 'archive/2018/0x04-introduction.md'
@@ -129,3 +129,4 @@ plugins:
         'v3/en/c8-protect-data-everywhere.md': 'archive/2018/c8-protect-data-everywhere.md'
         'v3/en/c9-security-logging.md': 'archive/2018/c9-security-logging.md'
         'v3/en/c10-errors-exceptions.md': 'archive/2018/c10-errors-exceptions.md'
+        'the-top-10/c8-help-the-browser-defend-the-user.md': 'the-top-10/c8-leverage-browser-security-features.md'
