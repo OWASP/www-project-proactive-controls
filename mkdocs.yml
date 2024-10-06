@@ -67,8 +67,6 @@ nav:
       - 'How to contribute?': introduction/contributing.md
       - 'About OWASP': introduction/about-owasp.md
       - 'Related OWASP Projects': introduction/related-owasp-projects.md
-    - 'About the Top 10':
-      - 'Old Versions and Translations': about-top-10/old-versions-and-translations.md
     - 'The Top 10 List':
       - "Introduction": the-top-10/introduction.md
       - "C1: Implement Access Control": the-top-10/c1-accesscontrol.md
@@ -83,8 +81,9 @@ nav:
       - "C10: Stop Server Side Request Forgery": the-top-10/c10-stop-server-side-request-forgery.md
     - 'Final Word': final-word.md
   - 'Top 10 2018':
-    - 'About OWASP': archive/2018/0x01-about-owasp.md
     - 'About Project': archive/2018/0x02-about-project.md
+    - 'Translations': archive/2018/translations.md
+    - 'About OWASP': archive/2018/0x01-about-owasp.md
     - 'About Structure': archive/2018/0x03-about-structure.md
     - 'Introduction': archive/2018/0x04-introduction.md
     - 'C1: Define Security Requirements': archive/2018/c1-security-requirements.md

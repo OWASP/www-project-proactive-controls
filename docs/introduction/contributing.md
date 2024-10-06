@@ -8,6 +8,13 @@ You find the source code of the current version of the OWASP Top 10 Proactive Co
 
 When you check [our open issues on github](https://github.com/OWASP/www-project-proactive-controls/issues), you can see that some issues are tagged with `help wanted` or `good first issue`. Choose these if you want to help out the project!
 
+
+## Translations
+
+Starting with version `v4` in 2024, we don't accept inclusion of translations into the OWASP Top 10 Proactive Controls directly and are only providing the English version.
+
+We do encourage translators to create translated versions and host them themselves and will link to those external sites/documents if notified about them.
+
 ## How to test the OWASP Proactive Control website locally?
 
 If you can run python, you can locally run the OWASP Proactive Control website locally. We recommend this to test your changes before pushing them to github.
