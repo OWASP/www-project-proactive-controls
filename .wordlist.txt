@@ -269,3 +269,10 @@ Zend
 Zudilin
 reimplement
 StrideGPT
+Jaskirat
+Kron
+Lukas
+Weichselbaum
+cowsecurity
+joonakokkola
+untracked

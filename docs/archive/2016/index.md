@@ -19,7 +19,7 @@ You can download an English version of the OWASP Top 10 Proactive Controls: [pdf
 
 In alphabetical order:
 
-  - Chinese: [pdf](https://github.com/OWASP/www-project-proactive-controls/blob/master/v2/OWASPTop10ProactiveControls2016-Chinese.pdf)
-  - Hebrew: [pdf](https://github.com/OWASP/www-project-proactive-controls/blob/master/v2/OWASP_Proactive_Controls_2-Hebrew.pdf)
-  - Japanese: [pdf](https://github.com/OWASP/www-project-proactive-controls/blob/master/v2/OWASPTop10ProactiveControls2016-Japanese.pdf)
-  - Simplified Chinese: [pdf](https://github.com/OWASP/www-project-proactive-controls/blob/master/v2/OWASPTop10ProactiveControls2016-SimplifiedChinese.pdf)
+- Chinese: [pdf](https://github.com/OWASP/www-project-proactive-controls/blob/master/v2/OWASPTop10ProactiveControls2016-Chinese.pdf)
+- Hebrew: [pdf](https://github.com/OWASP/www-project-proactive-controls/blob/master/v2/OWASP_Proactive_Controls_2-Hebrew.pdf)
+- Japanese: [pdf](https://github.com/OWASP/www-project-proactive-controls/blob/master/v2/OWASPTop10ProactiveControls2016-Japanese.pdf)
+- Simplified Chinese: [pdf](https://github.com/OWASP/www-project-proactive-controls/blob/master/v2/OWASPTop10ProactiveControls2016-SimplifiedChinese.pdf)
