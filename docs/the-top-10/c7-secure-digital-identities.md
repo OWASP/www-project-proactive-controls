@@ -1,4 +1,4 @@
-# C7: Implement Digital Identity
+# C7: Secure Digital Identities
 
 ## Description
 

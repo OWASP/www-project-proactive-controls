@@ -73,12 +73,12 @@ nav:
     - 'The Top 10 List':
       - "Introduction": the-top-10/introduction.md
       - "C1: Implement Access Control": the-top-10/c1-accesscontrol.md
-      - "C2: Use Cryptography the proper way": the-top-10/c2-crypto.md
+      - "C2: Use Cryptography to Protect Data": the-top-10/c2-crypto.md
       - "C3: Validate all Input & Handle Exceptions": the-top-10/c3-validate-input-and-handle-exceptions.md
       - "C4: Address Security from the Start": the-top-10/c4-secure-architecture.md
       - "C5: Secure By Default Configurations": the-top-10/c5-secure-by-default.md
       - "C6: Keep your Components Secure": the-top-10/c6-use-secure-dependencies.md
-      - "C7: Implement Digital Identity": the-top-10/c7-implement-digital-identity.md
+      - "C7: Secure Digital Identities": the-top-10/c7-secure-digital-identities.md
       - "C8: Leverage Browser Security Features": the-top-10/c8-leverage-browser-security-features.md
       - "C9: Implement Security Logging and Monitoring": the-top-10/c9-security-logging-and-monitoring.md
       - "C10: Stop Server Side Request Forgery": the-top-10/c10-stop-server-side-request-forgery.md

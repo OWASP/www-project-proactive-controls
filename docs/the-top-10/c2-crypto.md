@@ -1,4 +1,4 @@
-# C2: Use Cryptography the proper way
+# C2: Use Cryptography to Protect Data
 
 ## Description
 
