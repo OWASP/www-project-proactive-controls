@@ -20,13 +20,13 @@ $ python3 -m venv venv
 $ source venv/bin/activate
 
 # install the mkdocs package
-$ pip install mkdocs-material
+$ pip install mkdocs-material mkdocs-redirects
 
 # switch into your checked-out OWASP Proactive Controls directory
 $ cd owasp-proactive-controls
 
 # run the local webserver
-$ mkdocs server
+$ mkdocs serve
 
 # now you can point your browser to http://localhost:8000 and check
 # how your changes will look like
