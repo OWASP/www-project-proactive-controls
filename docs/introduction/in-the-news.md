@@ -4,6 +4,7 @@
 
 Introduction of the OWASP Top 10 Proactive Controls v4 and switch to new wiki system.
 
+- \[9 Sep 2024\] Featured in `SecureIdeas` post [ What’s new in the OWASP Proactive Controls for 2024 ](https://www.secureideas.com/blog/whats-new-in-the-owasp-proactive-controls-for-2024)
 - \[6 Feb 2024\] Featured in `gbhackers.` post [OWASP Top 10 Proactive Security Controls For Software Developers to Build Secure Software](https://gbhackers.com/owasp-released-top-10-proactive-controls/)
 
 ## 2022
