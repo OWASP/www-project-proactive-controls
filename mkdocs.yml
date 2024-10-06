@@ -63,12 +63,11 @@ nav:
   - 'Current Top 10 (WIP, 2024)':
     - 'Introduction':
       - 'About this Project': index.md
-      - 'About OWASP': introduction/about-owasp.md
+      - 'In the News': introduction/in-the-news.md
       - 'How to contribute?': introduction/contributing.md
+      - 'About OWASP': introduction/about-owasp.md
       - 'Related OWASP Projects': introduction/related-owasp-projects.md
     - 'About the Top 10':
-      - 'In the News': about-top-10/in-the-news.md
-      - 'Our Contributors': about-top-10/contributors.md
       - 'Old Versions and Translations': about-top-10/old-versions-and-translations.md
     - 'The Top 10 List':
       - "Introduction": the-top-10/introduction.md
