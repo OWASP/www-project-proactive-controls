@@ -61,13 +61,12 @@ copyright: |
 
 nav:
   - 'Current Top 10 (WIP, 2024)':
-    - 'Introduction':
-      - 'About this Project': index.md
-      - 'In the News': introduction/in-the-news.md
-      - 'How to contribute?': introduction/contributing.md
-      - 'About OWASP': introduction/about-owasp.md
-      - 'Related OWASP Projects': introduction/related-owasp-projects.md
-    - 'The Top 10 List':
+    - 'About this Project': index.md
+    - 'In the News': introduction/in-the-news.md
+    - 'How to contribute?': introduction/contributing.md
+    - 'About OWASP': introduction/about-owasp.md
+    - 'Related OWASP Projects': introduction/related-owasp-projects.md
+    - 'Top 10 Proactive Controls:':
       - "Introduction": the-top-10/introduction.md
       - "C1: Implement Access Control": the-top-10/c1-accesscontrol.md
       - "C2: Use Cryptography to Protect Data": the-top-10/c2-crypto.md
