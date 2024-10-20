@@ -2,7 +2,9 @@
 
 ## Description
 
-While Injection Attacks typically target the victim server itself, Server-Side Request Forgery (SSRF) attacks try to coerce the server to perform a request on behalf of the attacker. Why is this beneficial for the attacker? The outgoing request will be performed with the identity of the victim server and thus the attacker might execute operations with elevated operations.
+While Injection Attacks typically target the victim server itself, Server-Side Request Forgery (SSRF) attacks try to coerce the server to perform a request on behalf of the attacker. SSRF occurs when an attacker can trick a server into making unintended requests to internal or external services, potentially bypassing security controls.
+
+Why is this beneficial for the attacker? The outgoing request will be performed with the identity of the victim server and thus the attacker might execute operations with elevated operations.
 
 ## Threats
 
@@ -19,6 +21,7 @@ There multiple ways of preventing SSRF:
 - Input validation
 - If outgoing requests have to be made, check the target against an allow-list
 - If using XML, configure parser securely to prevent XEE
+
 Be aware of [Unicode and other Character transformations](https://cheatsheetseries.owasp.org/assets/Server_Side_Request_Forgery_Prevention_Cheat_Sheet_Orange_Tsai_Talk.pdf) when performing input validation.
 
 ## Vulnerabilities Prevented

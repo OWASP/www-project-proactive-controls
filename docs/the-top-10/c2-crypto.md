@@ -42,8 +42,10 @@ When it comes to cryptography, there are a few simple rules:
 ### Protect data at rest
 
 The first rule of sensitive data management is to avoid storing sensitive data when at all possible. If you must store sensitive data then make sure it is cryptographically protected in some way to avoid unauthorized disclosure and modification.
+
 Cryptography (or crypto) is one of the more advanced topics of information security and one whose understanding requires the most schooling and experience. It is difficult to get right because there are many approaches to encryption, each with advantages and disadvantages that need to be thoroughly understood by web solution architects and developers. In addition, serious cryptography research is typically based on advanced mathematics and number theory, providing a serious barrier to entry.
-Designing or building cryptographic algorithms is very error-prone (see side-channel attacks). Instead of building cryptographic capability from scratch, it is strongly recommended that peer-reviewed and open solutions be used, such as the Google `Tink` project, `Libsodium`, and secure storage capability built into many software frameworks and cloud services.
+
+Designing or building cryptographic algorithms is very error-prone (see side-channel attacks). Instead of building cryptographic capability from scratch, it is strongly recommended that peer-reviewed and open solutions be used, such as the [Google Tink](https://developers.google.com/tink) project, [Libsodium](https://doc.libsodium.org/), and secure storage capability built into many software frameworks and cloud services.
 
 #### Store passwords safely
 
@@ -74,7 +76,7 @@ Attackers can steal data from web and web service applications in a number of wa
 
 #### Use current cryptographic protocols
 
-When developing web applications, use TLSv1.2 or TLSv1.3, preferably TLSv1.3. If possible, investigate the usage of HTTP/2 or HTTP/3 as they warrant the usage of security TLS versions/algorithms.
+When developing web applications, you will typically use [Transport Layer Security (TLS)](https://en.wikipedia.org/wiki/Transport_Layer_Security) for encryption during transit. Use TLSv1.2 or TLSv1.3, preferably TLSv1.3. If possible, investigate the usage of HTTP/2 or HTTP/3 as they warrant the usage of security TLS versions/algorithms.
 
 - Directly turn off other older protocols to avoid protocol downgrade attacks.
 - Do not offer HTTP. Disable both HTTP and SSL compression.

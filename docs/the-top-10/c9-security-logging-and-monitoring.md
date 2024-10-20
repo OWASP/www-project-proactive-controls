@@ -2,7 +2,11 @@
 
 ## Description
 
-Logging is a concept that most developers already use for debugging and diagnostic purposes. Security logging is an equally basic concept: to log security information during the runtime operation of an application. Monitoring is the live review of application and security logs using various forms of automation. The same tools and patterns can be used for operations, debugging and security purposes.
+Logging is a concept that most developers already use for debugging and diagnostic purposes. Security logging is an equally basic concept: to log security information during the runtime operation of an application.
+
+Monitoring is the live review of application and security logs using various forms of automation. The same tools and patterns can be used for operations, debugging and security purposes.
+
+The goal of secruity logging is to detect and respond to potential security incidents.
 
 ### Benefits of Security Logging
 
@@ -20,6 +24,7 @@ Use logging to identify activity that indicates that a user is behaving maliciou
 - Submitted data that involves changes to data that should not be modifiable (select list, checkbox or other limited entry component).
 - Requests that violate server-side access control rules.
 - A more comprehensive list of possible detection points is available [here](https://cheatsheetseries.owasp.org/cheatsheets/Application_Logging_Vocabulary_Cheat_Sheet.html).
+
 When your application encounters such activity, your application should at the very least log the activity and mark it as a high severity issue. Ideally, your application should also respond to a possible identified attack, by for example invalidating the user’s session and locking the user’s account. The response mechanisms allow the software to react in realtime to possible identified attacks.
 
 ### Secure Logging Design

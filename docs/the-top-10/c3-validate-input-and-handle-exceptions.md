@@ -72,7 +72,9 @@ Regular expressions are just one way to accomplish validation. Regular expressio
 #### Unexpected User Input (Mass Assignment)
 
 Some frameworks support automatic binding of HTTP requests parameters to server-side objects used by the application. This auto-binding feature can allow an attacker to update server-side objects that were not meant to be modified. The attacker can possibly modify their access control level or circumvent the intended business logic of the application with this feature.
+
 This attack has a number of names including: mass assignment, autobinding and object injection.
+
 As a simple example, if the user object has a field privilege which specifies the user’s privilege level in the application, a malicious user can look for pages where user data is modified and add privilege=admin to the HTTP parameters sent. If auto-binding is enabled in an insecure fashion, the server-side object representing the user will be modified accordingly.
 
 Two approaches can be used to handle this:

@@ -8,6 +8,7 @@ theme:
     - 404.html
     - google6fbf6cc04efaa5b5.html
   features:
+    - navigation.indexes
     - navigation.sections
     - navigation.tracking
     - navigation.path
@@ -61,13 +62,13 @@ copyright: |
 
 nav:
   - 'Current Top 10 (WIP, 2024)':
-    - 'About this Project': index.md
+    - index.md
     - 'In the News': introduction/in-the-news.md
     - 'How to contribute?': introduction/contributing.md
     - 'About OWASP': introduction/about-owasp.md
     - 'Related OWASP Projects': introduction/related-owasp-projects.md
     - 'Top 10 Proactive Controls:':
-      - "Introduction": the-top-10/introduction.md
+      - the-top-10/index.md
       - "C1: Implement Access Control": the-top-10/c1-accesscontrol.md
       - "C2: Use Cryptography to Protect Data": the-top-10/c2-crypto.md
       - "C3: Validate all Input & Handle Exceptions": the-top-10/c3-validate-input-and-handle-exceptions.md
@@ -112,7 +113,7 @@ plugins:
         'v4/en/c4-secure-architecture.md': 'the-top-10/c4-secure-architecture.md'
         'v4/en/c5-secure-by-default.md': 'the-top-10/c5-secure-by-default.md'
         'v4/en/c6-use-secure-dependencies.md': 'the-top-10/c6-use-secure-dependencies.md'
-        'v4/en/c7-implement-digital-identity.md': 'the-top-10/c7-implement-digital-identity.md'
+        'v4/en/c7-implement-digital-identity.md': 'the-top-10/c7-secure-digital-identities.md'
         'v4/en/c8-help-the-browser-defend-the-user.md': 'the-top-10/c8-leverage-browser-security-features.md'
         'v4/en/c9-security-logging-and-monitoring.md': 'the-top-10/c9-security-logging-and-monitoring.md'
         'v4/en/c10-stop-server-side-request-forgery.md': 'the-top-10/c10-stop-server-side-request-forgery.md'
