@@ -6,7 +6,7 @@ Logging is a concept that most developers already use for debugging and diagnost
 
 Monitoring is the live review of application and security logs using various forms of automation. The same tools and patterns can be used for operations, debugging and security purposes.
 
-The goal of secruity logging is to detect and respond to potential security incidents.
+The goal of security logging is to detect and respond to potential security incidents.
 
 ### Benefits of Security Logging
 
