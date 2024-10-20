@@ -61,7 +61,7 @@ copyright: |
   </span><br><span style="font-size: smaller">OWASP &#174; is a registered trademark of the OWASP Foundation, Inc.</span> <span>This website uses cookies to analyze our traffic and only share that information with our analytics partners. <a href="https://github.com/OWASP/owasp-mastg/blob/master/about_cookies.md">Learn more</a>.</span>
 
 nav:
-  - 'Current Top 10 (WIP, 2024)':
+  - 'Future Top 10 (WIP)':
     - index.md
     - 'In the News': introduction/in-the-news.md
     - 'How to contribute?': introduction/contributing.md
@@ -80,6 +80,25 @@ nav:
       - "C9: Implement Security Logging and Monitoring": the-top-10/c9-security-logging-and-monitoring.md
       - "C10: Stop Server Side Request Forgery": the-top-10/c10-stop-server-side-request-forgery.md
     - 'Final Word': final-word.md
+  - 'Top 10 2024':
+    - archive/2024/index.md
+    - 'In the News': archive/2024/introduction/in-the-news.md
+    - 'How to contribute?': archive/2024/introduction/contributing.md
+    - 'About OWASP': archive/2024/introduction/about-owasp.md
+    - 'Related OWASP Projects': archive/2024/introduction/related-owasp-projects.md
+    - 'Top 10 Proactive Controls:':
+      - archive/2024/the-top-10/index.md
+      - "C1: Implement Access Control": archive/2024/the-top-10/c1-accesscontrol.md
+      - "C2: Use Cryptography to Protect Data": archive/2024/the-top-10/c2-crypto.md
+      - "C3: Validate all Input & Handle Exceptions": archive/2024/the-top-10/c3-validate-input-and-handle-exceptions.md
+      - "C4: Address Security from the Start": archive/2024/the-top-10/c4-secure-architecture.md
+      - "C5: Secure By Default Configurations": archive/2024/the-top-10/c5-secure-by-default.md
+      - "C6: Keep your Components Secure": archive/2024/the-top-10/c6-use-secure-dependencies.md
+      - "C7: Secure Digital Identities": archive/2024/the-top-10/c7-secure-digital-identities.md
+      - "C8: Leverage Browser Security Features": archive/2024/the-top-10/c8-leverage-browser-security-features.md
+      - "C9: Implement Security Logging and Monitoring": archive/2024/the-top-10/c9-security-logging-and-monitoring.md
+      - "C10: Stop Server Side Request Forgery": archive/2024/the-top-10/c10-stop-server-side-request-forgery.md
+    - 'Final Word': archive/2024/final-word.md
   - 'Top 10 2018':
     - 'About Project': archive/2018/0x02-about-project.md
     - 'Translations': archive/2018/translations.md
@@ -106,7 +125,7 @@ plugins:
       redirect_maps:
         'v4/en/introduction.md': 'index.md'
         'v4/en/0x02-about-project.md': 'index.md'
-        'v4/en/0x03-about-structure.md': 'the-top-10/introduction.md'
+        'v4/en/0x03-about-structure.md': 'the-top-10/index.md'
         'v4/en/c1-accesscontrol.md': 'the-top-10/c1-accesscontrol.md'
         'v4/en/c2-crypto.md': 'the-top-10/c2-crypto.md'
         'v4/en/c3-validate-input-and-handle-exceptions.md': 'the-top-10/c3-validate-input-and-handle-exceptions.md'
