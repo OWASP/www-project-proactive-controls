@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
     
     
       
@@ -2080,6 +2080,10 @@
 
 
 <h1 id="c4-encode-and-escape-data">C4: Encode and Escape Data</h1>
+<div class="admonition warning">
+<p class="admonition-title">New Version of the Control Available!</p>
+<p>You are looking at the legacy 2018 version of the OWASP Top 10 Proactive Controls. You can find information about the same control within the <a href="../../2024/">OWASP Top 10 Proactive Controls 2024</a> within <a href="../../2024/the-top-10/c3-validate-input-and-handle-exceptions/">C3: Validate all Input &amp; Handle Exceptions</a>!</p>
+</div>
 <h2 id="description">Description</h2>
 <p><strong>Encoding</strong> and escaping are defensive techniques meant to stop injection attacks. Encoding (commonly called "Output Encoding") involves translating special characters into some different but equivalent form that is no longer dangerous in the target interpreter, for example translating the <code>&lt;</code> character into the <code>&amp;lt;</code> string when writing to an HTML page. <strong>Escaping</strong> involves adding a special character before the character/string to avoid it being misinterpreted, for example, adding a <code>\</code> character before a <code>"</code> (double quote) character so that it is interpreted as text and not as closing a string.</p>
 <p>Output encoding is best applied <strong>just before</strong> the content is passed to the target interpreter. If this defense is performed too early in the processing of a request then the encoding or escaping may interfere with the use of the content in other parts of the program. For example if you HTML escape content before storing that data in the database and the UI automatically escapes that data a second time then the content will not display properly due to being double escaped.</p>
