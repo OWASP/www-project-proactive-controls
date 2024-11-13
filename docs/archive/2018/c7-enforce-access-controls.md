@@ -1,5 +1,9 @@
 # C7: Enforce Access Controls
 
+!!! warning "New Version of the Control Available!"
+
+    You are looking at the legacy 2018 version of the OWASP Top 10 Proactive Controls. You can find information about the same control within the [OWASP Top 10 Proactive Controls 2024](./../2024/index.md) within [C1: Implement Access Control](./../2024/the-top-10/c1-accesscontrol.md)!
+
 ## Description
 
 Access Control (or Authorization) is the process of granting or denying *specific requests* from a user, program, or process. Access control also involves the act of *granting and revoking those privileges*.

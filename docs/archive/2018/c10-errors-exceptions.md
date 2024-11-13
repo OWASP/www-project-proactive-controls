@@ -1,5 +1,9 @@
 # C10: Handle all Errors and Exceptions
 
+!!! warning "New Version of the Control Available!"
+
+    You are looking at the legacy 2018 version of the OWASP Top 10 Proactive Controls. You can find information about the same control within the [OWASP Top 10 Proactive Controls 2024](./../2024/index.md) within [C3: Validate all Input & Handle Exceptions](./../2024/the-top-10/c3-validate-input-and-handle-exceptions.md)!
+
 ## Description
 
 Exception handling is a programming concept that allows an application to respond to different error states (like network down, or database connection failed, etc) in various ways. Handling exceptions and errors correctly is critical to making your code reliable and secure.

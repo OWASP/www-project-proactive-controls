@@ -1,5 +1,9 @@
 # C9: Implement Security Logging and Monitoring
 
+!!! warning "New Version of the Control Available!"
+
+    You are looking at the legacy 2018 version of the OWASP Top 10 Proactive Controls. You can find information about the same control within the [OWASP Top 10 Proactive Controls 2024](./../2024/index.md) within [C9: Implement Security Logging and Monitoring ](./../2024/the-top-10/c9-security-logging-and-monitoring.md)!
+
 ## Description
 
 Logging is a concept that most developers already use for debugging and diagnostic purposes. Security logging is an equally basic concept: to log security information during the runtime operation of an application. Monitoring is the live review of application and security logs using various forms of automation. The same tools and patterns can be used for operations, debugging and security purposes.

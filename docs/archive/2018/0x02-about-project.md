@@ -1,5 +1,9 @@
 # About this Project
 
+!!! warning "New Version Available!"
+
+    You are looking at the legacy 2018 version of the OWASP Top 10 Proactive Controls. The current version is the [OWASP Top 10 Proactive Controls 2024](./../2024/index.md)!
+
 Insecure software is undermining our financial, healthcare, defense, energy, and other critical infrastructure worldwide. As our digital, global infrastructure gets increasingly complex and interconnected, the difficulty of achieving application security increases exponentially. We can no longer afford to tolerate relatively simple security problems.
 
 ## Aim & Objective

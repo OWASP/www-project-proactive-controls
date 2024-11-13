@@ -1,5 +1,9 @@
 # Document Structure
 
+!!! warning "New Version Available!"
+
+    You are looking at the legacy 2018 version of the OWASP Top 10 Proactive Controls. The current version is the [OWASP Top 10 Proactive Controls 2024](./../2024/index.md)!
+
 This document is structured as a list of security controls. Each control is described as follows:
 
 ## Cx: Control Name

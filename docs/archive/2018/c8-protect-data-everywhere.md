@@ -1,5 +1,10 @@
 # C8: Protect Data Everywhere
 
+!!! warning "New Version of the Control Available!"
+
+    You are looking at the legacy 2018 version of the OWASP Top 10 Proactive Controls. You can find information about the same control within the [OWASP Top 10 Proactive Controls 2024](./../2024/index.md) within [C2: Use Cryptography to Protect Data](./../2024/the-top-10/c2-crypto.md)!
+
+
 ## Description
 
 Sensitive data such as passwords, credit card numbers, health records, personal information and business secrets require extra protection, particularly if that data falls under privacy laws (EU's General Data Protection Regulation GDPR), financial data protection rules such as PCI Data Security Standard (PCI DSS) or other regulations.

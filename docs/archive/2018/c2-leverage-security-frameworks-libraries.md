@@ -1,5 +1,9 @@
 # C2: Leverage Security Frameworks and Libraries
 
+!!! warning "New Version of the Control Available!"
+
+    You are looking at the legacy 2018 version of the OWASP Top 10 Proactive Controls. You can find information about the same control within the [OWASP Top 10 Proactive Controls 2024](./../2024/index.md) within [C6: Keep your Components Secure](./../2024/the-top-10/c6-use-secure-dependencies.md)!
+
 ## Description
 
 Secure coding libraries and software frameworks with embedded security help software developers guard against security-related design and implementation flaws. A developer writing an application from scratch might not have sufficient knowledge, time, or budget to properly implement or maintain security features. Leveraging security frameworks helps accomplish security goals more efficiently and accurately.

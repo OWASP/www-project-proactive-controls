@@ -1,5 +1,9 @@
 # C3: Secure Database Access
 
+!!! warning "New Version of the Control Available!"
+
+    You are looking at the legacy 2018 version of the OWASP Top 10 Proactive Controls. You can find information about the same control within the [OWASP Top 10 Proactive Controls 2024](./../2024/index.md) within [C3: Validate all Input & Handle Exceptions](./../2024/the-top-10/c3-validate-input-and-handle-exceptions.md)!
+
 ## Description
 
 This section describes secure access to all data stores, including both relational databases and NoSQL databases. Some areas to consider:

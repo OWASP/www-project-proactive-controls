@@ -1,5 +1,9 @@
 # C6: Implement Digital Identity
 
+!!! warning "New Version of the Control Available!"
+
+    You are looking at the legacy 2018 version of the OWASP Top 10 Proactive Controls. You can find information about the same control within the [OWASP Top 10 Proactive Controls 2024](./../2024/index.md) within [C7: Secure Digital Identities](./../2024/the-top-10/c7-secure-digital-identities.md)!
+
 ## Description
 
 Digital Identity is the unique representation of a user (or other subject) as they engage in an online transaction. Authentication is the process of verifying that an individual or entity is who they claim to be. Session management is a process by which a server maintains the state of the users authentication so that the user may continue to use the system without re-authenticating. The [NIST Special Publication 800-63B: Digital Identity Guidelines (Authentication and Life Cycle Management)](https://pages.nist.gov/800-63-3/sp800-63b.html) provides solid guidance on implementing digital identity, authentication and session management controls.

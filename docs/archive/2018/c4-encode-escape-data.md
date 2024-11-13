@@ -1,5 +1,9 @@
 # C4: Encode and Escape Data
 
+!!! warning "New Version of the Control Available!"
+
+    You are looking at the legacy 2018 version of the OWASP Top 10 Proactive Controls. You can find information about the same control within the [OWASP Top 10 Proactive Controls 2024](./../2024/index.md) within [C3: Validate all Input & Handle Exceptions](./../2024/the-top-10/c3-validate-input-and-handle-exceptions.md)!
+
 ## Description
 
 **Encoding** and escaping are defensive techniques meant to stop injection attacks. Encoding (commonly called "Output Encoding") involves translating special characters into some different but equivalent form that is no longer dangerous in the target interpreter, for example translating the ``<`` character into the ``&lt;`` string when writing to an HTML page. **Escaping** involves adding a special character before the character/string to avoid it being misinterpreted, for example, adding a ``\`` character before a ``"`` (double quote) character so that it is interpreted as text and not as closing a string.

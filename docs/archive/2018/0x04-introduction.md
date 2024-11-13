@@ -1,5 +1,9 @@
 # Introduction
 
+!!! warning "New Version Available!"
+
+    You are looking at the legacy 2018 version of the OWASP Top 10 Proactive Controls. The current version is the [OWASP Top 10 Proactive Controls 2024](./../2024/the-top-10/index.md)!
+
 The OWASP Top Ten Proactive Controls 2018 is a list of security techniques that should be considered for every software development project. This document is written for developers to assist those new to secure development.
 
 One of the main goals of this document is to provide concrete practical guidance that helps developers build secure software. These techniques should be applied proactively at the early stages of software development to ensure maximum effectiveness.
