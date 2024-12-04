@@ -2,10 +2,6 @@
 
 ## 2024
 
-Introduction of the OWASP Top 10 Proactive Controls v4 and switch to new wiki system.
-
-- \[25 Nov 2025\] Podcast Series at [Cloud Security Deep Dive](https://cloudsecuritydeepdive.com/), currently contains podcasts about C1, C2, C3, C4, C5, C8.
-- \[9 Sep 2024\] Featured in `SecureIdeas` post [What’s new in the OWASP Proactive Controls for 2024](https://www.secureideas.com/blog/whats-new-in-the-owasp-proactive-controls-for-2024)
 - \[6 Feb 2024\] Featured in `gbhackers.` post [OWASP Top 10 Proactive Security Controls For Software Developers to Build Secure Software](https://gbhackers.com/owasp-released-top-10-proactive-controls/)
 
 ## 2022
@@ -32,16 +28,15 @@ Introduction of the OWASP Top 10 Proactive Controls v4 and switch to new wiki sy
 
 ## 2018
 
-The OWASP Top 10 Proactive Controls 2018 (v3) were released.
+The OWASP Top 10 Proactive Controls 2018 (v3) were released on May 7th, 2018.
 
 - \[Dec 2018\] Featured as the resource for Security “Shifting to the Left”\! in the ISC2 course: "DevSecOps: Integrating Security into DevOps”
 - \[20 Sep 2018\] Featured in TechBeacon: [OWASP Top 10 Proactive Controls 2018: How it makes your code more secure](https://techbeacon.com/owasp-top-10-proactive-controls-2018-how-it-makes-your-code-more-secure)
 - \[17 Sep 2018\] Binary Blogger Podcast Episodes: [OWASP Top 10 Proactive Controls Podcast Episodes](https://binaryblogger.com/2018/09/17/owasp-top-10-proactive-controls-podcast-episodes/)
 - \[9 May 2018\] Featured in [Developer's security guide: 50 online resources to shift left](https://techbeacon.com/developer-secure-code-starter-kit-resources)
-- \[7 May 2018\] 3.0 released\!
 
 ## Older Versions
 
 News Posts for older versions of the Proactive Controls can be found here:
 
-- [News about the 2016 version](./../archive/2016/in-the-news.md)
+- [News about the 2016 version](./../2016/in-the-news.md)

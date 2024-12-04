@@ -18,7 +18,7 @@ jobs:
       - name: Link Checker
         uses: lycheeverse/lychee-action@v1.10.0
         with:
-          args: --no-progress --max-retries 5 --exclude-path './docs/introduction/in-the-news.md' './docs/**/*.md'
+          args: --no-progress --max-retries 5 --exclude-path './docs/archive/' './docs/**/*.md'
           fail: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}

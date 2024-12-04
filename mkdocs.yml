@@ -103,6 +103,7 @@ nav:
     - 'Final Word': archive/2024/final-word.md
   - 'Top 10 2018':
     - 'About Project': archive/2018/0x02-about-project.md
+    - 'In the News': archive/2018/in-the-news.md
     - 'Translations': archive/2018/translations.md
     - 'About OWASP': archive/2018/0x01-about-owasp.md
     - 'About Structure': archive/2018/0x03-about-structure.md
@@ -118,7 +119,9 @@ nav:
     - 'C9: Implement Security Logging and Monitoring': archive/2018/c9-security-logging.md
     - 'C10: Handle All Errors and Exceptions': archive/2018/c10-errors-exceptions.md
     - 'Final Word': archive/2018/final-word.md
-  - 'Top 10 2016': archive/2016/index.md
+  - 'Top 10 2016':
+    - archive/2016/index.md
+    - 'In the News': archive/2016/in-the-news.md
   - 'Top 10 2014': archive/2014/index.md
 
 plugins:
