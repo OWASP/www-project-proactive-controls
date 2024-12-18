@@ -13,7 +13,9 @@ The [NIST Special Publication 800-63B: Digital Identity Guidelines (Authenticati
 
 NIST 800-63b describes three levels of authentication assurance called Authentication Assurance Level (AAL):
 
-#### Level 1 : Passwords: The first level, AAL level 1 is reserved for lower-risk applications that do not contain PII or other private data. At AAL level 1 only single-factor authentication is required, typically through the use of a password (something you know). The security of passwords (or credentials in general) is of utmost importance, this includes both secure storage (using a key-derivation function and such) as well as corresponding processes, e.g. having a secure password-reset flow.
+#### Level 1 : Passwords:
+
+The first level, AAL level 1 is reserved for lower-risk applications that do not contain PII or other private data. At AAL level 1 only single-factor authentication is required, typically through the use of a password (something you know). The security of passwords (or credentials in general) is of utmost importance, this includes both secure storage (using a key-derivation function and such) as well as corresponding processes, e.g. having a secure password-reset flow.
 
 #### Level 2 : Multi-Factor Authentication
 
