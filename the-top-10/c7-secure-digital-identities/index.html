@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.47">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
     
     
       
@@ -801,6 +801,15 @@
   
     <nav class="md-nav" aria-label="Authentication Assurance Levels">
       <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#level-1-passwords-the-first-level-aal-level-1-is-reserved-for-lower-risk-applications-that-do-not-contain-pii-or-other-private-data-at-aal-level-1-only-single-factor-authentication-is-required-typically-through-the-use-of-a-password-something-you-know-the-security-of-passwords-or-credentials-in-general-is-of-utmost-importance-this-includes-both-secure-storage-using-a-key-derivation-function-and-such-as-well-as-corresponding-processes-eg-having-a-secure-password-reset-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Level 1 : Passwords: The first level, AAL level 1 is reserved for lower-risk applications that do not contain PII or other private data. At AAL level 1 only single-factor authentication is required, typically through the use of a password (something you know). The security of passwords (or credentials in general) is of utmost importance, this includes both secure storage (using a key-derivation function and such) as well as corresponding processes, e.g. having a secure password-reset flow.
+    </span>
+  </a>
+  
+</li>
         
           <li class="md-nav__item">
   <a href="#level-2-multi-factor-authentication" class="md-nav__link">
@@ -2164,6 +2173,15 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#level-1-passwords-the-first-level-aal-level-1-is-reserved-for-lower-risk-applications-that-do-not-contain-pii-or-other-private-data-at-aal-level-1-only-single-factor-authentication-is-required-typically-through-the-use-of-a-password-something-you-know-the-security-of-passwords-or-credentials-in-general-is-of-utmost-importance-this-includes-both-secure-storage-using-a-key-derivation-function-and-such-as-well-as-corresponding-processes-eg-having-a-secure-password-reset-flow" class="md-nav__link">
+    <span class="md-ellipsis">
+      Level 1 : Passwords: The first level, AAL level 1 is reserved for lower-risk applications that do not contain PII or other private data. At AAL level 1 only single-factor authentication is required, typically through the use of a password (something you know). The security of passwords (or credentials in general) is of utmost importance, this includes both secure storage (using a key-derivation function and such) as well as corresponding processes, e.g. having a secure password-reset flow.
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#level-2-multi-factor-authentication" class="md-nav__link">
     <span class="md-ellipsis">
       Level 2 : Multi-Factor Authentication
@@ -2376,11 +2394,7 @@ Digital identity, authentication, and session management are very complex topics
 <p>The <a href="https://pages.nist.gov/800-63-3/sp800-63b.html">NIST Special Publication 800-63B: Digital Identity Guidelines (Authentication and Life Cycle Management</a> provide solid guidance on implementing digital identity, authentication, and session management controls. Below are some recommendations for secure implementation to ensure strong digital identity controls are implemented in applications.</p>
 <h3 id="authentication-assurance-levels">Authentication Assurance Levels</h3>
 <p>NIST 800-63b describes three levels of authentication assurance called Authentication Assurance Level (AAL):</p>
-<ul>
-<li><strong>Level 1 : Passwords</strong>: The first level, AAL level 1 is reserved for lower-risk applications that do not contain PII or other private data. At AAL level 1 only single-factor authentication is required, typically through the use of a password (something you know). The security of passwords (or credentials in general) is of utmost importance, this includes both secure storage (using a key-derivation function and such) as well as corresponding processes, e.g. having a secure password-reset flow.</li>
-<li><strong>Level 2 : Multi-Factor Authentication</strong>: NIST 800-63b AAL level 2 is reserved for higher-risk applications that contain "self-asserted PII or other personal information made available online." At AAL level 2 multi-factor authentication is required including OTP or other forms of multi-factor implementation.</li>
-<li><strong>Level 3 : Cryptographic Based Authentication</strong>: NIST 800-63b Authentication Assurance Level 3 (AAL3) is required when the impact of compromised systems could lead to personal harm, significant financial loss, harm the public interest or involve civil or criminal violations. AAL3 requires authentication that is "based on proof of possession of a key through a cryptographic protocol." This type of authentication is used to achieve the strongest level of authentication assurance. This is typically done through hardware cryptographic modules. When developing web applications, this will commonly lead to WebAuthn or PassKeys.</li>
-</ul>
+<h4 id="level-1-passwords-the-first-level-aal-level-1-is-reserved-for-lower-risk-applications-that-do-not-contain-pii-or-other-private-data-at-aal-level-1-only-single-factor-authentication-is-required-typically-through-the-use-of-a-password-something-you-know-the-security-of-passwords-or-credentials-in-general-is-of-utmost-importance-this-includes-both-secure-storage-using-a-key-derivation-function-and-such-as-well-as-corresponding-processes-eg-having-a-secure-password-reset-flow">Level 1 : Passwords: The first level, AAL level 1 is reserved for lower-risk applications that do not contain PII or other private data. At AAL level 1 only single-factor authentication is required, typically through the use of a password (something you know). The security of passwords (or credentials in general) is of utmost importance, this includes both secure storage (using a key-derivation function and such) as well as corresponding processes, e.g. having a secure password-reset flow.</h4>
 <h4 id="level-2-multi-factor-authentication">Level 2 : Multi-Factor Authentication</h4>
 <p>NIST 800-63b AAL level 2 is reserved for higher-risk applications that contain "self-asserted PII or other personal information made available online." At AAL level 2 multi-factor authentication is required including OTP or other forms of multi-factor implementation.</p>
 <p>Multi-factor authentication (MFA) ensures that users are who they claim to be by requiring them to identify themselves with a combination of:</p>
@@ -2558,7 +2572,7 @@ By default, always use server-side session management..</li>
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.sections", "navigation.tracking", "navigation.path", "navigation.tabs", "navigation.top", "search.suggest", "search.highlight", "content.tabs.link", "content.code.annotation", "content.code.copy"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.88dd0f4e.min.js"></script>
       
     
   </body>
