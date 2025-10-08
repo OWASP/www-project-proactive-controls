@@ -1,0 +1,27 @@
+audience:
+  - builder
+leaders:
+  - name: Andreas Happe
+    email: andreas.happe@owasp.org
+    github: andreashappe
+  - name: Jim Manico
+    email: jim.manico@owasp.org
+    github: jmanico
+  - name: Katy Anton
+    email: katy.anton@owasp.org
+    github: katyanton
+level: 2
+license:
+  - CC-BY-SA-4.0
+name: OWASP Top 10 Proactive Controls
+pitch: Security Controls Every Developer Should Know
+repositories:
+  - name: www-project-proactive-controls
+    url: https://github.com/OWASP/www-project-proactive-controls
+    description: OWASP Foundation Web Repository
+tags:
+  - security-controls
+  - developer
+  - controls
+type: documentation
+website: https://top10proactive.owasp.org/
