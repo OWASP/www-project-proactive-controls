@@ -22,5 +22,6 @@ repositories:
 tags:
   - security-controls
   - developer
+  - controls
 type: documentation
 website: https://top10proactive.owasp.org/
