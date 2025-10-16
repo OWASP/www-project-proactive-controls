@@ -120,7 +120,7 @@ If the application needs to support high availability, design key-rollover proce
 - [OWASP O-Saft TLS Tool](https://www.owasp.org/index.php/O-Saft) - TLS connection testing tool
 - [GitRob](https://github.com/michenriksen/gitrob) - Command line tool to find sensitive information in publicly available files on GitHub
 - [TruffleHog](https://github.com/dxa4481/truffleHog) - Searches for secrets accidentally committed
-- [Hashicorp Vault](https://www.vaultproject.io/) - Secrets manager
+- [Hashicorp Vault](https://developer.hashicorp.com/vault) - Secrets manager
 - [Amazon KMS](https://aws.amazon.com/kms/) - Manage keys on AWS
 - [AWS Secrets Manager](https://aws.amazon.com/secrets-manager) - Manage secrets on AWS
 - [Azure Key Vault](https://azure.microsoft.com/en-us/products/key-vault) - Manage keys and secrets on Azure

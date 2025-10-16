@@ -23,10 +23,8 @@ Introduction of the OWASP Top 10 Proactive Controls v4 and switch to new wiki sy
 
 ## 2019
 
-- \[July 2019\] Featured in Coursera course from UCDavies
-    [Identifying Security Vulnerabilities](https://www.coursera.org/directory/videos?courseId=V1k0pBtIEemZRAqH7m9oGA)
+- \[July 2019\] Featured in Coursera course from UCDavies: Identifying Security Vulnerabilities
 - \[23 June 2019\] Featured on HackerCombat: [Implement OWASP Proactive Controls to Work](https://hackercombat.com/implement-owasp-proactive-controls-to-work/)
-- \[7 June 2019\] Feature on OWASP DevSlop Show [Proactive Controls](https://www.youtube.com/watch?v=Jdb3qweDc_Q)
 - \[15 May 2019\] Featured in TechBeacon: [Put OWASP Top 10 Proactive Controls to work](https://techbeacon.com/security/put-owasp-top-10-proactive-controls-work)
 - \[2 Mar 2019\] Webinar: [The OWASP Top Ten Proactive Controls with Jim Manico](https://www.youtube.com/watch?v=ldXe8f5yVq8)
 
