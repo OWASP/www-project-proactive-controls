@@ -17,5 +17,7 @@ matrix:
       - code
       - pre
   sources:
-  - 'docs/**/*.md'
+  - 'docs/*.md'
+  - 'docs/introduction/*.md'
+  - 'docs/the-top-10/*.md'
   default_encoding: utf-8

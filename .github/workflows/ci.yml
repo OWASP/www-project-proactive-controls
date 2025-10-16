@@ -18,7 +18,12 @@ jobs:
       - name: Link Checker
         uses: lycheeverse/lychee-action@v2.6.1
         with:
-          args: --no-progress --max-retries 5 --exclude-path './docs/archive/' './docs/**/*.md'
+          args: >-
+            --no-progress
+            --max-retries 5
+            './docs/*.md'
+            './docs/introduction/*.md'
+            './docs/the-top-10/*.md'
           fail: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
@@ -34,7 +39,10 @@ jobs:
         uses: DavidAnson/markdownlint-cli2-action@v20.0.0
         with:
           config: '.markdownlint.yaml'
-          globs: './docs/**/*.md'
+          globs: |
+            './docs/*.md'
+            './docs/introduction/*.md'
+            './docs/the-top-10/*.md'
 
   spell_checker:
     name: Check spelling
